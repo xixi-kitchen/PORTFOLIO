@@ -1,7 +1,7 @@
 import React from "react";
 
 const Tcc = () => {
-  return <div>kkkkk</div>;
+  return <div className="text-red-700">kkkkk</div>;
 };
 
 export default Tcc;

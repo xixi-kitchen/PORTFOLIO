@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@builder.io/html-to-figma": "^0.0.3",
     "@excalidraw/excalidraw": "^0.14.2",
     "@react-three/drei": "^9.64.0",
     "@splinetool/r3f-spline": "^1.0.2",
@@ -25,6 +26,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.3.1",
     "vite": "^4.2.0"
   }

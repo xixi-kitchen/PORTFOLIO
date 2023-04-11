@@ -2,11 +2,10 @@ import React from "react";
 
 function Ttt() {
   return (
-  <div 
-  className = "text-center"
+  <h1 
+  className = "text-center font-mono"
   
-  
-  >这是个测试</div>
+  >Hello , It is my Website</h1>
   );
 }
 export default Ttt;

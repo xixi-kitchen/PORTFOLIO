@@ -1,6 +1,6 @@
 import * as React from "react";
 import tubiao from ".././assets/Vector.svg";
-import tubiaod from ".././assets/Vectord.svg";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function liststyle(params, tubiao) {
   return (
@@ -8,17 +8,34 @@ function liststyle(params, tubiao) {
       <div className="max-w-fall text-left text-[16px] tracking-[0%] text-[rgba(30,30,30,1)] dark:text-white">
         {params}
       </div>
-      <img className="invert" src={tubiao} alt="some_text"></img>
+      <img className="" src={tubiao} alt="some_text"></img>
     </div>
   );
 }
+
 export default function Bloglist() {
+  // const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
+  // const goBs = () => {
+  //   goNavigate("/blog/bs");
+  // }; //onClick不能直接传参数，所以在这个函数中赋值
+
   return (
     <div className="max-w-fall flex flex-col items-center justify-center space-y-1 ">
-      <div className="w-fall flex max-w-full flex-row items-start justify-start self-stretch rounded-[5px] bg-black p-[10px] text-left text-[96px] tracking-[0%] text-white dark:bg-white dark:text-black">
+      <div
+        // onClick={goBs}
+        className="w-fall flex max-w-full flex-row items-start justify-start self-stretch rounded-[5px] bg-black p-[10px] text-left text-[96px] tracking-[0%] text-white dark:bg-white dark:text-black"
+      >
         idea
       </div>
+
       <div className="w-fall flex max-w-full flex-col items-center justify-start space-y-2 self-stretch rounded-[5px] border border-solid border-black px-[6px] pb-[6px] pt-[6px] dark:border-white">
+        <div className="w-fall flex max-w-full flex-row items-center justify-between self-stretch rounded-[5px] border border-solid border-black p-[10px] dark:border-white">
+          <div className="max-w-fall text-left text-[16px] tracking-[0%] text-[rgba(30,30,30,1)] dark:text-white">
+            设计一套自己的标识系统
+          </div>
+          <img className="" src={tubiao} alt="some_text"></img>
+        </div>
+        {/* <Outlet></Outlet> */}
         {liststyle("设计一套自己的标识系统", tubiao)}
         {liststyle(
           "一种全天候办公方式 上网需求 用电需求 空间需求 移动需求",
@@ -28,6 +45,7 @@ export default function Bloglist() {
           "app：自动整理管家，拍照自动管理，分配整理空间，帮助整理！",
           tubiao
         )}
+
         {liststyle("自动整理桌面文件的程序", tubiao)}
         {liststyle("弹力绳连接的模块化椅子", tubiao)}
         {liststyle("一个动的模块以及若干搭配模块实现多用途", tubiao)}

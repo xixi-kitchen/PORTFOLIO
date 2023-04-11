@@ -1,25 +1,25 @@
-import Ttt from "./Ttt";
-import Tcc from "./Tcc";
+import React from "react";
+// import Ttt from "./Ttt";
+// import Tcc from "./Tcc";
 // import Splines from "./Splines";
 // import Scene from "./Splinefibe";
 // import Excali from "./Excali";
 import "tailwindcss/tailwind.css";
-import Blog from "./blog/Blog";
-import Homepage from "./homepage/Homepage";
-import Project from "./project/Project";
-import Monomer from "./monomer/Monomer";
-import Teamwork from "./teamwork/Teamwork";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import RouterView from "./router/RouterView";
+// import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
 
 function App() {
   return (
-    <>
-      <div className="flex w-screen ">
-        <div className="top-30 mx-auto basis-[1000px]">
-          <nav className="mx-auto flex-row text-2xl">
-            <Link to="/" className="ml-2">
-              Homepage
-            </Link>
+    <div className="flex w-screen ">
+      <div className="top-30 mx-auto basis-[1000px]">
+        <nav className=" inline-flex w-full flex-row flex-nowrap justify-between text-2xl">
+          <Link to="/" className="ml-2">
+            Homepage
+          </Link>
+          <div className="flex-row space-x-5">
             <Link to="/project" className="ml-2">
               Project
             </Link>
@@ -32,17 +32,14 @@ function App() {
             <Link to="/teamwork" className="ml-2">
               Teamwork
             </Link>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/monomer" element={<Monomer />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/teamwork" element={<Teamwork />} />
-          </Routes>
-        </div>
+            <Link to="/aboutus" className="ml-2">
+              Aboutus
+            </Link>
+          </div>
+        </nav>
+        <RouterView />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -14,6 +14,31 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl bg-red-400;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@layer components {
+  .ttt {
+    @apply text-4xl bg-blue-400;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;

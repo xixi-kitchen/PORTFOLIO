@@ -1,4 +1,5 @@
 import React from "react";
+import { Suspense } from "react";
 
 import { useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
@@ -6,10 +7,11 @@ import { OrbitControls, Sphere } from "@react-three/drei";
 
 import Tcc from "../Tcc";
 import Ttt from "../Ttt";
+
 import Box from "./Box";
 import AnimateSphere from "./AnimateSphere";
+
 import { Model } from "./Draco";
-import { Suspense } from "react";
 import { Boot } from "./Boot";
 import { Fangzi } from "./Mini_room_art_copy";
 
@@ -35,8 +37,8 @@ const Homepage = () => {
       >
         GoBlog
       </button>
-      <div id="canvas-container" className=" h-[400px] bg-slate-400">
-        <Canvas className="">
+      <div id="canvas-container" className=" h-[400px] bg-slate-600">
+        <Canvas className="bg-slate-600">
           {/* 添加控制器 */}
           <OrbitControls enableZoom={false} />
           {/* 添加环境光 */}
@@ -48,7 +50,7 @@ const Homepage = () => {
             <Box />
           </Suspense>
         </Canvas>
-        <Canvas className="">
+        <Canvas className="bg-slate-500">
           {/* 添加控制器 */}
           <OrbitControls enableZoom={false} />
           {/* 添加环境光 */}

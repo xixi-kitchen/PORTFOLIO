@@ -9,7 +9,7 @@ import { useGLTF, OrthographicCamera } from '@react-three/drei'
 export function Fangzi(props) {
   const { nodes, materials } = useGLTF('/../src/homepage/mini_room_art_copy.gltf')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={0.5}>
       <group scale={0.01}>
         <group position={[-450.79, -384.27, 1226.54]}>
           <mesh geometry={nodes.Color_Purple.geometry} material={nodes.Color_Purple.material} position={[292.21, 0, 0]} rotation={[0, -Math.PI / 2, 0]} />

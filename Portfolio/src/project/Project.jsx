@@ -1,8 +1,13 @@
 import React from 'react'
+import { NotLack } from './NotLack'
 
 const Project = () => {
   return (
-    <div>Project</div>
+    <div>Project
+      <NotLack/>
+
+    </div>
+
   )
 }
 

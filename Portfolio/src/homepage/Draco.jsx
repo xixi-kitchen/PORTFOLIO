@@ -10,7 +10,7 @@ Title: Sakura Cake Roll
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
+export function Odel(props) {
   const { nodes, materials } = useGLTF("/../src/homepage/Draco.gltf");
   //这里路径和预渲染路径一直即可
   return (

@@ -8,12 +8,14 @@ import Tcc from "../Tcc";
 import Ttt from "../Ttt";
 import Box from "./Box";
 import AnimateSphere from "./AnimateSphere";
-import { Model } from "./Draco";
+import { Odel } from "./Draco";
 import { Suspense } from "react";
 import { Boot } from "./Boot";
 import { Fangzi } from "./Mini_room_art_copy";
+import { Model } from "./Model";
+import { Xichenqi } from "./Xichenqi";
 
-const Homepage = () => {
+function Homepage() {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
   const goBlog = () => {
     goNavigate("/blog");
@@ -35,7 +37,7 @@ const Homepage = () => {
       >
         GoBlog
       </button>
-      <div id="canvas-container" className=" h-[400px] bg-slate-400">
+      <div id="canvas-container" className=" h-[800px] bg-slate-400">
         <Canvas className="">
           {/* 添加控制器 */}
           <OrbitControls enableZoom={false} />
@@ -75,7 +77,7 @@ const Homepage = () => {
           />
           {/* 添加网格模型 */}
           <Suspense fallback="null">
-            <Model />
+            <Odel />
           </Suspense>
         </Canvas>
         <Canvas className="">
@@ -96,23 +98,42 @@ const Homepage = () => {
         </Canvas>
         <Canvas className="">
           {/* 添加控制器 */}
-          <OrbitControls enableZoom={false} />
+          <OrbitControls enableZoom={true} />
           {/* 添加环境光 */}
           <ambientLight intensity={0.1} />
           {/* 添加点光源 */}
           <directionalLight
             color="white"
-            position={[0, 0, 5]}
-            intensity={0.5}
+            position={[0, 0, 100]}
+            intensity={4}
           />
           {/* 添加网格模型 */}
           <Suspense fallback="null">
             <Fangzi />
           </Suspense>
         </Canvas>
+
+        <Canvas shadows dpr={[1, 2]} camera={{ fov: 75 }} className="bg-slate-400">
+          <ambientLight intensity={0.3} />
+          <directionalLight color="white" position={[1, 3, 5]} intensity={1} />
+          <Suspense fallback={null}>
+            <Model />
+          </Suspense>
+          <OrbitControls autoRotate />
+        </Canvas>
+
+        <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
+          <ambientLight intensity={0.1} />
+          <directionalLight color="white" position={[0, 0, 5]} intensity={1} />
+
+          <Suspense fallback={null}>
+            <Xichenqi />
+          </Suspense>
+          <OrbitControls />
+        </Canvas>
       </div>
     </div>
   );
-};
+}
 
 export default Homepage;

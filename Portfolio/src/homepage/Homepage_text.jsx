@@ -16,6 +16,7 @@ import { Model } from "./Model";
 import { Xichenqi } from "./Xichenqi";
 
 function Homepage() {
+  
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
   const goBlog = () => {
     goNavigate("/blog");

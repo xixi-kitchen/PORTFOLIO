@@ -29,9 +29,9 @@ function App() {
             <Link to="/blog" className="ml-2">
               Blog
             </Link>
-            <Link to="/teamwork" className="ml-2">
+            {/* <Link to="/teamwork" className="ml-2">
               Teamwork
-            </Link>
+            </Link> */}
             <Link to="/aboutus" className="ml-2">
               Aboutus
             </Link>

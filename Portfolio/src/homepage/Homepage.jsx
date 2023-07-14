@@ -1,8 +1,127 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Homepage = ({ ...props }) => {
+function Homepage({ ...props }) {
+
+  const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
+  const goAbspace = () => {
+    goNavigate("/Abspace");
+  };
+  const goTour = () => {
+    goNavigate("/Tour");
+  };
+  const goGeneral = () => {
+    goNavigate("/General");
+  };
+  const goPractice = () => {
+    goNavigate("/Practice");
+  };
+
+  // const goVector = () => {
+  //   goNavigate("/Vector");
+  // };
+  // const goOne = () => {
+  //   goNavigate("/One");
+  // };
+  const goSaint = () => {
+    goNavigate("/Saint");
+  };
+  // const goMiss = () => {
+  //   goNavigate("/Miss");
+  // };
+  const goMigiccomb = () => {
+    goNavigate("/Migiccomb");
+  };
+  const goTwoface = () => {
+    goNavigate("/Twoface");
+  };
+  // const goEscort = () => {
+  //   goNavigate("/Escort");
+  // };
+  // const goEscortplus = () => {
+  //   goNavigate("/Escortplus");
+  // };
+  const goAerobic = () => {
+    goNavigate("/Aerobic");
+  };
+  const goNotlack = () => {
+    goNavigate("/Notlack");
+  };
+
+
+
+
+
+
+
+
+
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
+      <div className="absolute left-0 top-0 flex w-[1440px] flex-col items-center justify-start">
+        <div className="relative flex shrink-0 flex-col items-center justify-start gap-1.5">
+          <div className="relative flex w-[1440px] shrink-0 flex-col items-start justify-start gap-2.5 overflow-hidden bg-[#d3d3d3] pb-[7px] pl-[219px] pr-[219px] pt-[7px]">
+            <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-center gap-[364px]">
+              <img
+                className="relative h-10 w-[86px] shrink-0"
+                src="union-1.png"
+              />
+
+              <div className="relative flex shrink-0 flex-row items-start justify-start gap-[39px]">
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Home
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Project
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Monomer
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Idea
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Resource
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  CP
+                </div>
+
+                <div
+                  className="relative text-center text-[#000000]"
+                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
+                >
+                  Resume
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="absolute left-0 right-0 top-[54px] h-[7444px] overflow-hidden bg-[#ffffff]">
         <div className="absolute left-[209px] right-[209px] top-[226px] flex flex-col items-center justify-start gap-[61px]">
           <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
@@ -62,13 +181,13 @@ const Homepage = ({ ...props }) => {
               </div>
 
               <div
-                className="relative text-left text-[#8158fc]"
+                className="relative h-0 w-[33px] shrink-0 border-solid border-[#8158fc]"
                 style={{
-                  font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
+                  borderWidth: "2px 0 0 0",
+                  transformOrigin: "0 0",
+                  transform: "rotate(90deg) scale(1, 1)",
                 }}
-              >
-                |
-              </div>
+              ></div>
 
               <div
                 className="relative text-left text-[#606060]"
@@ -340,7 +459,7 @@ const Homepage = ({ ...props }) => {
         </div>
 
         <div className="absolute left-0 right-0 top-[3919px] flex h-[1672px] flex-col items-center justify-start gap-10">
-          <div className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch" onClick={goAerobic}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-6.png"
@@ -369,7 +488,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goMigiccomb}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-7.png"
@@ -395,7 +514,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch bg-[#f3f3f3]">
+          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch bg-[#f3f3f3]" onClick={goSaint}>
             <div className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch">
               <img
                 className="relative flex-1 self-stretch"
@@ -423,7 +542,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch" onClick={goTwoface}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-9.png"
@@ -449,7 +568,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goNotlack}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-10.png"
@@ -1022,7 +1141,10 @@ const Homepage = ({ ...props }) => {
         />
 
         <div className="absolute left-[calc(50%_-_720px)] top-[2433px] flex h-[1080px] w-[1440px] flex-row items-start justify-start gap-5">
-          <div className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch">
+          <div
+            className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch"
+            onClick={goAbspace}
+          >
             <img
               className="relative flex-1 self-stretch"
               src="homepage-2.png"
@@ -1036,7 +1158,10 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch">
+          <div
+            className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch"
+            onClick={goTour}
+          >
             <img
               className="relative h-[1080px] w-[345px] shrink-0"
               src="homepage-3.png"
@@ -1050,7 +1175,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goGeneral}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-4.png"
@@ -1065,7 +1190,7 @@ const Homepage = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch">
+          <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goPractice}>
             <img
               className="relative flex-1 self-stretch"
               src="homepage-5.png"
@@ -1102,6 +1227,6 @@ const Homepage = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Homepage;

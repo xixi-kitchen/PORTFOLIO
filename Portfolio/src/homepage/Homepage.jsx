@@ -49,86 +49,15 @@ function Homepage({ ...props }) {
   };
 
 
-
-
-
-
-
-
-
   return (
-    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
-      <div className="absolute left-0 top-0 flex w-[1440px] flex-col items-center justify-start">
-        <div className="relative flex shrink-0 flex-col items-center justify-start gap-1.5">
-          <div className="relative flex w-[1440px] shrink-0 flex-col items-start justify-start gap-2.5 overflow-hidden bg-[#d3d3d3] pb-[7px] pl-[219px] pr-[219px] pt-[7px]">
-            <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-center gap-[364px]">
-              <img
-                className="relative h-10 w-[86px] shrink-0"
-                src="union-1.png"
-              />
 
-              <div className="relative flex shrink-0 flex-row items-start justify-start gap-[39px]">
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Home
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Project
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Monomer
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Idea
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Resource
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  CP
-                </div>
-
-                <div
-                  className="relative text-center text-[#000000]"
-                  style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-                >
-                  Resume
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute left-0 right-0 top-[54px] h-[7444px] overflow-hidden bg-[#ffffff]">
+      <div className="relative left-0 right-0 top-[0px] h-[7444px] overflow-hidden bg-[#ffffff]">
         <div className="absolute left-[209px] right-[209px] top-[226px] flex flex-col items-center justify-start gap-[61px]">
           <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
             <div
               className="relative text-left text-[#000000]"
               style={{
-                font: "var(--, 600 64px/150% 'PingFang SC', sans-serif)",
+                font: "var(--en, 600 64px/150% 'Arial', sans-serif)",
               }}
             >
               Human Design Studio
@@ -180,15 +109,15 @@ function Homepage({ ...props }) {
                 Design concept
               </div>
 
-              <div
-                className="relative h-0 w-[33px] shrink-0 border-solid border-[#8158fc]"
-                style={{
-                  borderWidth: "2px 0 0 0",
-                  transformOrigin: "0 0",
-                  transform: "rotate(90deg) scale(1, 1)",
-                }}
-              ></div>
 
+              <div
+                className="relative text-left text-[#8158fc]"
+                style={{
+                  font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                |
+              </div>
               <div
                 className="relative text-left text-[#606060]"
                 style={{
@@ -203,7 +132,7 @@ function Homepage({ ...props }) {
               <div
                 className="relative flex-1 text-center text-[#ffffff]"
                 style={{
-                  font: "var(--, 600 64px/150% 'PingFang SC', sans-serif)",
+                  font: "var(--en , 600 64px/150% 'PingFang SC', sans-serif)",
                 }}
               >
                 Design benefits humanbeings
@@ -1225,7 +1154,7 @@ function Homepage({ ...props }) {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }
 

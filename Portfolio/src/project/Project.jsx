@@ -35,87 +35,10 @@ function Project() {
     goNavigate("/Notlack");
   };
 
-  
   return (
-    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
-      <div className="absolute left-0 right-0 top-0 flex h-[1024px] flex-col items-start justify-between">
-        <div className="relative flex w-[1440px] shrink-0 flex-col items-center justify-start">
-          <div className="relative flex shrink-0 flex-col items-center justify-start gap-1.5">
-            <div className="relative flex w-[1440px] shrink-0 flex-col items-start justify-start gap-2.5 overflow-hidden bg-[#d3d3d3] pb-[7px] pl-[219px] pr-[219px] pt-[7px]">
-              <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-center gap-[364px]">
-                <img
-                  className="relative h-10 w-[86px] shrink-0"
-                  src="union-1.png"
-                />
-
-                <div className="relative flex shrink-0 flex-row items-start justify-start gap-[39px]">
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Home
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Project
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Monomer
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Idea
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Resource
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    CP
-                  </div>
-
-                  <div
-                    className="relative text-center text-[#000000]"
-                    style={{
-                      font: "600 14px/99.52% 'PingFang SC', sans-serif",
-                    }}
-                  >
-                    Resume
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="relative w-[1440px] bg-[#ffffff]">
+      <div className="absolute left-0 right-0 top-0 flex h-[1024px] flex-col items-start justify-start">
+       
 
         <div
           className="relative flex w-[1440px] shrink-0 flex-row items-center justify-start gap-0"
@@ -466,56 +389,6 @@ function Project() {
           </div>
         </div>
       </div>
-
-      <svg
-        className="absolute left-[91px] top-[674.41px] overflow-visible"
-        style={{ transform: "translate(-44px, -115.41px)" }}
-        width="44"
-        height="112"
-        viewBox="0 0 44 112"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M29.3359 111.41L8.58988 72.0127C3.21486 61.8054 3.21487 49.6049 8.58988 39.3976L29.3359 2.85506e-05"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M44 111.41L23.2539 72.0127C17.8789 61.8054 17.8789 49.6049 23.2539 39.3976L44 2.85506e-05"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-
-      <svg
-        className="absolute left-[1342px] top-[571.04px] overflow-visible"
-        style={{}}
-        width="44"
-        height="112"
-        viewBox="0 0 44 112"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.6641 0.0449219L35.4101 39.4425C40.7851 49.6498 40.7851 61.8503 35.4101 72.0576L14.6641 111.455"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M0 0.0449219L20.7461 39.4425C26.1211 49.6498 26.1211 61.8503 20.746 72.0576L0 111.455"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
     </div>
   );
 }

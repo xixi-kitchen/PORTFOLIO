@@ -2,7 +2,7 @@ import React from 'react';
 
 export const General = ({ ...props }) => {
   return (
-    <div className="w-[1440px] h-[1024px] relative">
+    <div className="w-[1440px] h-[4959px] relative">
       <div className="flex flex-col gap-10 items-center justify-start absolute left-0 top-0">
         <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <img

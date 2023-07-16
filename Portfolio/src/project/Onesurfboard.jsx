@@ -4,9 +4,8 @@ export function Onesurfboard({ ...props }) {
   return (
     <div
       className="relative h-[1024px] w-[1440px] bg-[#ffffff]"
-      style={{ overflowY: "auto" }}
     >
-      <div className="absolute left-0 right-0 top-[54px] flex h-[6142px] flex-col items-center justify-start gap-0">
+      <div className="absolute left-0 right-0 top-[0px] flex h-[6142px] flex-col items-center justify-start gap-0">
         <div className="relative flex h-[970px] shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden">
           <img
             className="relative h-[970.29px] shrink-0 self-stretch"
@@ -478,62 +477,6 @@ export function Onesurfboard({ ...props }) {
         </div>
       </div>
 
-      <div className="sticky left-0 top-0 flex w-[1440px] flex-col items-center justify-start gap-2.5 overflow-hidden bg-[#d3d3d3] pb-[7px] pl-[220px] pr-[220px] pt-[7px]">
-        <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
-          <img className="relative h-10 w-[85.96px] shrink-0" src="logo.png" />
-
-          <div className="relative flex shrink-0 flex-row items-start justify-start gap-[39px]">
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Home
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Project
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Monomer
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Idea
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resource
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              CP
-            </div>
-
-            <div
-              className="relative text-center text-[#000000]"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resume
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

@@ -7,8 +7,7 @@ export const Tour = ({ ...props }) => {
 
   return (
     <div
-      className="bg-[#f7f7f7] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
+      className="bg-[#f7f7f7] w-[1440px] h-[15200px] relative"
     >
       <img
         className="w-[1440px] h-[292.15px] absolute left-[calc(50%_-_720px)] top-0"

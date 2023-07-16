@@ -3,10 +3,9 @@ import React from 'react';
 const Abspace = ({ ...props }) => {
   return (
     <div
-      className="bg-[#f5f5f5] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
+      className="bg-[#f5f5f5] w-[1440px] h-[24200px] relative"
     >
-      <div className="flex flex-col gap-10 items-center justify-start w-[1440px] h-[24389px] absolute left-0 top-0">
+      <div className="flex flex-col gap-10 items-center justify-start w-[1440px] h-[24200px] absolute left-0 top-0">
         <div className="flex flex-row gap-2.5 items-start justify-center shrink-0 w-[1040px] h-[281px] relative">
           <div className="bg-[#ffffff] shrink-0 w-[1440px] h-[269px] relative overflow-hidden">
             <svg

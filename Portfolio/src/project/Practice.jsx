@@ -3,8 +3,7 @@ import React from 'react';
 export const Practice = ({ ...props }) => {
   return (
     <div
-      className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
+      className="bg-[#ffffff] w-[1440px] h-[4697px] relative"
     >
       <div className="flex flex-col gap-11 items-center justify-start absolute left-0 top-0">
         <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">

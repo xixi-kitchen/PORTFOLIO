@@ -4,7 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 function liststyle(params, tubiao) {
   return (
-    <div className="w-fall flex max-w-full flex-row items-center justify-between self-stretch rounded-[5px] border border-solid border-black p-[10px] dark:border-white">
+    <div className="w-fall flex max-w-full flex-row items-center justify-between self-stretch rounded-[5px] border border-solid border-black p-[10px] dark:border-white ">
       <div className="max-w-fall text-left text-[16px] tracking-[0%] text-[rgba(30,30,30,1)] dark:text-white">
         {params}
       </div>

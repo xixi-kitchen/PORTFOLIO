@@ -4,9 +4,8 @@ export const EscortBoatplus = ({ ...props }) => {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
     >
-      <div className="flex flex-col gap-0 items-start justify-start absolute right-0 left-0 top-[124px]">
+      <div className="flex flex-col gap-0 items-start justify-start absolute right-0 left-0 top-[70px]">
         <div className="bg-[#ffffff] flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[900px] relative">
           <div className="flex flex-row items-center justify-center shrink-0 relative">
             <div
@@ -642,7 +641,7 @@ export const EscortBoatplus = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="bg-[#464646] pt-0 pr-0 pb-1 pl-0 flex flex-col gap-0 items-center justify-start absolute right-0 left-0 top-[54px]">
+      <div className="bg-[#464646] pt-0 pr-0 pb-1 pl-0 flex flex-col gap-0 items-center justify-start absolute right-0 left-0 top-[0px]">
         <div
           className="text-[#ffffff] text-left relative"
           style={{ font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)" }}
@@ -675,7 +674,7 @@ export const EscortBoatplus = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="flex flex-row items-start justify-between absolute right-[220px] left-[220px] top-[132px]">
+      <div className="flex flex-row items-start justify-between absolute right-[220px] left-[220px] top-[80px]">
         <div
           className="text-[#1a1a1a] text-left relative"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
@@ -700,62 +699,7 @@ export const EscortBoatplus = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="bg-[#d3d3d3] pt-[7px] pr-[220px] pb-[7px] pl-[220px] flex flex-col gap-2.5 items-center justify-start w-[1440px] sticky left-[calc(50%_-_720px)] top-0 overflow-hidden">
-        <div className="flex flex-row items-center justify-between self-stretch shrink-0 relative">
-          <img className="shrink-0 w-[85.96px] h-10 relative" src="logo.png" />
 
-          <div className="flex flex-row gap-10 items-start justify-end shrink-0 relative">
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Home
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Project
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Monomer
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Idea
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resource
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              CP
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resume
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

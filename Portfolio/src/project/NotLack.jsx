@@ -3,26 +3,25 @@ import React from "react";
 export const NotLack = ({ ...props }) => {
   return (
     <div
-      className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
+      className="relative h-[1024px] w-[1440px] bg-[#ffffff]"
     >
-      <div className="flex flex-col gap-0 items-center justify-start absolute left-0 top-[54px]">
-        <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+      <div className="relative flex flex-col items-center justify-start gap-0">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
           <img
-            className="shrink-0 w-[1440px] h-[970px] relative"
+            className="relative h-[970px] w-[1440px] shrink-0"
             src="notlack-zhutu.png"
           />
 
-          <div className="flex flex-col items-center justify-start shrink-0 absolute left-[calc(50%_-_516px)] top-[245px]">
+          <div className="absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start">
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
             >
               &quot;Heart&quot; will not lack companionship
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 margin: "-16px 0 0 0",
                 font: "300 40px/150% 'PingFang SC', sans-serif",
@@ -33,37 +32,37 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
-          <div className="bg-[#f9f9f9] shrink-0 w-[1440px] h-[1019px] absolute left-[calc(50%_-_720px)] top-0"></div>
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
+          <div className="absolute left-[calc(50%_-_720px)] top-0 h-[1019px] w-[1440px] shrink-0 bg-[#f9f9f9]"></div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 h-[1024px] relative">
+          <div className="relative flex h-[1024px] shrink-0 flex-col items-start justify-start gap-2.5">
             <img
-              className="shrink-0 w-[1440px] h-[1024px] relative"
+              className="relative h-[1024px] w-[1440px] shrink-0"
               src="miss-xinyuxin.png"
             />
 
-            <div className="flex flex-col gap-[390px] items-center justify-start shrink-0 absolute left-[305px] top-[115px]">
-              <div className="flex flex-col gap-3 items-center justify-start shrink-0 relative">
+            <div className="absolute left-[305px] top-[115px] flex shrink-0 flex-col items-center justify-start gap-[390px]">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-3">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{ font: "600 40px/150% 'PingFang SC', sans-serif" }}
                 >
                   Bringing hearts and minds closer together
                 </div>
 
                 <div
-                  className="text-[#202020] text-left relative"
+                  className="relative text-left text-[#202020]"
                   style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
                 >
                   让心与心靠的更近
                 </div>
               </div>
 
-              <div className="flex flex-col gap-5 items-center justify-start shrink-0 relative">
-                <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
-                  <div className="flex flex-col gap-[22px] items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-5">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 p-2.5">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-[22px]">
                     <div
-                      className="text-[#000000] text-left relative w-[809px]"
+                      className="relative w-[809px] text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -79,7 +78,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative w-[797px]"
+                      className="relative w-[797px] text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -89,11 +88,11 @@ export const NotLack = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
-                  <div className="flex flex-row gap-[327px] items-start justify-start shrink-0 relative">
-                    <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 p-2.5">
+                  <div className="relative flex shrink-0 flex-row items-start justify-start gap-[327px]">
+                    <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                       <div
-                        className="text-[#000000] text-center relative"
+                        className="relative text-center text-[#000000]"
                         style={{
                           font: "600 12px/150% 'PingFang SC', sans-serif",
                         }}
@@ -102,7 +101,7 @@ export const NotLack = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-center relative"
+                        className="relative text-center text-[#000000]"
                         style={{
                           font: "300 12px/150% 'PingFang SC', sans-serif",
                         }}
@@ -111,9 +110,9 @@ export const NotLack = ({ ...props }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+                    <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "600 12px/150% 'PingFang SC', sans-serif",
                         }}
@@ -122,7 +121,7 @@ export const NotLack = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "300 12px/150% 'PingFang SC', sans-serif",
                         }}
@@ -137,12 +136,12 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#171717] pt-[66px] pr-[220px] pb-[66px] pl-[220px] flex flex-row gap-2.5 items-start justify-start shrink-0 h-[2048px] relative overflow-hidden">
-          <div className="flex flex-col gap-[100px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-[34px] items-center justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+        <div className="relative flex h-[2048px] shrink-0 flex-row items-start justify-start gap-2.5 overflow-hidden bg-[#171717] pb-[66px] pl-[220px] pr-[220px] pt-[66px]">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[100px]">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-[34px]">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#d3d3d3] text-left relative"
+                  className="relative text-left text-[#d3d3d3]"
                   style={{
                     font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -151,7 +150,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#d3d3d3] text-left relative"
+                  className="relative text-left text-[#d3d3d3]"
                   style={{
                     font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -160,10 +159,10 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-[18px] items-start justify-start shrink-0 w-[1000px] relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[15px]">
+                <div className="relative flex w-[1000px] shrink-0 flex-col items-start justify-start gap-[18px]">
                   <div
-                    className="text-[#d3d3d3] text-left relative w-[998px]"
+                    className="relative w-[998px] text-left text-[#d3d3d3]"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -180,7 +179,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#d3d3d3] text-left relative w-[998px]"
+                    className="relative w-[998px] text-left text-[#d3d3d3]"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -191,10 +190,10 @@ export const NotLack = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-row items-start justify-between shrink-0 w-[1000px] relative">
-                  <div className="flex flex-col gap-[7px] items-start justify-start shrink-0 relative">
+                <div className="relative flex w-[1000px] shrink-0 flex-row items-start justify-between">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-[7px]">
                     <div
-                      className="text-[#d3d3d3] text-left relative w-[484px]"
+                      className="relative w-[484px] text-left text-[#d3d3d3]"
                       style={{
                         font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -204,7 +203,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#d3d3d3] text-left relative w-[383px]"
+                      className="relative w-[383px] text-left text-[#d3d3d3]"
                       style={{
                         font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -214,18 +213,18 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <img
-                    className="shrink-0 w-[801px] h-[664px] relative"
+                    className="relative h-[664px] w-[801px] shrink-0"
                     src="miss-lianghzongdakai.png"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-row items-end justify-between shrink-0 w-[1000px] relative">
-              <div className="flex flex-col gap-[55px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex w-[1000px] shrink-0 flex-row items-end justify-between">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[55px]">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                   <div
-                    className="text-[#d49d9d] text-left relative"
+                    className="relative text-left text-[#d49d9d]"
                     style={{
                       font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -234,7 +233,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#d49d9d] text-left relative"
+                    className="relative text-left text-[#d49d9d]"
                     style={{
                       font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -244,15 +243,15 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="shrink-0 w-[407px] h-[311px] relative"
+                  className="relative h-[311px] w-[407px] shrink-0"
                   src="miss-pingfang.png"
                 />
               </div>
 
-              <div className="flex flex-col gap-[67px] items-end justify-start shrink-0 relative">
-                <div className="flex flex-col gap-[15px] items-end justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-end justify-start gap-[67px]">
+                <div className="relative flex shrink-0 flex-col items-end justify-start gap-[15px]">
                   <div
-                    className="text-[#d49d9d] text-left relative"
+                    className="relative text-left text-[#d49d9d]"
                     style={{
                       font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -261,7 +260,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#d49d9d] text-left relative"
+                    className="relative text-left text-[#d49d9d]"
                     style={{
                       font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -271,15 +270,15 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="shrink-0 w-[493.03px] h-[523px] relative"
+                  className="relative h-[523px] w-[493.03px] shrink-0"
                   src="miss-lifang.png"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col gap-[19px] items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[19px]">
               <div
-                className="text-[#d3d3d3] text-left relative w-[1000px]"
+                className="relative w-[1000px] text-left text-[#d3d3d3]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -291,7 +290,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#d3d3d3] text-left relative w-[1000px]"
+                className="relative w-[1000px] text-left text-[#d3d3d3]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -302,12 +301,12 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#dbdbdb] pt-[93px] pr-[220px] pb-[93px] pl-[220px] flex flex-col gap-2.5 items-start justify-start shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[65px] items-center justify-start shrink-0 relative">
-            <div className="flex flex-col gap-[43px] items-center justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] shrink-0 flex-col items-start justify-start gap-2.5 overflow-hidden bg-[#dbdbdb] pb-[93px] pl-[220px] pr-[220px] pt-[93px]">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-[65px]">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-[43px]">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -316,7 +315,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -325,9 +324,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -337,7 +336,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -347,12 +346,12 @@ export const NotLack = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
-              <div className="flex flex-col gap-[19px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-[9px] items-start justify-start shrink-0 relative">
-                  <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[19px]">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-[9px]">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -361,7 +360,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -370,9 +369,9 @@ export const NotLack = ({ ...props }) => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -382,7 +381,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -392,41 +391,41 @@ export const NotLack = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-5 items-start justify-start shrink-0 relative">
-                  <div className="bg-[#ffc6bf] rounded-[50%] shrink-0 w-10 h-10 relative"></div>
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-5">
+                  <div className="relative h-10 w-10 shrink-0 rounded-[50%] bg-[#ffc6bf]"></div>
 
-                  <div className="bg-[#adc3ff] rounded-[50%] shrink-0 w-10 h-10 relative"></div>
+                  <div className="relative h-10 w-10 shrink-0 rounded-[50%] bg-[#adc3ff]"></div>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[69px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[69px]">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
-                    className="shrink-0 w-[520px] h-60 relative"
+                    className="relative h-60 w-[520px] shrink-0"
                     src="miss-lanse.png"
                   />
 
-                  <div className="bg-[#adc3ff] rounded-[50%] shrink-0 w-[60px] h-[60px] absolute left-[114px] top-[130px]"></div>
+                  <div className="absolute left-[114px] top-[130px] h-[60px] w-[60px] shrink-0 rounded-[50%] bg-[#adc3ff]"></div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
-                    className="shrink-0 w-[520px] h-60 relative"
+                    className="relative h-60 w-[520px] shrink-0"
                     src="miss-hongse.png"
                   />
 
-                  <div className="bg-[#ffc6bf] rounded-[50%] shrink-0 w-[60px] h-[60px] absolute left-[114px] top-[147px]"></div>
+                  <div className="absolute left-[114px] top-[147px] h-[60px] w-[60px] shrink-0 rounded-[50%] bg-[#ffc6bf]"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-[#f8f8f8] pt-[33px] pr-[220px] pb-[33px] pl-[220px] flex flex-col gap-2.5 items-center justify-center shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[30px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] shrink-0 flex-col items-center justify-center gap-2.5 overflow-hidden bg-[#f8f8f8] pb-[33px] pl-[220px] pr-[220px] pt-[33px]">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[30px]">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -435,7 +434,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -444,10 +443,10 @@ export const NotLack = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[22px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[22px]">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -455,37 +454,37 @@ export const NotLack = ({ ...props }) => {
                   Sunset
                 </div>
 
-                <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
-                    className="shrink-0 w-[166.98px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[166.98px] shrink-0"
                     src="miss-sunset.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-sunset-1.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-sunset-2.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="vmiss-sunset-3.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-sunset-4.png"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -493,32 +492,32 @@ export const NotLack = ({ ...props }) => {
                   Moss
                 </div>
 
-                <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
-                    className="shrink-0 w-[166.98px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[166.98px] shrink-0"
                     src="miss-moss.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-moss-1.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-moss-2.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-moss-3.png"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -526,32 +525,32 @@ export const NotLack = ({ ...props }) => {
                   Fairy
                 </div>
 
-                <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
-                    className="shrink-0 w-[166.98px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[166.98px] shrink-0"
                     src="miss-fairy.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-fairy-1.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-fairy-2.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-fairy-3.png"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -559,29 +558,29 @@ export const NotLack = ({ ...props }) => {
                   Docks
                 </div>
 
-                <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
-                    className="shrink-0 w-[166.98px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[166.98px] shrink-0"
                     src="miss-docks.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-docks-1.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-docks-2.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-docks-3.png"
                   />
 
                   <img
-                    className="shrink-0 w-[208.26px] h-[166.98px] relative"
+                    className="relative h-[166.98px] w-[208.26px] shrink-0"
                     src="miss-docks-4.png"
                   />
                 </div>
@@ -590,11 +589,11 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#3f3f3f] pt-[114px] pr-[220px] pb-[114px] pl-[220px] flex flex-col gap-2.5 items-center justify-center shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-10 items-center justify-start shrink-0 w-[1000px] relative">
-            <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] shrink-0 flex-col items-center justify-center gap-2.5 overflow-hidden bg-[#3f3f3f] pb-[114px] pl-[220px] pr-[220px] pt-[114px]">
+          <div className="relative flex w-[1000px] shrink-0 flex-col items-center justify-start gap-10">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -603,7 +602,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -612,9 +611,9 @@ export const NotLack = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0 self-stretch">
               <div
-                className="text-[#ffffff] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -626,7 +625,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -637,11 +636,11 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#ffffff] pt-[103px] pr-[219px] pb-[103px] pl-[219px] flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[54px] items-center justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] w-[1440px] shrink-0 flex-col items-center justify-center gap-2.5 overflow-hidden bg-[#ffffff] pb-[103px] pl-[219px] pr-[219px] pt-[103px]">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-[54px]">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -650,7 +649,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -659,11 +658,11 @@ export const NotLack = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-1.5 items-start justify-start shrink-0 relative">
-              <div className="flex flex-col gap-5 items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-1 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-1.5">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-5">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -673,7 +672,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -682,9 +681,9 @@ export const NotLack = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-1 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -694,7 +693,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -704,16 +703,16 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
+              <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
                 <img
-                  className="shrink-0 w-[715px] h-[505px] relative"
+                  className="relative h-[505px] w-[715px] shrink-0"
                   src="miss-structure.png"
                 />
 
-                <div className="flex flex-col gap-[200px] items-start justify-start shrink-0 relative">
-                  <div className="flex flex-col gap-1 items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-[200px]">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -722,7 +721,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -731,9 +730,9 @@ export const NotLack = ({ ...props }) => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -742,7 +741,7 @@ export const NotLack = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -756,11 +755,11 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#ffffff] pt-[47px] pr-[220px] pb-[47px] pl-[220px] flex flex-col gap-2.5 items-center justify-center shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[91px] items-center justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] shrink-0 flex-col items-center justify-center gap-2.5 overflow-hidden bg-[#ffffff] pb-[47px] pl-[220px] pr-[220px] pt-[47px]">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-[91px]">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -769,7 +768,7 @@ export const NotLack = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -778,22 +777,22 @@ export const NotLack = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
+            <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
               <img
-                className="shrink-0 w-[602px] h-[514px] relative"
+                className="relative h-[514px] w-[602px] shrink-0"
                 src="miss-packing-1.png"
               />
 
               <img
-                className="shrink-0 w-[521px] h-[406px] relative"
+                className="relative h-[406px] w-[521px] shrink-0"
                 src="miss-packing-2.png"
               />
             </div>
 
-            <div className="flex flex-row gap-[198px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-row items-start justify-start gap-[198px]">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -802,7 +801,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -811,9 +810,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -822,7 +821,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -831,9 +830,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -842,7 +841,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -854,11 +853,11 @@ export const NotLack = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#5c5c5c] pt-20 pr-0 pb-20 pl-0 flex flex-col gap-2.5 items-center justify-start shrink-0 w-[1440px] h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[1000px] relative">
+        <div className="relative flex h-[1024px] w-[1440px] shrink-0 flex-col items-center justify-start gap-2.5 overflow-hidden bg-[#5c5c5c] pb-20 pt-20">
+          <div className="relative flex w-[1000px] shrink-0 flex-col items-start justify-start gap-[15px]">
             <svg
-              className="self-stretch shrink-0 relative overflow-visible"
-              style={{}}
+              className="relative shrink-0 self-stretch overflow-visible"
+              style={{ transform: "translate(-1px, -1px)" }}
               width="1000"
               height="3"
               viewBox="0 0 1000 3"
@@ -873,10 +872,10 @@ export const NotLack = ({ ...props }) => {
               />
             </svg>
 
-            <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[900px] relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -885,7 +884,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -894,9 +893,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -905,7 +904,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -914,9 +913,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -925,7 +924,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -934,9 +933,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -945,7 +944,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -954,9 +953,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -965,7 +964,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -974,9 +973,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -985,7 +984,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -994,9 +993,9 @@ export const NotLack = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -1005,7 +1004,7 @@ export const NotLack = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -1018,81 +1017,19 @@ export const NotLack = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-[747px] items-start justify-start absolute left-[220px] top-[60px]">
+      <div className="absolute left-[220px] top-[10px] flex flex-row items-start justify-start gap-[747px]">
         <div
-          className="text-[#202020] text-left relative"
+          className="relative text-left text-[#202020]"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
         >
           Not Lack“心缺”笔筒
         </div>
 
         <div
-          className="text-[#000000] text-left relative"
+          className="relative text-left text-[#000000]"
           style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
         >
           Design journal | 设计日志
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-1.5 items-center justify-start h-[54px] sticky left-0 top-0">
-        <div className="bg-[#d3d3d3] pt-[7px] pr-[219px] pb-[7px] pl-[219px] flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1440px] relative overflow-hidden">
-          <div className="flex flex-row gap-[364px] items-center justify-center shrink-0 w-[1000px] relative">
-            <img
-              className="shrink-0 w-[86px] h-10 relative"
-              src="union-1.png"
-            />
-
-            <div className="flex flex-row gap-[39px] items-start justify-start shrink-0 relative">
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Home
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Project
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Monomer
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Idea
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Resource
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                CP
-              </div>
-
-              <div
-                className="text-[#000000] text-center relative"
-                style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-              >
-                Resume
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

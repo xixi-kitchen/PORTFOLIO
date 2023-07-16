@@ -3,64 +3,9 @@ import React from 'react'
 export default function Aboutus() {
   return (
     <div className="bg-[#ffffff] w-[1440px] h-[5964px] relative">
-      <div className="bg-[#d3d3d3] pt-[7px] pr-[220px] pb-[7px] pl-[220px] flex flex-col gap-2.5 items-center justify-start w-[1440px] absolute left-[calc(50%_-_720px)] top-0 overflow-hidden">
-        <div className="flex flex-row items-center justify-between self-stretch shrink-0 relative">
-          <img className="shrink-0 w-[85.96px] h-10 relative" src="logo.png" />
 
-          <div className="flex flex-row gap-10 items-start justify-end shrink-0 relative">
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Home
-            </div>
 
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Project
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Monomer
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Idea
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resource
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              CP
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resume
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-[#ffffff] h-[5910px] absolute right-0 left-0 top-[54px]">
+      <div className="bg-[#ffffff] h-[5910px] absolute right-0 left-0 top-[0px]">
         <div className="bg-[#fff8f4] pt-[70px] pr-[337px] pb-[70px] pl-[337px] flex flex-col gap-2.5 items-center justify-center absolute right-[209px] left-[209px] top-[3580px]">
           <div className="flex flex-col gap-24 items-center justify-center shrink-0 relative">
             <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 relative">

@@ -4,9 +4,8 @@ export function MigicComb({ ...props }) {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-      style={{ overflowX: "auto" }}
     >
-      <div className="h-[11788px] absolute right-0 left-0 top-[54px]">
+      <div className="h-[11788px] absolute right-0 left-0 top-[0px]">
         <div className="flex flex-col gap-2.5 items-start justify-start h-[971px] absolute right-0 left-0 top-0">
           <img className="self-stretch flex-1 relative" src="mc-2-4.png" />
 
@@ -929,65 +928,6 @@ export function MigicComb({ ...props }) {
           src="mc-20.png" />
       </div>
 
-      <div
-        className="bg-[#d3d3d3] pt-[7px] pr-[220px] pb-[7px] pl-[220px] flex flex-col gap-2.5 items-center justify-start sticky right-0 left-0 top-0"
-        style={{ overflowX: "auto" }}
-      >
-        <div className="flex flex-row items-center justify-between self-stretch shrink-0 relative">
-          <img className="shrink-0 w-[85.96px] h-10 relative" src="logo.png" />
-
-          <div className="flex flex-row gap-10 items-start justify-end shrink-0 relative">
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Home
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Project
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Monomer
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Idea
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resource
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              CP
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resume
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

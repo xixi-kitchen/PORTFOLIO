@@ -4,9 +4,8 @@ export function MissCalender({ ...props }) {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-      style={{ overflowY: "auto" }}
     >
-      <div className="flex flex-col gap-0 items-center justify-start absolute right-0 left-0 top-[54px]">
+      <div className="flex flex-col gap-0 items-center justify-start absolute right-0 left-0 top-[0px]">
         <div className="bg-[#000000] flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 h-[970px] relative">
           <img
             className="shrink-0 w-[1440px] h-[850.01px] relative"
@@ -898,7 +897,7 @@ export function MissCalender({ ...props }) {
         </div>
       </div>
 
-      <div className="flex flex-row gap-[781px] items-start justify-center absolute right-[219px] left-[220px] top-[62px]">
+      <div className="flex flex-row gap-[781px] items-start justify-center absolute right-[219px] left-[220px] top-[10px]">
         <div
           className="text-[#e5e5e5] text-left relative"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
@@ -916,62 +915,6 @@ export function MissCalender({ ...props }) {
         </div>
       </div>
 
-      <div className="bg-[#d3d3d3] pt-[7px] pr-[220px] pb-[7px] pl-[220px] flex flex-col gap-2.5 items-center justify-start w-[1440px] sticky left-[calc(50%_-_720px)] top-0 overflow-hidden">
-        <div className="flex flex-row items-center justify-between self-stretch shrink-0 relative">
-          <img className="shrink-0 w-[85.96px] h-10 relative" src="logo.png" />
-
-          <div className="flex flex-row gap-10 items-start justify-end shrink-0 relative">
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Home
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Project
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Monomer
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Idea
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resource
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              CP
-            </div>
-
-            <div
-              className="text-[#000000] text-center relative"
-              style={{ font: "600 14px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Resume
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

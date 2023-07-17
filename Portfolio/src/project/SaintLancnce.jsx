@@ -1,4 +1,8 @@
 import React from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls,  } from "@react-three/drei";
+import { SaintLancnceModel } from "./SaintLancnceModel";
 
 export function Saintlancnce({ ...props }) {
   return (
@@ -8,24 +12,40 @@ export function Saintlancnce({ ...props }) {
       <div className="flex flex-col gap-0 items-start justify-start absolute left-[calc(50%_-_720px)] top-[0px] overflow-hidden">
         <div className="bg-[#f3f3f3] flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1440px] h-[970px] relative">
           <div className="flex flex-col gap-2.5 items-center justify-start self-stretch flex-1 relative">
-            <img
+            {/* <img
               className="self-stretch flex-1 relative"
-              src="saint-zhutu.png" />
+              src="saint-zhutu.png" /> */}
+              <Canvas
+              shadows
+              dpr={[1, 2]}
+              camera={{ fov: 75 }}
+              className=" relative flex-1 self-stretch bg-[#ffffff]"
+            >
+              <ambientLight intensity={0.3} />
+              <directionalLight
+                color="white"
+                position={[2, 3, 5]}
+                intensity={1}
+              />
+              <Suspense fallback={null}>
+                <SaintLancnceModel />
+              </Suspense>
+              <OrbitControls autoRotate />
+            </Canvas>
           </div>
 
           <div
-            className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_169px)] top-[165px]"
-            style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+            className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_169px)] top-[165px] drop-shadow-lg"
           >
             <div
-              className="text-[#ececec] text-left relative"
+              className="text-[#ffffff] text-left relative"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
             >
               Saint Lance
             </div>
 
             <div
-              className="text-[#ececec] text-left relative"
+              className="text-[#ffffff] text-left relative"
               style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
             >
               圣·兰斯号

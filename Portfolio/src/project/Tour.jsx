@@ -1,23 +1,17 @@
-import React from 'react';
-
+import React from "react";
 
 export const Tour = ({ ...props }) => {
-
-
-
   return (
-    <div
-      className="bg-[#f7f7f7] w-[1440px] h-[15200px] relative"
-    >
+    <div className="relative h-[15200px] w-[1440px] bg-[#f7f7f7]">
       <img
-        className="w-[1440px] h-[292.15px] absolute left-[calc(50%_-_720px)] top-0"
+        className="absolute left-[calc(50%_-_720px)] top-0 h-[292.15px] w-[1440px]"
         src="tour-fengmian.png"
       />
 
-      <div className="pt-0 pr-[200px] pb-0 pl-[200px] flex flex-col gap-10 items-center justify-start w-[1440px] absolute left-[calc(50%_-_720px)] top-0">
-        <div className="shrink-0 w-[1040px] h-[480px] relative">
+      <div className="absolute left-[calc(50%_-_720px)] top-0 flex w-[1440px] flex-col items-center justify-start gap-10 pb-0 pl-[200px] pr-[200px] pt-0">
+        <div className="relative h-[480px] w-[1040px] shrink-0">
           <div
-            className="text-gray-1 text-left absolute left-0 top-[376px]"
+            className="text-gray-1 absolute left-0 top-[376px] text-left"
             style={{ font: "600 80px 'Archivo', sans-serif" }}
           >
             案例研究
@@ -51,40 +45,41 @@ export const Tour = ({ ...props }) => {
           </svg>
 
           <div
-            className="text-[#ffffff] text-left absolute left-[182px] top-[239px]"
+            className="absolute left-[182px] top-[239px] text-left text-[#ffffff]"
             style={{ font: "600 48px 'Archivo', sans-serif" }}
           >
             旅行助手
           </div>
 
           <div
-            className="flex flex-row gap-0 items-end justify-start absolute left-[470.21px] top-[199.59px]"
+            className="absolute left-[470.21px] top-[199.59px] flex flex-row items-end justify-start gap-0"
             style={{
               transformOrigin: "0 0",
               transform: "rotate(-23.985deg) scale(1, 1)",
             }}
           >
             <img
-              className="shrink-0 w-[160.6px] h-[321.81px] relative"
+              className="relative h-[321.81px] w-[160.6px] shrink-0"
               src="tour-1.png"
             />
 
             <img
-              className="shrink-0 w-[168.94px] h-[323.05px] relative"
+              className="relative h-[323.05px] w-[168.94px] shrink-0"
               src="tour-2.png"
             />
 
             <img
-              className="shrink-0 w-[172.95px] h-[328.61px] relative"
+              className="relative h-[328.61px] w-[172.95px] shrink-0"
               src="tour-3.png"
             />
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-start justify-start shrink-0 relative">
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-10">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <div
-              className="text-gray-1 text-left relative"
+              id="beijin"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
               }}
@@ -93,7 +88,7 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -103,9 +98,10 @@ export const Tour = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="wenti"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -113,10 +109,10 @@ export const Tour = ({ ...props }) => {
             挑战/问题声明
           </div>
 
-          <div className="flex flex-row gap-8 items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-[31px] items-start justify-start shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-start justify-start gap-8">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[31px]">
               <div
-                className="text-gray-1 text-left relative w-[1040px]"
+                className="text-gray-1 relative w-[1040px] text-left"
                 style={{
                   font: "var(--title, 700 22px/140% 'Roboto', sans-serif)",
                 }}
@@ -125,12 +121,12 @@ export const Tour = ({ ...props }) => {
               </div>
 
               <img
-                className="rounded-[20px] shrink-0 w-[1040px] h-[391px] relative"
+                className="relative h-[391px] w-[1040px] shrink-0 rounded-[20px]"
                 src="tour-quesion.png"
               />
 
               <div
-                className="text-gray-1 text-left relative w-[1040px]"
+                className="text-gray-1 relative w-[1040px] text-left"
                 style={{
                   font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
                 }}
@@ -138,9 +134,9 @@ export const Tour = ({ ...props }) => {
                 就是在这次旅行中，我发现了关于制定计划方面的一些问题，而第二个项目的灵感也来源于此：
               </div>
 
-              <div className="flex flex-row gap-[31px] items-center justify-start shrink-0 w-[1040px] relative">
+              <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-[31px]">
                 <div
-                  className="text-gray-1 text-left relative w-[427px]"
+                  className="text-gray-1 relative w-[427px] text-left"
                   style={{
                     font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
                   }}
@@ -149,25 +145,25 @@ export const Tour = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="rounded-[20px] shrink-0 w-[582px] h-[274px] relative"
+                  className="relative h-[274px] w-[582px] shrink-0 rounded-[20px]"
                   src="tour-mudidi.png"
                 />
               </div>
 
-              <div className="flex flex-row gap-[31px] items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-row items-start justify-start gap-[31px]">
                 <img
-                  className="rounded-[20px] shrink-0 w-[389px] h-[437px] relative"
+                  className="relative h-[437px] w-[389px] shrink-0 rounded-[20px]"
                   src="tour-zhusudi.png"
                 />
 
-                <div className="flex flex-col gap-[57px] items-start justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-[57px]">
                   <img
-                    className="rounded-[20px] shrink-0 w-[619px] h-[272px] relative"
+                    className="relative h-[272px] w-[619px] shrink-0 rounded-[20px]"
                     src="tour-jiaotongfangshi.png"
                   />
 
                   <div
-                    className="text-gray-1 text-left relative w-[619px]"
+                    className="text-gray-1 relative w-[619px] text-left"
                     style={{
                       font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
                     }}
@@ -177,10 +173,10 @@ export const Tour = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-[31px] items-center justify-start shrink-0 w-[1040px] relative">
-                <div className="flex flex-col gap-10 items-start justify-start shrink-0 w-[405px] relative">
+              <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-[31px]">
+                <div className="relative flex w-[405px] shrink-0 flex-col items-start justify-start gap-10">
                   <div
-                    className="text-gray-1 text-left relative self-stretch"
+                    className="text-gray-1 relative self-stretch text-left"
                     style={{
                       font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
                     }}
@@ -189,7 +185,7 @@ export const Tour = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-gray-1 text-left relative self-stretch"
+                    className="text-gray-1 relative self-stretch text-left"
                     style={{
                       font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
                     }}
@@ -199,7 +195,7 @@ export const Tour = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="rounded-[20px] shrink-0 w-[603px] h-[451px] relative"
+                  className="relative h-[451px] w-[603px] shrink-0 rounded-[20px]"
                   src="tour-xaingxijihua.png"
                 />
               </div>
@@ -207,9 +203,10 @@ export const Tour = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 w-[1040px] relative">
+        <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="mubiao"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -217,9 +214,9 @@ export const Tour = ({ ...props }) => {
             目标
           </div>
 
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -228,7 +225,7 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -237,7 +234,7 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -246,7 +243,7 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -255,7 +252,7 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -265,9 +262,10 @@ export const Tour = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="fenxi"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -275,8 +273,8 @@ export const Tour = ({ ...props }) => {
             研究/分析
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="research-analysis-2-span">商业分析</span>
                 <span className="research-analysis-2-span2">
@@ -289,13 +287,13 @@ export const Tour = ({ ...props }) => {
           </div>
 
           <img
-            className="shrink-0 w-[1040px] h-[1104px] relative"
+            className="relative h-[1104px] w-[1040px] shrink-0"
             src="tour-shangyefenxi.png"
           />
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -312,8 +310,8 @@ export const Tour = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="research-analysis-2-span3">总结</span>
                 <span className="research-analysis-2-span4">
@@ -326,9 +324,10 @@ export const Tour = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="yonghuhuaxiang"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -336,8 +335,8 @@ export const Tour = ({ ...props }) => {
             用户画像
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="persona-3-span">角色概述</span>
                 <span className="persona-3-span2">
@@ -349,20 +348,20 @@ export const Tour = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-start justify-start shrink-0 w-[1040px] h-[318px] relative">
+          <div className="relative flex h-[318px] w-[1040px] shrink-0 flex-row items-start justify-start gap-8">
             <img
-              className="self-stretch flex-1 relative"
+              className="relative flex-1 self-stretch"
               src="tour-persona-1.png"
             />
 
             <img
-              className="self-stretch flex-1 relative"
+              className="relative flex-1 self-stretch"
               src="tour-persona-2.png"
             />
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="persona-3-span3">同理心地图</span>
                 <span className="persona-3-span4">
@@ -375,14 +374,15 @@ export const Tour = ({ ...props }) => {
           </div>
 
           <img
-            className="shrink-0 w-[1040px] h-[1040px] relative"
+            className="relative h-[1040px] w-[1040px] shrink-0"
             src="tour-tonglixing-1.png"
           />
         </div>
 
-        <div className="flex flex-col gap-[60px] items-start justify-start shrink-0 w-[1040px] relative">
+        <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-[60px]">
           <div
-            className="text-gray-1 text-left relative"
+            id="shishi"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -390,8 +390,8 @@ export const Tour = ({ ...props }) => {
             研究结果实施
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="findings-3-span">项目功能简述</span>
                 <span className="findings-3-span2">
@@ -403,9 +403,9 @@ export const Tour = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[348px]"
+              className="text-gray-1 relative w-[348px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -414,19 +414,19 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <img
-              className="rounded-[20px] shrink-0 w-[658px] h-[230px] relative"
+              className="relative h-[230px] w-[658px] shrink-0 rounded-[20px]"
               src="tour-tansuomididi.png"
             />
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <img
-              className="rounded-[20px] shrink-0 w-[658px] h-[230px] relative"
+              className="relative h-[230px] w-[658px] shrink-0 rounded-[20px]"
               src="tour-zhengtiguihua.png"
             />
 
             <div
-              className="text-gray-1 text-left relative w-[347px]"
+              className="text-gray-1 relative w-[347px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -435,9 +435,9 @@ export const Tour = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-start self-stretch shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-start gap-8 self-stretch">
             <div
-              className="text-gray-1 text-left relative w-[529px]"
+              className="text-gray-1 relative w-[529px] text-left"
               style={{
                 font: "var(--body, 400 17px/140% 'PingFang SC', sans-serif)",
               }}
@@ -446,15 +446,16 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <img
-              className="rounded-[20px] shrink-0 w-[482px] h-[171px] relative"
+              className="relative h-[171px] w-[482px] shrink-0 rounded-[20px]"
               src="tour-meirijihua.png"
             />
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="xiangmuzhanshi"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -463,16 +464,16 @@ export const Tour = ({ ...props }) => {
           </div>
 
           <img
-            className="shrink-0 w-[1040px] h-[502.99px] relative"
+            className="relative h-[502.99px] w-[1040px] shrink-0"
             src="tour-xiangmuzhnashi.png"
           />
         </div>
 
-        <div className="flex flex-col gap-20 items-center justify-start shrink-0 w-[1440px] relative">
-          <div className="flex flex-col gap-6 items-center justify-start shrink-0 w-[1040px] relative">
-            <div className="flex flex-row gap-6 items-start justify-start self-stretch shrink-0 relative">
+        <div className="relative flex w-[1440px] shrink-0 flex-col items-center justify-start gap-20">
+          <div className="relative flex w-[1040px] shrink-0 flex-col items-center justify-start gap-6">
+            <div className="relative flex shrink-0 flex-row items-start justify-start gap-6 self-stretch">
               <svg
-                className="shrink-0 relative overflow-visible"
+                className="relative shrink-0 overflow-visible"
                 style={{}}
                 width="47"
                 height="59"
@@ -499,7 +500,8 @@ export const Tour = ({ ...props }) => {
               </svg>
 
               <div
-                className="text-gray-1 text-left relative"
+                id="luojitu"
+                className="text-gray-1 relative text-left"
                 style={{
                   font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
                 }}
@@ -508,11 +510,11 @@ export const Tour = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-16 items-center justify-start shrink-0 w-[1041px] relative">
-              <div className="flex flex-row gap-0 items-end justify-start shrink-0 relative">
-                <div className="bg-[#686868] pt-1 pr-[15px] pb-1 pl-[15px] flex flex-row gap-2.5 items-center justify-center shrink-0 relative overflow-hidden">
+            <div className="relative flex w-[1041px] shrink-0 flex-col items-center justify-start gap-16">
+              <div className="relative flex shrink-0 flex-row items-end justify-start gap-0">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 overflow-hidden bg-[#686868] pb-1 pl-[15px] pr-[15px] pt-1">
                   <div
-                    className="text-[#ffffff] text-left relative"
+                    className="relative text-left text-[#ffffff]"
                     style={{ font: "600 32px 'PingFang SC', sans-serif" }}
                   >
                     软件中心逻辑：
@@ -522,36 +524,36 @@ export const Tour = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="shrink-0 w-[600px] h-[370.74px] relative"
+                  className="relative h-[370.74px] w-[600px] shrink-0"
                   src="tour-denglui.png"
                 />
               </div>
 
-              <div className="flex flex-col gap-[26px] items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[26px]">
                 <div
-                  className="text-[#000000] text-left relative w-[736px]"
+                  className="relative w-[736px] text-left text-[#000000]"
                   style={{ font: "400 20px 'PingFang SC', sans-serif" }}
                 >
                   主要三个流程，分别为：
                 </div>
 
-                <div className="flex flex-col gap-[18px] items-start justify-center shrink-0 relative">
+                <div className="relative flex shrink-0 flex-col items-start justify-center gap-[18px]">
                   <div
-                    className="text-[#ff4057] text-left relative"
+                    className="relative text-left text-[#ff4057]"
                     style={{ font: "500 20px 'PingFang SC', sans-serif" }}
                   >
                     1：浏览、探索、查找地点为主，将景点信息进行综合从而更加方便用户使用
                   </div>
 
                   <div
-                    className="text-[#fdbc02] text-left relative"
+                    className="relative text-left text-[#fdbc02]"
                     style={{ font: "500 20px 'PingFang SC', sans-serif" }}
                   >
                     2：从如何规划一条旅行路线的思路为依据，将旅行规划从发散式思考转化为选择性思考
                   </div>
 
                   <div
-                    className="text-[#00a0e9] text-left relative"
+                    className="relative text-left text-[#00a0e9]"
                     style={{ font: "500 20px 'PingFang SC', sans-serif" }}
                   >
                     3：个人中心的设计更加关注用户自己的旅程，提供清晰的旅程计划的状态
@@ -561,11 +563,11 @@ export const Tour = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 w-[1040px] relative">
-            <div className="flex flex-col gap-[11px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-row gap-[11px] items-start justify-start shrink-0 relative">
+          <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[11px]">
+              <div className="relative flex shrink-0 flex-row items-start justify-start gap-[11px]">
                 <svg
-                  className="shrink-0 relative overflow-visible"
+                  className="relative shrink-0 overflow-visible"
                   style={{}}
                   width="47"
                   height="59"
@@ -596,7 +598,8 @@ export const Tour = ({ ...props }) => {
                 </svg>
 
                 <div
-                  className="text-right relative"
+                  id="xiankuangtu"
+                  className="relative text-right"
                   style={{ font: "600 48px 'PingFang SC', sans-serif" }}
                 >
                   线框图
@@ -604,7 +607,7 @@ export const Tour = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#4b4b4b] text-left relative w-[558px]"
+                className="relative w-[558px] text-left text-[#4b4b4b]"
                 style={{ font: "400 16px/26px 'PingFang SC', sans-serif" }}
               >
                 整套线框图根据流程图的分析而来，更加完善了页面数量以及更多的页面细节
@@ -612,15 +615,15 @@ export const Tour = ({ ...props }) => {
             </div>
 
             <img
-              className="shrink-0 w-[925px] h-[739px] relative"
+              className="relative h-[739px] w-[925px] shrink-0"
               src="group-22.png"
             />
           </div>
 
-          <div className="flex flex-col gap-14 items-start justify-start shrink-0 relative">
-            <div className="flex flex-row gap-5 items-center justify-center shrink-0 w-[277px] h-[77px] relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-14">
+            <div className="relative flex h-[77px] w-[277px] shrink-0 flex-row items-center justify-center gap-5">
               <svg
-                className="shrink-0 relative overflow-visible"
+                className="relative shrink-0 overflow-visible"
                 style={{}}
                 width="63"
                 height="75"
@@ -687,7 +690,8 @@ export const Tour = ({ ...props }) => {
               </svg>
 
               <div
-                className="text-[#000000] text-left relative"
+                id="shijueguifan"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
                 }}
@@ -696,29 +700,29 @@ export const Tour = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[11px] items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[11px]">
               <img
-                className="shrink-0 w-[1040px] h-[838.91px] relative"
+                className="relative h-[838.91px] w-[1040px] shrink-0"
                 src="_13.png"
               />
 
               <img
-                className="shrink-0 w-[1040px] h-[582.97px] relative"
+                className="relative h-[582.97px] w-[1040px] shrink-0"
                 src="_24.png"
               />
 
               <img
-                className="shrink-0 w-[1040px] h-[783.3px] relative"
+                className="relative h-[783.3px] w-[1040px] shrink-0"
                 src="_34.png"
               />
             </div>
           </div>
 
-          <div className="flex flex-col gap-0 items-center justify-start self-stretch shrink-0 relative">
-            <div className="flex flex-col gap-11 items-center justify-start self-stretch shrink-0 relative">
-              <div className="pt-12 pr-0 pb-0 pl-0 flex flex-row gap-2.5 items-center justify-center shrink-0 h-[104.96px] relative">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-0 self-stretch">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-11 self-stretch">
+              <div className="relative flex h-[104.96px] shrink-0 flex-row items-center justify-center gap-2.5 pb-0 pl-0 pr-0 pt-12">
                 <svg
-                  className="shrink-0 relative overflow-visible"
+                  className="relative shrink-0 overflow-visible"
                   style={{}}
                   width="48"
                   height="62"
@@ -745,7 +749,8 @@ export const Tour = ({ ...props }) => {
                 </svg>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  id="lo"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
                   }}
@@ -754,47 +759,47 @@ export const Tour = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative">
-                <div className="bg-[#f2bb02] pt-[100px] pr-0 pb-[100px] pl-0 flex flex-row gap-[25px] items-center justify-center self-stretch shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0 self-stretch">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-[25px] self-stretch bg-[#f2bb02] pb-[100px] pl-0 pr-0 pt-[100px]">
                   <div
-                    className="flex flex-row gap-2 items-start justify-start shrink-0 relative"
+                    className="relative flex shrink-0 flex-row items-start justify-start gap-2"
                     style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                   >
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-dibaozhan-1.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-dibaozhen-2.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-dibaozhen-3.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-dibaozhen-4.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-dibaozhen-5.png"
                     />
                   </div>
 
-                  <div className="flex flex-col gap-1 items-end justify-start shrink-0 relative">
+                  <div className="relative flex shrink-0 flex-col items-end justify-start gap-1">
                     <div
-                      className="bg-[#ffcd63] rounded-[15px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[182.79px] h-[50.03px] relative"
+                      className="relative flex h-[50.03px] w-[182.79px] shrink-0 flex-row items-center justify-center gap-2.5 rounded-[15px] bg-[#ffcd63] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                       }}
                     >
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{ font: "600 20px 'PingFang SC', sans-serif" }}
                       >
                         浏览的逐层设计
@@ -802,14 +807,14 @@ export const Tour = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="bg-[rgba(232,232,232,0.30)] rounded-[15px] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[180.73px] h-[130.29px] relative"
+                      className="relative flex h-[130.29px] w-[180.73px] shrink-0 flex-col items-center justify-center gap-2.5 rounded-[15px] bg-[rgba(232,232,232,0.30)] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                         backdropFilter: "blur(2px)",
                       }}
                     >
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{ font: "500 15px 'PingFang SC', sans-serif" }}
                       >
                         通过对探索点的相关内容进行逐步深入的设计，可以更好地让不同用户的需要都得到很好的满足
@@ -818,16 +823,16 @@ export const Tour = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="bg-[#ff4057] pt-[100px] pr-0 pb-[100px] pl-0 flex flex-row gap-[21px] items-center justify-center self-stretch shrink-0 relative">
-                  <div className="flex flex-col gap-1.5 items-center justify-start shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-[21px] self-stretch bg-[#ff4057] pb-[100px] pl-0 pr-0 pt-[100px]">
+                  <div className="relative flex shrink-0 flex-col items-center justify-start gap-1.5">
                     <div
-                      className="bg-[#b22d3d] rounded-[15px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[185.89px] relative"
+                      className="relative flex w-[185.89px] shrink-0 flex-row items-center justify-center gap-2.5 rounded-[15px] bg-[#b22d3d] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                       }}
                     >
                       <div
-                        className="text-[#ffffff] text-left relative"
+                        className="relative text-left text-[#ffffff]"
                         style={{ font: "600 20px 'PingFang SC', sans-serif" }}
                       >
                         线性计划制定
@@ -835,14 +840,14 @@ export const Tour = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="bg-[rgba(232,232,232,0.30)] rounded-[15px] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
+                      className="relative flex shrink-0 flex-col items-center justify-center gap-2.5 rounded-[15px] bg-[rgba(232,232,232,0.30)] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                         backdropFilter: "blur(2px)",
                       }}
                     >
                       <div
-                        className="text-[#ffffff] text-left relative w-[158px]"
+                        className="relative w-[158px] text-left text-[#ffffff]"
                         style={{ font: "500 15px 'PingFang SC', sans-serif" }}
                       >
                         单线逻辑的设计，将原本制作旅行计划的开放式搜索转化为更加简单的选择项，更加方便了用户对自己计划的控制
@@ -851,71 +856,71 @@ export const Tour = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="flex flex-row gap-2 items-start justify-start shrink-0 relative"
+                    className="relative flex shrink-0 flex-row items-start justify-start gap-2"
                     style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                   >
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-jihuazhiding-1.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-jihuazhiding-2.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-jihuazhiding-3.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-jihuazhiding-4.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-jihuazhiding-5.png"
                     />
                   </div>
                 </div>
 
-                <div className="bg-[#ff4057] pt-[100px] pr-0 pb-[100px] pl-0 flex flex-row gap-[34px] items-center justify-center self-stretch shrink-0 relative">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-[34px] self-stretch bg-[#ff4057] pb-[100px] pl-0 pr-0 pt-[100px]">
                   <div
-                    className="flex flex-row gap-2 items-start justify-start shrink-0 relative"
+                    className="relative flex shrink-0 flex-row items-start justify-start gap-2"
                     style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                   >
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-wanzhengjihua-1.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-wanzhengjihua-2.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-wanzhengjihua-3.png"
                     />
 
                     <img
-                      className="rounded-[10px] border-solid border-[#747474] border shrink-0 w-[158.67px] h-[346.76px] relative"
+                      className="relative h-[346.76px] w-[158.67px] shrink-0 rounded-[10px] border border-solid border-[#747474]"
                       src="tour-wanzhengjihua-4.png"
                     />
                   </div>
 
-                  <div className="flex flex-col gap-1.5 items-end justify-start shrink-0 relative">
+                  <div className="relative flex shrink-0 flex-col items-end justify-start gap-1.5">
                     <div
-                      className="bg-[#b22d3d] rounded-[15px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 relative"
+                      className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 rounded-[15px] bg-[#b22d3d] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                       }}
                     >
                       <div
-                        className="text-[#ffffff] text-left relative"
+                        className="relative text-left text-[#ffffff]"
                         style={{ font: "600 20px 'PingFang SC', sans-serif" }}
                       >
                         更具行动性的计划
@@ -923,14 +928,14 @@ export const Tour = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="bg-[rgba(232,232,232,0.30)] rounded-[15px] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 relative"
+                      className="relative flex shrink-0 flex-col items-center justify-center gap-2.5 rounded-[15px] bg-[rgba(232,232,232,0.30)] p-2.5"
                       style={{
                         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                         backdropFilter: "blur(2px)",
                       }}
                     >
                       <div
-                        className="text-[#ffffff] text-left relative w-[158px]"
+                        className="relative w-[158px] text-left text-[#ffffff]"
                         style={{ font: "500 15px 'PingFang SC', sans-serif" }}
                       >
                         智能根据选项生成计划，能更加精细和贴心的告诉用户计划详情，从每天的旅行计划，到路线、交通方式、预备清单，甚至每天计划也可以以小时为单位生成，而这些都不需要用户制定，智能化就可以完成
@@ -939,16 +944,16 @@ export const Tour = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+                < div id="hi" className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
-                    className="shrink-0 w-[1440px] h-[787.15px] relative"
+                    className="relative h-[787.15px] w-[1440px] shrink-0"
                     src="tour-gaobaozhen.png"
                   />
 
-                  <div className="flex flex-col gap-[23px] items-center justify-center shrink-0 absolute left-[609px] top-[308px]">
-                    <div className="flex flex-row gap-3.5 items-end justify-center shrink-0 relative">
+                  <div className="absolute left-[609px] top-[308px] flex shrink-0 flex-col items-center justify-center gap-[23px]">
+                    <div className="relative flex shrink-0 flex-row items-end justify-center gap-3.5">
                       <svg
-                        className="shrink-0 relative overflow-visible"
+                        className="relative shrink-0 overflow-visible"
                         style={{}}
                         width="88"
                         height="110"
@@ -975,7 +980,7 @@ export const Tour = ({ ...props }) => {
                       </svg>
 
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{ font: "600 40px 'PingFang SC', sans-serif" }}
                       >
                         高保真
@@ -983,27 +988,32 @@ export const Tour = ({ ...props }) => {
                         原型
                       </div>
                     </div>
-
-                    <div className="bg-[#fdbb2d] rounded-[65px] pt-[5px] pr-2.5 pb-[5px] pl-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[119px] h-9 relative">
-                      <div
-                        className="text-[#ffffff] text-left relative"
-                        style={{
-                          font: "600 24px 'PingFang SC', sans-serif",
-                          textDecoration: "underline",
-                        }}
-                      >
-                        click it
+                    <a
+                      href="https://www.figma.com/proto/TQ56VLWYx7dWe9QBT6DruI/Practice-2-BanaMenu?page-id=0%3A1&node-id=24%3A3708&viewport=342%2C48%2C0.2&scaling=min-zoom&starting-point-node-id=24%3A3708"
+                      target="blank"
+                    >
+                      <div className="relative flex h-9 w-[119px] shrink-0 flex-row items-center justify-center gap-2.5 rounded-[65px] bg-[#fdbb2d] pb-[5px] pl-2.5 pr-2.5 pt-[5px]">
+                        <div
+                          className="relative text-left text-[#ffffff]"
+                          style={{
+                            font: "600 24px 'PingFang SC', sans-serif",
+                            textDecoration: "underline",
+                          }}
+                        >
+                          click it
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#242424] flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative">
-              <div className="pt-[57px] pr-0 pb-[57px] pl-0 flex flex-col gap-6 items-start justify-start shrink-0 w-[1040px] relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-2.5 self-stretch bg-[#242424]">
+              <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6 pb-[57px] pl-0 pr-0 pt-[57px]">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  id="jielun"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
                   }}
@@ -1011,8 +1021,8 @@ export const Tour = ({ ...props }) => {
                   结论/反思
                 </div>
 
-                <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-                  <div className="text-[#ffffff] text-left relative w-[1040px]">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+                  <div className="relative w-[1040px] text-left text-[#ffffff]">
                     <span>
                       <span className="conclusion-reflection-3-span">
                         结论
@@ -1026,8 +1036,8 @@ export const Tour = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-                  <div className="text-[#ffffff] text-left relative w-[1040px]">
+                <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+                  <div className="relative w-[1040px] text-left text-[#ffffff]">
                     <span>
                       <span className="conclusion-reflection-3-span3">
                         更新迭代
@@ -1048,141 +1058,163 @@ export const Tour = ({ ...props }) => {
       </div>
 
       <div
-        className="bg-[rgba(172,172,172,0.50)] rounded-[10px] p-1.5 flex flex-col gap-3 items-center justify-start w-28 h-[616px] sticky left-3.5 top-[calc(50%_-_308px)]"
+        className="sticky left-3.5 top-[calc(50%_-_308px)] flex h-[616px] w-28 flex-col items-center justify-start gap-3 rounded-[10px] bg-[rgba(172,172,172,0.50)] p-1.5"
         style={{ backdropFilter: "blur(10px)" }}
       >
         <div
-          className="text-[#ffffff] text-center relative"
+          className="relative text-center text-[#ffffff]"
           style={{ font: "600 16px/99.52% 'PingFang SC', sans-serif" }}
         >
           Navigation
         </div>
 
-        <div className="flex flex-col gap-[5px] items-center justify-center shrink-0 relative">
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              背景
+        <div className="relative flex shrink-0 flex-col items-center justify-center gap-[5px]">
+          <a href="#beijin" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                背景
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              问题
+          <a href="#wenti" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                问题
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              目标
+          <a href="#mubiao" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                目标
+              </div>
             </div>
-          </div>
+          </a>
+          <a href="#fenxi" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                分析
+              </div>
+            </div>
+          </a>
+          <a href="#yonghuhuaxiang" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                用户画像
+              </div>
+            </div>
+          </a>
+          <a href="#shishi" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                实施
+              </div>
+            </div>
+          </a>
+          <a href="#xiangmuzhanshi" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                项目展示
+              </div>
+            </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              分析
+          <a href="#luojitu" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                逻辑图
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              用户画像
+          <a href="#xiankuangtu" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                线框图
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              实施
+          <a href="#shijueguifan" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{
+                  font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
+                }}
+              >
+                视觉规范
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              项目展示
+          <a href="#lo" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{
+                  font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
+                }}
+              >
+                低保真原型
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              逻辑图
+          <a href="#hi" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{
+                  font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
+                }}
+              >
+                高保真原型
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              线框图
+          <a href="#jielun" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{
+                  font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
+                }}
+              >
+                结论
+              </div>
             </div>
-          </div>
-
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{
-                font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
-              }}
-            >
-              视觉规范
-            </div>
-          </div>
-
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{
-                font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
-              }}
-            >
-              低保真原型
-            </div>
-          </div>
-
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{
-                font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
-              }}
-            >
-              高保真原型
-            </div>
-          </div>
-
-          <div className="bg-[#c93e3e] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{
-                font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
-              }}
-            >
-              结论
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -1,41 +1,45 @@
 import React from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Box } from "@react-three/drei";
+import { EscortPlusModel } from "./EscortPlusModel";
+import { useNavigate } from "react-router-dom";
 
-export const EscortBoatplus = ({ ...props }) => {
+
+export function EscortBoatplus({ ...props }) {
+  const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
+ 
+  const goEscort = () => {
+    goNavigate("/Escort");
+  };
+
+
   return (
-    <div
-      className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-    >
-      <div className="flex flex-col gap-0 items-start justify-start absolute right-0 left-0 top-[70px]">
-        <div className="bg-[#ffffff] flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[900px] relative">
-          <div className="flex flex-row items-center justify-center shrink-0 relative">
+    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
+      <div className="absolute left-0 right-0 top-[70px] flex flex-col items-start justify-start gap-0">
+        <div className="relative flex h-[900px] w-[1440px] shrink-0 flex-col items-center justify-center gap-2.5 bg-[#ffffff]">
+          {/* <img className="flex-1 w-[1440px] relative" src="escortboat-zhutu.png" /> */}
+          <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#ffffff]"
+          >
+            <ambientLight intensity={2} />
+            <directionalLight
+              color="white"
+              position={[2, 3, 5]}
+              intensity={1} />
+            <Suspense fallback={null}>
+              <EscortPlusModel />
+              {/* <Box /> */}
+            </Suspense>
+            <OrbitControls autoRotate />
+          </Canvas>
+
+          <div className="absolute left-[calc(50%_-_400px)] top-[715px] flex w-[800px] shrink-0 flex-col items-center justify-start gap-2.5">
             <div
-              className="flex flex-col gap-5 items-start justify-start shrink-0 relative"
-              style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
-            >
-              <div
-                className="text-[#595959] text-left relative"
-                style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
-              >
-                Sail long distances and be safe
-              </div>
-
-              <div
-                className="text-[#595959] text-left relative"
-                style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
-              >
-                远航、安全无忧
-              </div>
-            </div>
-
-            <img
-              className="shrink-0 w-[605px] h-[828px] relative"
-              src="escortboat-zhutu.png"
-            />
-          </div>
-
-          <div className="flex flex-col gap-2.5 items-center justify-start shrink-0 w-[800px] absolute left-[calc(50%_-_400px)] top-[674px]">
-            <div
-              className="text-[#000000] text-center relative self-stretch"
+              className="relative self-stretch text-center text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -46,7 +50,7 @@ export const EscortBoatplus = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-center relative self-stretch"
+              className="relative self-stretch text-center text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -55,13 +59,32 @@ export const EscortBoatplus = ({ ...props }) => {
               为专门针对远海救援条件所设计
             </div>
           </div>
+
+          <div
+            className="absolute left-[calc(50%_-_450px)] top-[293px] flex shrink-0 flex-col items-center justify-center gap-5"
+
+          >
+            <div
+              className="relative text-left text-[#595959]"
+              style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
+            >
+              Sail long distances and be safe
+            </div>
+
+            <div
+              className="relative text-left text-[#595959]"
+              style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
+            >
+              远航、安全无忧
+            </div>
+          </div>
         </div>
 
-        <div className="bg-[#d9d9d9] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[2048px] relative">
-          <div className="flex flex-col gap-0 items-start justify-center shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 w-[450px] relative">
+        <div className="relative flex h-[2048px] w-[1440px] shrink-0 flex-row items-center justify-center gap-2.5 bg-[#d9d9d9] p-2.5">
+          <div className="relative flex shrink-0 flex-col items-start justify-center gap-0">
+            <div className="relative flex w-[450px] shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -70,7 +93,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#202020] text-left relative"
+                className="relative text-left text-[#202020]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -79,17 +102,16 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[145px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[145px]">
+              <div className="relative flex shrink-0 flex-row items-center justify-start gap-5">
                 <img
-                  className="shrink-0 w-[605px] h-[531px] relative"
-                  src="escortboat-gongnengfenge.png"
-                />
+                  className="relative h-[531px] w-[605px] shrink-0"
+                  src="escortboat-gongnengfenge.png" />
 
-                <div className="flex flex-col gap-5 items-start justify-start shrink-0 w-[397px] relative">
-                  <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+                <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-5">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -98,7 +120,7 @@ export const EscortBoatplus = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative"
+                      className="relative text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -107,9 +129,9 @@ export const EscortBoatplus = ({ ...props }) => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[397px] relative">
+                  <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-2.5">
                     <div
-                      className="text-[#000000] text-left relative self-stretch"
+                      className="relative self-stretch text-left text-[#000000]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -121,7 +143,7 @@ export const EscortBoatplus = ({ ...props }) => {
                     </div>
 
                     <div
-                      className="text-[#000000] text-left relative self-stretch"
+                      className="relative self-stretch text-left text-[#000000]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -132,10 +154,10 @@ export const EscortBoatplus = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -144,7 +166,7 @@ export const EscortBoatplus = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#000000] text-left relative"
+                    className="relative text-left text-[#000000]"
                     style={{
                       font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -153,11 +175,11 @@ export const EscortBoatplus = ({ ...props }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
-                  <div className="flex flex-col gap-[79px] items-start justify-start shrink-0 relative">
-                    <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[397px] relative">
+                <div className="relative flex shrink-0 flex-row items-center justify-start gap-5">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-[79px]">
+                    <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-2.5">
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -169,7 +191,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -178,9 +200,9 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[397px] relative">
+                    <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-2.5">
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -192,7 +214,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -203,21 +225,19 @@ export const EscortBoatplus = ({ ...props }) => {
                   </div>
 
                   <img
-                    className="shrink-0 w-[605px] h-[409px] relative"
-                    src="escortboat-gangxingguyjia.png"
-                  />
+                    className="relative h-[409px] w-[605px] shrink-0"
+                    src="escortboat-gangxingguyjia.png" />
                 </div>
               </div>
 
-              <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-row items-center justify-start gap-5">
                 <img
-                  className="shrink-0 w-[605px] h-[532px] relative"
-                  src="escortboat-fangshuikeji.png"
-                />
+                  className="relative h-[532px] w-[605px] shrink-0"
+                  src="escortboat-fangshuikeji.png" />
 
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[397px] relative">
+                <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-2.5">
                   <div
-                    className="text-[#000000] text-left relative self-stretch"
+                    className="relative self-stretch text-left text-[#000000]"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -227,7 +247,7 @@ export const EscortBoatplus = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#000000] text-left relative self-stretch"
+                    className="relative self-stretch text-left text-[#000000]"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -240,11 +260,11 @@ export const EscortBoatplus = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#ffffff] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[1024px] relative">
-          <div className="flex flex-col gap-[11px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+        <div className="relative flex h-[1024px] w-[1440px] shrink-0 flex-col items-center justify-center gap-2.5 bg-[#ffffff] p-2.5">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[11px]">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -253,7 +273,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -262,11 +282,11 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-row gap-6 items-center justify-start shrink-0 relative">
-              <div className="flex flex-col gap-[45px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[393px] relative">
+            <div className="relative flex shrink-0 flex-row items-center justify-start gap-6">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[45px]">
+                <div className="relative flex w-[393px] shrink-0 flex-col items-start justify-start gap-2.5">
                   <div
-                    className="text-[#000000] text-left relative self-stretch"
+                    className="relative self-stretch text-left text-[#000000]"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -281,7 +301,7 @@ export const EscortBoatplus = ({ ...props }) => {
                   </div>
 
                   <div
-                    className="text-[#000000] text-left relative self-stretch"
+                    className="relative self-stretch text-left text-[#000000]"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -291,24 +311,22 @@ export const EscortBoatplus = ({ ...props }) => {
                 </div>
 
                 <img
-                  className="shrink-0 w-[188px] h-[158px] relative"
-                  src="escortboat-shounacangsmall.png"
-                />
+                  className="relative h-[158px] w-[188px] shrink-0"
+                  src="escortboat-shounacangsmall.png" />
               </div>
 
               <img
-                className="shrink-0 w-[605px] h-[718px] relative"
-                src="escortboat-shounacangbig.png"
-              />
+                className="relative h-[718px] w-[605px] shrink-0"
+                src="escortboat-shounacangbig.png" />
             </div>
           </div>
         </div>
 
-        <div className="bg-[#d9d9d9] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[1024px] relative">
-          <div className="flex flex-col gap-[89px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 w-[397px] relative">
+        <div className="relative flex h-[1024px] w-[1440px] shrink-0 flex-col items-center justify-center gap-2.5 bg-[#d9d9d9] p-2.5">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[89px]">
+            <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -317,7 +335,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#202020] text-left relative"
+                className="relative text-left text-[#202020]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -327,17 +345,16 @@ export const EscortBoatplus = ({ ...props }) => {
             </div>
 
             <img
-              className="shrink-0 w-[1022px] h-[284px] relative"
-              src="escortboat-shiyong.png"
-            />
+              className="relative h-[284px] w-[1022px] shrink-0"
+              src="escortboat-shiyong.png" />
           </div>
         </div>
 
-        <div className="bg-[#ededed] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[1024px] relative">
-          <div className="flex flex-col gap-[33px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 w-[397px] relative">
+        <div className="relative flex h-[1024px] w-[1440px] shrink-0 flex-col items-center justify-center gap-2.5 bg-[#ededed] p-2.5">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[33px]">
+            <div className="relative flex w-[397px] shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -346,7 +363,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#202020] text-left relative"
+                className="relative text-left text-[#202020]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -355,22 +372,22 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="shrink-0 w-[1022px] h-[257px] static">
-              <div className="w-[1022px] h-[257px] static">
-                <div className="flex flex-col gap-0 items-end justify-start absolute left-0 top-[153px]">
-                  <div className="flex flex-row items-start justify-start shrink-0 relative">
-                    <div className="bg-[#efa043] rounded-[50%] shrink-0 w-[100px] h-[100px] relative"></div>
+            <div className="static h-[257px] w-[1022px] shrink-0">
+              <div className="static h-[257px] w-[1022px]">
+                <div className="absolute left-0 top-[153px] flex flex-col items-end justify-start gap-0">
+                  <div className="relative flex shrink-0 flex-row items-start justify-start">
+                    <div className="relative h-[100px] w-[100px] shrink-0 rounded-[50%] bg-[#efa043]"></div>
 
                     <div
-                      className="bg-[#ee550a] rounded-[50%] shrink-0 w-[100px] h-[100px] relative"
+                      className="relative h-[100px] w-[100px] shrink-0 rounded-[50%] bg-[#ee550a]"
                       style={{ margin: "0 0 0 -20px" }}
                     ></div>
                   </div>
 
-                  <div className="flex flex-col gap-[33px] items-start justify-start shrink-0 w-[1022px] relative">
-                    <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+                  <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-[33px]">
+                    <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -379,7 +396,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -388,9 +405,9 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+                    <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -403,7 +420,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -416,22 +433,22 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="shrink-0 w-[1022px] h-[260px] static">
-              <div className="w-[1022px] h-[260px] static">
-                <div className="flex flex-col gap-0 items-end justify-start absolute left-0 top-[443px]">
-                  <div className="flex flex-row items-start justify-start shrink-0 relative">
-                    <div className="bg-[#ffffff] rounded-[50%] shrink-0 w-[100px] h-[100px] relative"></div>
+            <div className="static h-[260px] w-[1022px] shrink-0">
+              <div className="static h-[260px] w-[1022px]">
+                <div className="absolute left-0 top-[443px] flex flex-col items-end justify-start gap-0">
+                  <div className="relative flex shrink-0 flex-row items-start justify-start">
+                    <div className="relative h-[100px] w-[100px] shrink-0 rounded-[50%] bg-[#ffffff]"></div>
 
                     <div
-                      className="bg-[#d9d9d9] rounded-[50%] shrink-0 w-[100px] h-[100px] relative"
+                      className="relative h-[100px] w-[100px] shrink-0 rounded-[50%] bg-[#d9d9d9]"
                       style={{ margin: "0 0 0 -20px" }}
                     ></div>
                   </div>
 
-                  <div className="flex flex-col gap-9 items-start justify-start shrink-0 w-[1022px] relative">
-                    <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+                  <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-9">
+                    <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -440,7 +457,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative"
+                        className="relative text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -449,9 +466,9 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+                    <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -464,7 +481,7 @@ export const EscortBoatplus = ({ ...props }) => {
                       </div>
 
                       <div
-                        className="text-[#000000] text-left relative self-stretch"
+                        className="relative self-stretch text-left text-[#000000]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -479,9 +496,9 @@ export const EscortBoatplus = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#3c3c3c] pt-[60px] pr-0 pb-[60px] pl-0 flex flex-col gap-[15px] items-center justify-start shrink-0 w-[1440px] h-[826px] relative">
+        <div className="relative flex h-[826px] w-[1440px] shrink-0 flex-col items-center justify-start gap-[15px] bg-[#3c3c3c] pb-[60px] pl-0 pr-0 pt-[60px]">
           <svg
-            className="shrink-0 relative overflow-visible"
+            className="relative shrink-0 overflow-visible"
             style={{}}
             width="1000"
             height="3"
@@ -493,14 +510,13 @@ export const EscortBoatplus = ({ ...props }) => {
               d="M0 0L999.998 2.23713"
               stroke="#DCDCDC"
               strokeWidth="2"
-              strokeLinecap="round"
-            />
+              strokeLinecap="round" />
           </svg>
 
-          <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[1000px] relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+          <div className="relative flex w-[1000px] shrink-0 flex-col items-start justify-start gap-[15px]">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -509,7 +525,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -518,9 +534,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -529,7 +545,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -538,9 +554,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -549,7 +565,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -558,9 +574,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -569,7 +585,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -578,9 +594,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -589,7 +605,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -598,9 +614,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -609,7 +625,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -618,9 +634,9 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -629,7 +645,7 @@ export const EscortBoatplus = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -641,17 +657,17 @@ export const EscortBoatplus = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="bg-[#464646] pt-0 pr-0 pb-1 pl-0 flex flex-col gap-0 items-center justify-start absolute right-0 left-0 top-[0px]">
+      <div className="absolute left-0 right-0 top-[0px] flex flex-col items-center justify-start gap-0 bg-[#464646] pb-1 pl-0 pr-0 pt-0"onClick={goEscort}>
         <div
-          className="text-[#ffffff] text-left relative"
+          className="relative text-left text-[#ffffff]"
           style={{ font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)" }}
         >
           ← Escort boat
         </div>
 
-        <div className="flex flex-col gap-0 items-center justify-start shrink-0 w-[1022px] relative">
+        <div className="relative flex w-[1022px] shrink-0 flex-col items-center justify-start gap-0">
           <div
-            className="text-[#ffffff] text-center relative self-stretch"
+            className="relative self-stretch text-center text-[#ffffff]"
             style={{
               font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
             }}
@@ -662,7 +678,7 @@ export const EscortBoatplus = ({ ...props }) => {
           </div>
 
           <div
-            className="text-[#ffffff] text-center relative self-stretch"
+            className="relative self-stretch text-center text-[#ffffff]"
             style={{
               font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
             }}
@@ -674,32 +690,30 @@ export const EscortBoatplus = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="flex flex-row items-start justify-between absolute right-[220px] left-[220px] top-[80px]">
+      <div className="absolute left-[220px] right-[220px] top-[80px] flex flex-row items-start justify-between">
         <div
-          className="text-[#1a1a1a] text-left relative"
+          className="relative text-left text-[#1a1a1a]"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
         >
           Escort boat 2.0
         </div>
 
-        <div className="flex flex-row gap-5 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-row items-start justify-start gap-5">
           <div
-            className="text-[#1a1a1a] text-left relative"
+            className="relative text-left text-[#1a1a1a]"
             style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
           >
             Escort boat
           </div>
 
           <div
-            className="text-[#1a1a1a] text-left relative"
+            className="relative text-left text-[#1a1a1a]"
             style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
           >
             Design journal | 设计日志
           </div>
         </div>
       </div>
-
-
     </div>
   );
-};
+}

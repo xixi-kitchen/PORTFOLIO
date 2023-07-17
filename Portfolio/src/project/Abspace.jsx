@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Abspace = ({ ...props }) => {
   return (
-    <div
-      className="bg-[#f5f5f5] w-[1440px] h-[24200px] relative"
-    >
-      <div className="flex flex-col gap-10 items-center justify-start w-[1440px] h-[24200px] absolute left-0 top-0">
-        <div className="flex flex-row gap-2.5 items-start justify-center shrink-0 w-[1040px] h-[281px] relative">
-          <div className="bg-[#ffffff] shrink-0 w-[1440px] h-[269px] relative overflow-hidden">
+    <div className="relative h-[24200px] w-[1440px] bg-[#f5f5f5]">
+      <div className="absolute left-0 top-0 flex h-[24200px] w-[1440px] flex-col items-center justify-start gap-10">
+        <div className="relative flex h-[281px] w-[1040px] shrink-0 flex-row items-start justify-center gap-2.5">
+          <div className="relative h-[269px] w-[1440px] shrink-0 overflow-hidden bg-[#ffffff]">
             <svg
               className="absolute left-[-25px] top-[-137px] overflow-visible"
               style={{}}
@@ -1602,7 +1600,7 @@ const Abspace = ({ ...props }) => {
             </svg>
 
             <div
-              className="text-[#ffffff] text-left absolute left-[calc(50%_-_244px)] top-[129.04px]"
+              className="absolute left-[calc(50%_-_244px)] top-[129.04px] text-left text-[#ffffff]"
               style={{ font: "600 100px 'Archivo', sans-serif" }}
             >
               A-B Space
@@ -1610,9 +1608,10 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#f5f5f5] shrink-0 w-[1040px] h-[226px] relative overflow-hidden">
+        <div className="relative h-[226px] w-[1040px] shrink-0 overflow-hidden bg-[#f5f5f5]">
           <div
-            className="text-gray-1 text-left absolute left-0 top-10"
+            id="introduction"
+            className="text-gray-1 absolute left-0 top-10 text-left"
             style={{ font: "600 64px 'Archivo', sans-serif" }}
           >
             Case Study
@@ -1621,10 +1620,10 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-start justify-start shrink-0 relative">
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-10">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
               }}
@@ -1632,7 +1631,7 @@ const Abspace = ({ ...props }) => {
               Research on item management software
             </div>
 
-            <div className="text-gray-1 text-left relative w-[1040px]">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="case-study-overview-a-holistic-study-of-how-individuals-manage-all-their-belongings-from-storage-to-retrieval-and-how-to-make-the-process-more-efficient-and-less-burdensome-for-the-user-it-will-also-help-users-to-find-and-retrieve-items-more-quickly-when-they-need-them-this-makes-life-easier-for-people-span">
                   Case Study Overview{" "}
@@ -1650,9 +1649,10 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 h-[568px] relative">
+        <div className="relative flex h-[568px] shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="challenges"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -1660,8 +1660,8 @@ const Abspace = ({ ...props }) => {
             Challenges/Problems Statement
           </div>
 
-          <div className="flex flex-row gap-8 items-start justify-start shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[617px] h-[444px]">
+          <div className="relative flex shrink-0 flex-row items-start justify-start gap-8">
+            <div className="text-gray-1 relative h-[444px] w-[617px] text-left">
               <span>
                 <span className="challenge-problem-overview-as-a-person-who-loves-to-store-but-also-has-neat-obsessive-compulsive-disorder-when-i-was-in-college-because-the-storage-space-provided-by-the-school-was-not-enough-and-i-had-a-lot-of-things-i-had-an-almost-paranoid-insistence-on-neatness-so-i-always-confronted-various-storage-methods-on-a-daily-basis-but-i-also-found-some-problems-when-i-was-in-storage-and-it-was-these-problems-that-prompted-me-to-have-this-creative-point-in-order-to-improve-neatness-in-storage-i-will-always-buy-a-lot-of-storage-boxes-to-display-items-but-in-use-i-found-that-because-of-the-state-of-the-large-box-set-and-the-small-box-and-the-length-width-and-height-of-each-item-are-different-it-will-lead-to-some-redundancy-in-the-space-under-the-traditional-placement-method-the-space-utilization-rate-is-relatively-low-and-not-neat-enough-but-this-is-just-a-way-if-you-change-the-way-of-placement-there-may-be-better-results-and-in-the-actual-process-it-is-often-used-to-exhaust-the-method-and-the-inspiration-method-to-find-the-best-emissions-the-whole-process-has-to-go-on-many-times-and-waste-time-span">
                   Challenge/Problem Overview
@@ -1695,18 +1695,19 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="shrink-0 w-[391px] h-[444px] relative">
+            <div className="relative h-[444px] w-[391px] shrink-0">
               <img
-                className="rounded-[10px] w-[412px] h-[444px] absolute left-[-21px] top-0"
+                className="absolute left-[-21px] top-0 h-[444px] w-[412px] rounded-[10px]"
                 src="abspace-1.png"
               />
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 w-[1040px] relative">
+        <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="goals"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -1714,9 +1715,9 @@ const Abspace = ({ ...props }) => {
             Goals
           </div>
 
-          <div className="flex flex-col gap-[19px] items-start justify-start shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-[19px]">
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               So I was thinking, since it is to improve the utilization of
@@ -1725,7 +1726,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 1：
@@ -1735,7 +1736,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 2：
@@ -1745,7 +1746,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 3：
@@ -1755,7 +1756,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 4：
@@ -1764,7 +1765,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 5：
@@ -1774,7 +1775,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative"
+              className="text-gray-1 relative text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Goal 6：
@@ -1785,9 +1786,10 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="research"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -1796,7 +1798,7 @@ const Abspace = ({ ...props }) => {
           </div>
 
           <div
-            className="text-gray-1 text-left relative w-[1039px]"
+            className="text-gray-1 relative w-[1039px] text-left"
             style={{ font: "700 17px/140% 'Inter', sans-serif" }}
           >
             After carefully studying the logic of storage, I found that storage
@@ -1811,8 +1813,8 @@ const Abspace = ({ ...props }) => {
             extracting the item when it needs to be used.
           </div>
 
-          <div className="flex flex-row gap-[47px] items-center justify-center shrink-0 w-[1040px] relative">
-            <div className="text-gray-1 text-left relative w-[598px]">
+          <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-center gap-[47px]">
+            <div className="text-gray-1 relative w-[598px] text-left">
               <span>
                 <span className="research-analysis-3-span">
                   User interviews
@@ -1836,46 +1838,46 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="shrink-0 w-[393.92px] h-[263.25px] static">
+            <div className="static h-[263.25px] w-[393.92px] shrink-0">
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.7px] absolute left-[881.24px] top-0"
+                className="absolute left-[881.24px] top-0 h-[200.7px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-8.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.25px] absolute left-[881.24px] top-[11px]"
+                className="absolute left-[881.24px] top-[11px] h-[200.25px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-7.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.7px] absolute left-[881.24px] top-[25px]"
+                className="absolute left-[881.24px] top-[25px] h-[200.7px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-6.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.7px] absolute left-[881.24px] top-[37px]"
+                className="absolute left-[881.24px] top-[37px] h-[200.7px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-5.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.7px] absolute left-[881.24px] top-12"
+                className="absolute left-[881.24px] top-12 h-[200.7px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-4.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.25px] absolute left-[808.79px] top-[63px]"
+                className="absolute left-[808.79px] top-[63px] h-[200.25px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-3.png"
               />
 
               <img
-                className="border-solid border-[#000000] border-[0.1px] w-[158.22px] h-[200.7px] absolute left-[645.54px] top-[62px]"
+                className="absolute left-[645.54px] top-[62px] h-[200.7px] w-[158.22px] border-[0.1px] border-solid border-[#000000]"
                 src="abspace-2.png"
               />
             </div>
           </div>
 
-          <div className="flex flex-col gap-8 items-center justify-center shrink-0 w-[1040px] relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex w-[1040px] shrink-0 flex-col items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="research-analysis-4-span">Data research</span>
                 <span className="research-analysis-4-span2">
@@ -1890,26 +1892,26 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="flex flex-col gap-8 items-center justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-8">
               <img
-                className="shrink-0 w-[1040px] h-[471.76px] relative"
+                className="relative h-[471.76px] w-[1040px] shrink-0"
                 src="abspace-31.png"
               />
 
               <img
-                className="shrink-0 w-[1040px] h-[293.26px] relative"
+                className="relative h-[293.26px] w-[1040px] shrink-0"
                 src="abspace-32.png"
               />
 
               <img
-                className="shrink-0 w-[1040px] h-[293.26px] relative"
+                className="relative h-[293.26px] w-[1040px] shrink-0"
                 src="abspace-33.png"
               />
             </div>
           </div>
 
-          <div className="flex flex-col gap-8 items-start justify-start shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[584px]">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-8">
+            <div className="text-gray-1 relative w-[584px] text-left">
               <span>
                 <span className="research-analysis-5-span">
                   Competitor analysis
@@ -1918,41 +1920,41 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="shrink-0 w-[1040px] h-[444.5px] static">
+            <div className="static h-[444.5px] w-[1040px] shrink-0">
               <img
-                className="w-[260px] h-[146.25px] absolute left-0 top-[361.25px]"
+                className="absolute left-0 top-[361.25px] h-[146.25px] w-[260px]"
                 src="abspace-36.png"
               />
 
               <img
-                className="w-[520px] h-[292.25px] absolute left-0 top-[63px]"
+                className="absolute left-0 top-[63px] h-[292.25px] w-[520px]"
                 src="abspace-34.png"
               />
 
               <img
-                className="w-[520px] h-[292.25px] absolute left-[520px] top-[63px]"
+                className="absolute left-[520px] top-[63px] h-[292.25px] w-[520px]"
                 src="abspace-35.png"
               />
 
               <img
-                className="w-[260px] h-[146.25px] absolute left-[260px] top-[361.25px]"
+                className="absolute left-[260px] top-[361.25px] h-[146.25px] w-[260px]"
                 src="abspace-37.png"
               />
 
               <img
-                className="w-[260px] h-[146.25px] absolute left-[520px] top-[361.25px]"
+                className="absolute left-[520px] top-[361.25px] h-[146.25px] w-[260px]"
                 src="abspace-38.png"
               />
 
               <img
-                className="w-[260px] h-[146.25px] absolute left-[780px] top-[361.25px]"
+                className="absolute left-[780px] top-[361.25px] h-[146.25px] w-[260px]"
                 src="abspace-39.png"
               />
             </div>
 
-            <div className="flex flex-col gap-0.5 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0.5">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--title, 700 22px/140% 'Roboto', sans-serif)",
                 }}
@@ -1961,7 +1963,7 @@ const Abspace = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative w-[1040px]"
+                className="relative w-[1040px] text-left text-[#000000]"
                 style={{
                   font: "var(--body, 400 17px/140% 'Inter', sans-serif)",
                 }}
@@ -1987,10 +1989,11 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-row items-start justify-start gap-2.5">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <div
-              className="text-gray-1 text-left relative"
+              id="persona"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
               }}
@@ -1998,14 +2001,14 @@ const Abspace = ({ ...props }) => {
               Persona
             </div>
 
-            <div className="flex flex-row gap-10 items-center justify-start self-stretch shrink-0 relative">
+            <div className="relative flex shrink-0 flex-row items-center justify-start gap-10 self-stretch">
               <img
-                className="rounded-[17px] shrink-0 w-[392px] h-[392px] relative"
+                className="relative h-[392px] w-[392px] shrink-0 rounded-[17px]"
                 src="abspace-9.png"
               />
 
               <div
-                className="text-[#000000] text-left relative w-[593px] h-[76px]"
+                className="relative h-[76px] w-[593px] text-left text-[#000000]"
                 style={{ font: "700 20px 'Public Sans', sans-serif" }}
               >
                 Use the empathy map to analyse how users think, what they say,
@@ -2014,23 +2017,24 @@ const Abspace = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
               <img
-                className="shrink-0 w-[1040px] h-[612px] relative"
+                className="relative h-[612px] w-[1040px] shrink-0"
                 src="abspace-10.png"
               />
 
               <img
-                className="shrink-0 w-[1040px] h-[667px] relative"
+                className="relative h-[667px] w-[1040px] shrink-0"
                 src="abspace-11.png"
               />
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="implementation"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -2038,8 +2042,8 @@ const Abspace = ({ ...props }) => {
             Findings Implementation
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="findings-3-span">Users Experience Map</span>
                 <span className="findings-3-span2">
@@ -2055,13 +2059,13 @@ const Abspace = ({ ...props }) => {
           </div>
 
           <img
-            className="shrink-0 w-[1040px] h-[808px] relative"
+            className="relative h-[808px] w-[1040px] shrink-0"
             src="abspace-12.png"
           />
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{
                 font: "var(--title, 700 22px/140% 'Roboto', sans-serif)",
               }}
@@ -2070,15 +2074,15 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-6 items-start justify-start shrink-0 relative">
-            <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-start justify-start gap-6">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
               <img
-                className="shrink-0 w-[231px] h-[274px] relative"
+                className="relative h-[274px] w-[231px] shrink-0"
                 src="abspace-13.png"
               />
 
               <div
-                className="text-gray-1 text-left relative w-[775px]"
+                className="text-gray-1 relative w-[775px] text-left"
                 style={{
                   font: "var(--body, 400 17px/140% 'Inter', sans-serif)",
                 }}
@@ -2101,9 +2105,9 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[657px]"
+              className="text-gray-1 relative w-[657px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Solving the feasibility of the core algorithm, then it is also
@@ -2122,19 +2126,19 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <img
-              className="shrink-0 w-[351px] h-[314px] relative"
+              className="relative h-[314px] w-[351px] shrink-0"
               src="abspace-14.png"
             />
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <img
-              className="shrink-0 w-[350px] h-[480px] relative"
+              className="relative h-[480px] w-[350px] shrink-0"
               src="abspace-15.png"
             />
 
             <div
-              className="text-gray-1 text-left relative w-[658px]"
+              className="text-gray-1 relative w-[658px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Solve the input problem, you can enter the size parameters to the
@@ -2157,9 +2161,9 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               <br />
@@ -2169,9 +2173,9 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div
-              className="text-gray-1 text-left relative w-[599px]"
+              className="text-gray-1 relative w-[599px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               But it is not perfect, it solves a big problem is to determine the
@@ -2196,15 +2200,16 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <img
-              className="shrink-0 w-[409px] h-[306px] relative"
+              className="relative h-[306px] w-[409px] shrink-0"
               src="abspace-16.png"
             />
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="wireframe"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -2212,8 +2217,8 @@ const Abspace = ({ ...props }) => {
             Wireframe(Lo-fi/Skecthing)/Prototype
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="wireframe-lo-fi-skecthing-prototype-2-span">
                   Design Overview
@@ -2242,8 +2247,8 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="wireframe-lo-fi-skecthing-prototype-2-span3">
                   Design Principles:
@@ -2296,8 +2301,8 @@ const Abspace = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="findings-3-span3">User Main Flow</span>
                 <span className="findings-3-span4">
@@ -2311,7 +2316,7 @@ const Abspace = ({ ...props }) => {
           </div>
 
           <svg
-            className="shrink-0 relative overflow-visible"
+            className="relative shrink-0 overflow-visible"
             style={{}}
             width="1040"
             height="576"
@@ -3003,8 +3008,8 @@ const Abspace = ({ ...props }) => {
             />
           </svg>
 
-          <div className="flex flex-col gap-8 items-start justify-center shrink-0 relative">
-            <div className="text-gray-1 text-left relative w-[1040px]">
+          <div className="relative flex shrink-0 flex-col items-start justify-center gap-8">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="wireframe-lo-fi-skecthing-prototype-2-span7">
                   Wireframe
@@ -3019,7 +3024,7 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="text-gray-1 text-left relative w-[1040px]">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="wireframe-lo-fi-skecthing-prototype-2-span9">
                   Lo-Fi Prototypes
@@ -3032,7 +3037,7 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="shrink-0 w-[698px] h-[270px] relative overflow-hidden">
+            <div className="relative h-[270px] w-[698px] shrink-0 overflow-hidden">
               <svg
                 className="absolute left-0 top-[-0.06px] overflow-visible"
                 style={{}}
@@ -3780,13 +3785,13 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Adding new space flow
             </div>
 
-            <div className="shrink-0 w-[1039px] h-[309px] relative overflow-hidden">
+            <div className="relative h-[309px] w-[1039px] shrink-0 overflow-hidden">
               <svg
                 className="absolute left-0 top-[-0.06px] overflow-visible"
                 style={{}}
@@ -4561,13 +4566,13 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{ font: "var(--body, 400 17px/140% 'Inter', sans-serif)" }}
             >
               Storage flow
             </div>
 
-            <div className="shrink-0 w-[827px] h-[615px] relative overflow-hidden">
+            <div className="relative h-[615px] w-[827px] shrink-0 overflow-hidden">
               <svg
                 className="absolute left-0 top-[-0.06px] overflow-visible"
                 style={{}}
@@ -6638,9 +6643,9 @@ const Abspace = ({ ...props }) => {
               </svg>
             </div>
 
-            <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
               <div
-                className="text-gray-1 text-left relative w-[1040px]"
+                className="text-gray-1 relative w-[1040px] text-left"
                 style={{
                   font: "var(--title, 700 22px/140% 'Roboto', sans-serif)",
                 }}
@@ -6649,7 +6654,7 @@ const Abspace = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="shrink-0 w-[1040px] h-[570px] relative overflow-hidden">
+            <div className="relative h-[570px] w-[1040px] shrink-0 overflow-hidden">
               <svg
                 className="absolute left-0 top-[-0.13px] overflow-visible"
                 style={{}}
@@ -6959,9 +6964,10 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="designsystem"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -6969,7 +6975,7 @@ const Abspace = ({ ...props }) => {
             Design System
           </div>
 
-          <div className="text-gray-1 text-left relative w-[1041px]">
+          <div className="text-gray-1 relative w-[1041px] text-left">
             <span>
               <span className="interface-design-2-span">
                 Apple Interface Styles Design Overview
@@ -6994,49 +7000,50 @@ const Abspace = ({ ...props }) => {
             </span>
           </div>
 
-          <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <img
-              className="shrink-0 w-[1040px] h-[1682.4px] relative"
+              className="relative h-[1682.4px] w-[1040px] shrink-0"
               src="abspace-colors.png"
             />
 
             <img
-              className="shrink-0 w-[1040px] h-[1810.39px] relative"
+              className="relative h-[1810.39px] w-[1040px] shrink-0"
               src="abspace-text-styles.png"
             />
 
             <img
-              className="shrink-0 w-[1040px] h-[805.9px] relative"
+              className="relative h-[805.9px] w-[1040px] shrink-0"
               src="abspace-icons.png"
             />
 
             <div
-              className="flex flex-row gap-6 items-start justify-start shrink-0 relative"
+              className="relative flex shrink-0 flex-row items-start justify-start gap-6"
               style={{ flexWrap: "wrap" }}
             >
-              <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
                 <img
-                  className="shrink-0 w-[508px] h-[554.98px] relative"
+                  className="relative h-[554.98px] w-[508px] shrink-0"
                   src="abspace-system.png"
                 />
 
                 <img
-                  className="shrink-0 w-[508px] h-[1136.41px] relative"
+                  className="relative h-[1136.41px] w-[508px] shrink-0"
                   src="abspace-controls.png"
                 />
               </div>
 
               <img
-                className="shrink-0 w-[508px] h-[1930.21px] relative"
+                className="relative h-[1930.21px] w-[508px] shrink-0"
                 src="abspace-bars.png"
               />
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            className="text-gray-1 text-left relative"
+            id="interface"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -7044,29 +7051,29 @@ const Abspace = ({ ...props }) => {
             Interface Design
           </div>
 
-          <div className="shrink-0 w-[1041px] h-[540.66px] static">
+          <div className="static h-[540.66px] w-[1041px] shrink-0">
             <img
-              className="w-[249.25px] h-[540.66px] absolute left-[265.75px] top-[91px]"
+              className="absolute left-[265.75px] top-[91px] h-[540.66px] w-[249.25px]"
               src="abspace-18.png"
             />
 
             <img
-              className="w-[247.42px] h-[540.66px] absolute left-[529.66px] top-[91px]"
+              className="absolute left-[529.66px] top-[91px] h-[540.66px] w-[247.42px]"
               src="abspace-19.png"
             />
 
             <img
-              className="w-[251.09px] h-[540.66px] absolute left-0 top-[91px]"
+              className="absolute left-0 top-[91px] h-[540.66px] w-[251.09px]"
               src="abspace-17.png"
             />
 
             <img
-              className="w-[249.25px] h-[540.66px] absolute left-[791.75px] top-[91px]"
+              className="absolute left-[791.75px] top-[91px] h-[540.66px] w-[249.25px]"
               src="abspace-20.png"
             />
           </div>
 
-          <div className="text-gray-1 text-left relative w-[1041px]">
+          <div className="text-gray-1 relative w-[1041px] text-left">
             <span>
               <span className="interface-design-2-span4">
                 Interface Design Overview
@@ -7091,9 +7098,9 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-[13px] items-start justify-start shrink-0 h-[852px] relative">
+        <div className="relative flex h-[852px] shrink-0 flex-col items-start justify-start gap-[13px]">
           <div
-            className="text-gray-1 text-left relative"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
             }}
@@ -7101,30 +7108,30 @@ const Abspace = ({ ...props }) => {
             Interface Design
           </div>
 
-          <div className="flex flex-col gap-[19px] items-start justify-start shrink-0 h-[772px] relative">
-            <div className="shrink-0 w-[1040px] h-[564.79px] static">
+          <div className="relative flex h-[772px] shrink-0 flex-col items-start justify-start gap-[19px]">
+            <div className="static h-[564.79px] w-[1040px] shrink-0">
               <img
-                className="w-[260px] h-[563.9px] absolute left-0 top-[0.89px]"
+                className="absolute left-0 top-[0.89px] h-[563.9px] w-[260px]"
                 src="abspace-21.png"
               />
 
               <img
-                className="w-[260px] h-[562.99px] absolute left-[260px] top-0"
+                className="absolute left-[260px] top-0 h-[562.99px] w-[260px]"
                 src="abspace-22.png"
               />
 
               <img
-                className="w-[260px] h-[563.9px] absolute left-[520px] top-[0.12px]"
+                className="absolute left-[520px] top-[0.12px] h-[563.9px] w-[260px]"
                 src="abspace-23.png"
               />
 
               <img
-                className="w-[260px] h-[562.99px] absolute left-[780px] top-[1.08px]"
+                className="absolute left-[780px] top-[1.08px] h-[562.99px] w-[260px]"
                 src="abspace-24.png"
               />
             </div>
 
-            <div className="text-gray-1 text-left relative w-[1040px] h-[188px]">
+            <div className="text-gray-1 relative h-[188px] w-[1040px] text-left">
               <span>
                 <span className="interface-design-3-span">
                   Access interface
@@ -7150,8 +7157,8 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-7 items-center justify-start shrink-0 w-[1040px] relative">
-          <div className="text-gray-1 text-left relative w-[536px]">
+        <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-7">
+          <div className="text-gray-1 relative w-[536px] text-left">
             <span>
               <span className="interface-design-4-span">
                 Recognition interface
@@ -7176,35 +7183,35 @@ const Abspace = ({ ...props }) => {
             </span>
           </div>
 
-          <div className="shrink-0 w-[476px] h-[505.07px] static">
+          <div className="static h-[505.07px] w-[476px] shrink-0">
             <img
-              className="w-[232px] h-[505px] absolute left-[564px] top-[0.07px]"
+              className="absolute left-[564px] top-[0.07px] h-[505px] w-[232px]"
               src="abspace-25.png"
             />
 
             <img
-              className="w-[234px] h-[505px] absolute left-[806px] top-0"
+              className="absolute left-[806px] top-0 h-[505px] w-[234px]"
               src="abspace-26.png"
             />
           </div>
         </div>
 
-        <div className="flex flex-row gap-11 items-center justify-start shrink-0 w-[1040px] relative">
-          <div className="shrink-0 w-[474px] h-[503.17px] static">
-            <div className="w-[474px] h-[503.17px] static">
+        <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-11">
+          <div className="static h-[503.17px] w-[474px] shrink-0">
+            <div className="static h-[503.17px] w-[474px]">
               <img
-                className="w-[232px] h-[503.17px] absolute left-0 top-0"
+                className="absolute left-0 top-0 h-[503.17px] w-[232px]"
                 src="abspace-27.png"
               />
 
               <img
-                className="w-[232px] h-[503.17px] absolute left-[242px] top-0"
+                className="absolute left-[242px] top-0 h-[503.17px] w-[232px]"
                 src="abspace-28.png"
               />
             </div>
           </div>
 
-          <div className="text-gray-1 text-left relative flex-1">
+          <div className="text-gray-1 relative flex-1 text-left">
             <span>
               <span className="interface-design-5-span">
                 Adding objects interface
@@ -7229,9 +7236,9 @@ const Abspace = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
-          <div className="flex flex-row gap-[140px] items-center justify-start shrink-0 w-[1040px] relative">
-            <div className="text-gray-1 text-left relative flex-1">
+        <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
+          <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-[140px]">
+            <div className="text-gray-1 relative flex-1 text-left">
               <span>
                 <span className="interface-design-5-span4">
                   Object List Interface
@@ -7250,45 +7257,50 @@ const Abspace = ({ ...props }) => {
               </span>
             </div>
 
-            <div className="shrink-0 w-[477.01px] h-[503.17px] static">
+            <div className="static h-[503.17px] w-[477.01px] shrink-0">
               <img
-                className="w-[235.01px] h-[503.17px] absolute left-[562.99px] top-0"
+                className="absolute left-[562.99px] top-0 h-[503.17px] w-[235.01px]"
                 src="abspace-29.png"
               />
 
               <img
-                className="w-[232px] h-[503.17px] absolute left-[808px] top-0"
+                className="absolute left-[808px] top-0 h-[503.17px] w-[232px]"
                 src="abspace-30.png"
               />
             </div>
           </div>
         </div>
 
-        <div className="p-2.5 flex flex-row gap-2.5 items-start justify-end shrink-0 w-[1040px] relative">
+        <div className="relative flex w-[1040px] shrink-0 flex-row items-start justify-end gap-2.5 p-2.5">
           <div
-            className="text-gray-1 text-left relative"
+            className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-3, 600 29px/120% 'Archivo', sans-serif)",
             }}
           >
             For more prototypes please
           </div>
-
-          <div
-            className="text-[#00a2fd] text-left relative"
-            style={{
-              font: "600 29px/120% 'Archivo', sans-serif",
-              textDecoration: "underline",
-            }}
+          <a
+            href="https://www.figma.com/proto/47IkqdsFW3XCmfJjzacmU2/A-B-Space?page-id=24%3A2437&node-id=51%3A7274&viewport=342%2C48%2C0.24&scaling=min-zoom&starting-point-node-id=51%3A7274"
+            target="blank"
           >
-            click here
-          </div>
+            <div
+              className="relative text-left text-[#00a2fd]"
+              style={{
+                font: "600 29px/120% 'Archivo', sans-serif",
+                textDecoration: "underline",
+              }}
+            >
+              click here
+            </div>
+          </a>
         </div>
 
-        <div className="shrink-0 w-[1040px] h-[858px] relative">
-          <div className="flex flex-col gap-6 items-start justify-start absolute left-0 top-0">
+        <div className="relative h-[858px] w-[1040px] shrink-0">
+          <div className="absolute left-0 top-0 flex flex-col items-start justify-start gap-6">
             <div
-              className="text-gray-1 text-left relative"
+              id="conclusion"
+              className="text-gray-1 relative text-left"
               style={{
                 font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
               }}
@@ -7296,8 +7308,8 @@ const Abspace = ({ ...props }) => {
               Conclusion And Reflection
             </div>
 
-            <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-              <div className="text-gray-1 text-left relative w-[1040px]">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+              <div className="text-gray-1 relative w-[1040px] text-left">
                 <span>
                   <span className="conclusion-reflection-6-span">
                     Conclusion
@@ -7326,8 +7338,8 @@ const Abspace = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-row gap-8 items-center justify-center shrink-0 relative">
-              <div className="text-gray-1 text-left relative w-[1040px]">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
+              <div className="text-gray-1 relative w-[1040px] text-left">
                 <span>
                   <span className="conclusion-reflection-6-span3">
                     Reflection Result{" "}
@@ -7349,7 +7361,7 @@ const Abspace = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="text-gray-1 text-left relative w-[1040px]">
+            <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
                 <span className="wireframe-lo-fi-skecthing-prototype-2-span11">
                   Iterable update items
@@ -7386,7 +7398,7 @@ const Abspace = ({ ...props }) => {
             </div>
 
             <div
-              className="text-gray-1 text-left relative w-[1040px]"
+              className="text-gray-1 relative w-[1040px] text-left"
               style={{
                 font: "var(--title, 700 22px/140% 'Roboto', sans-serif)",
               }}
@@ -7406,108 +7418,128 @@ const Abspace = ({ ...props }) => {
       </div>
 
       <div
-        className="bg-[rgba(172,172,172,0.50)] rounded-[10px] p-1.5 flex flex-col gap-3 items-center justify-start w-[146px] sticky left-4 top-[calc(50%_-_265px)]"
+        className="sticky left-4 top-[calc(50%_-_265px)] flex w-[146px] flex-col items-center justify-start gap-3 rounded-[10px] bg-[rgba(172,172,172,0.50)] p-1.5"
         style={{ backdropFilter: "blur(10px)" }}
       >
         <div
-          className="text-[#ffffff] text-center relative"
+          className="relative text-center text-[#ffffff]"
           style={{ font: "600 16px/99.52% 'PingFang SC', sans-serif" }}
         >
           Navigation
         </div>
 
-        <div className="flex flex-col gap-[5px] items-center justify-center shrink-0 relative">
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Introduction
+        <div className="relative flex shrink-0 flex-col items-center justify-center gap-[5px]">
+          <a href="#introduction" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                Introduction
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Challenges
+          <a href="#challenges" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                Challenges
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Goals
+          <a href="#goals" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                Goals
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Research
-            </div>
-          </div>
+          <a href="#research" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                Research
+              </div>
+            </div>{" "}
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
-            >
-              Persona
+          <a href="#persona" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
+              >
+                Persona
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              Implementation
-            </div>
-          </div>
+          <a href="#implementation" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                Implementation
+              </div>
+            </div>{" "}
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              Wireframe
+          <a href="#wireframe" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                Wireframe
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              Design System
-            </div>
-          </div>
+          <a href="#designsystem" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                Design System
+              </div>
+            </div>{" "}
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
-            >
-              Interface
-            </div>
-          </div>
+          <a href="#interface" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
+              >
+                Interface
+              </div>
+            </div>{" "}
+          </a>
 
-          <div className="bg-[#595959] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
-            <div
-              className="text-[#ffffff] text-center relative"
-              style={{
-                font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
-              }}
-            >
-              Conclusion
+          <a href="#conclusion" className="w-full">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#595959] p-2.5">
+              <div
+                className="relative text-center text-[#ffffff]"
+                style={{
+                  font: "var(--body, 400 16px/140% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Conclusion
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

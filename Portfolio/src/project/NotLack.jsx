@@ -1,16 +1,35 @@
 import React from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { NotlackModel } from "./NotlackModel";
 
 export const NotLack = ({ ...props }) => {
   return (
-    <div
-      className="relative h-[1024px] w-[1440px] bg-[#ffffff]"
-    >
+    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
       <div className="relative flex flex-col items-center justify-start gap-0">
-        <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
-          <img
-            className="relative h-[970px] w-[1440px] shrink-0"
+        <div className="relative flex h-[970px] shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
+          {/* <img
+            className="relative flex-1 self-stretch"
             src="notlack-zhutu.png"
-          />
+          /> */}
+          <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#ffffff]"
+          >
+            <ambientLight intensity={0.5} />
+            <directionalLight
+              color="white"
+              position={[-2, 3, 5]}
+              intensity={2}
+            />
+            <Suspense fallback={null}>
+              <NotlackModel />
+            </Suspense>
+            <OrbitControls autoRotate />
+          </Canvas>
 
           <div className="absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start">
             <div

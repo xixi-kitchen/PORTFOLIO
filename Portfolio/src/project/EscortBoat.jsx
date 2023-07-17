@@ -1,4 +1,8 @@
 import React from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Box } from "@react-three/drei";
+import { EscortBoatModel } from "./EscortBoatModel";
 
 export const EscortBoat = ({ ...props }) => {
   return (
@@ -8,10 +12,26 @@ export const EscortBoat = ({ ...props }) => {
       <div className="flex flex-col gap-0 items-start justify-start absolute left-0 top-[0px]">
         <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1440px] relative">
           <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 h-[970px] relative">
-            <img
+            {/* <img
               className="self-stretch flex-1 relative"
               src="escort-zhutu.png"
-            />
+            /> */}
+            <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#777777]"
+          >
+            <ambientLight intensity={2} />
+            <directionalLight
+              color="white"
+              position={[2, 3, 5]}
+              intensity={1} />
+            <Suspense fallback={null}>
+              <EscortBoatModel/>
+            </Suspense>
+            <OrbitControls autoRotate />
+          </Canvas>
           </div>
 
           <div

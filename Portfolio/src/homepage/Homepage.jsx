@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere } from "@react-three/drei";
 
 function Homepage({ ...props }) {
 
@@ -1071,11 +1073,11 @@ function Homepage({ ...props }) {
 
         <div className="absolute left-[calc(50%_-_720px)] top-[2433px] flex h-[1080px] w-[1440px] flex-row items-start justify-start gap-5">
           <div
-            className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch"
+            className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch rounded-lg"
             onClick={goAbspace}
           >
             <img
-              className="relative flex-1 self-stretch"
+              className="relative flex-1 self-stretch rounded-2xl"
               src="homepage-2.png"
             />
 
@@ -1092,7 +1094,7 @@ function Homepage({ ...props }) {
             onClick={goTour}
           >
             <img
-              className="relative h-[1080px] w-[345px] shrink-0"
+              className="relative h-[1080px] w-[345px] shrink-0 rounded-2xl"
               src="homepage-3.png"
             />
 
@@ -1106,7 +1108,7 @@ function Homepage({ ...props }) {
 
           <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goGeneral}>
             <img
-              className="relative flex-1 self-stretch"
+              className="relative flex-1 self-stretch rounded-2xl"
               src="homepage-4.png"
             />
 
@@ -1121,7 +1123,7 @@ function Homepage({ ...props }) {
 
           <div className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch" onClick={goPractice}>
             <img
-              className="relative flex-1 self-stretch"
+              className="relative flex-1 self-stretch rounded-2xl"
               src="homepage-5.png"
             />
 

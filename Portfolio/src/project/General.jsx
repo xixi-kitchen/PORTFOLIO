@@ -19,7 +19,7 @@ export const General = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-[31px] items-start justify-start shrink-0 relative">
+        <div id='guide' className="flex flex-col gap-[31px] items-start justify-start shrink-0 relative">
           <div
             className="text-[#000000] text-left relative"
             style={{ font: "700 48px 'Dancing Script', sans-serif" }}
@@ -28,7 +28,7 @@ export const General = ({ ...props }) => {
           </div>
 
           <div className="flex flex-col gap-[100px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-row gap-[46px] items-center justify-start shrink-0 relative">
+            <div id="colors" className="flex flex-row gap-[46px] items-center justify-start shrink-0 relative">
               <div className="flex flex-col gap-[29px] items-start justify-start shrink-0 relative">
                 <div
                   className="text-[#22242a] text-left relative"
@@ -568,7 +568,7 @@ export const General = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[81px] items-start justify-start shrink-0 relative">
+            <div id="typograrphy" className="flex flex-col gap-[81px] items-start justify-start shrink-0 relative">
               <div className="flex flex-row gap-[139px] items-start justify-start shrink-0 relative">
                 <div
                   className="text-black text-left relative"
@@ -749,6 +749,7 @@ export const General = ({ ...props }) => {
         </div>
 
         <img
+        id='interface'
           className="shrink-0 w-[1440px] h-[968px] relative"
           src="general-yemian-1.png"
         />
@@ -758,8 +759,8 @@ export const General = ({ ...props }) => {
           src="general-yemian-2.png"
         />
 
-        <div className="bg-[#22242b] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[647px] relative">
-          <div className="flex flex-col gap-[53px] items-center justify-start shrink-0 relative">
+        <div id="prototype" className="bg-[#22242b] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[647px] relative">
+          <div className="flex flex-col gap-[53px] items-center justify-start shrink-0 relative text-[#6478D3]">
             <div
               className="text-center relative"
               style={{ font: "400 128px 'Bebas Neue', sans-serif" }}
@@ -771,16 +772,18 @@ export const General = ({ ...props }) => {
               className="text-center relative"
               style={{
                 font: "500 48px/22px 'Montserrat', sans-serif",
-                textDecoration: "underline",
+
               }}
             >
               <span>
-                <span className="to-see-more-details-please-click-here-span">
+                <span className="to-see-more-details-please-click-here-span text-[#ffffff]">
                   To see more details please{" "}
                 </span>
-                <span className="to-see-more-details-please-click-here-span2">
+                <a href='https://www.figma.com/proto/G9UCUbHggvCVKHLl4G3ALf/General-UI-screens?page-id=17%3A6868&node-id=28%3A11465&viewport=342%2C48%2C0.15&scaling=contain&starting-point-node-id=28%3A11472' target='blank'>
+                <span className="to-see-more-details-please-click-here-span2 underline text-[#6478D3]">
                   click here
                 </span>
+                </a>
               </span>
             </div>
           </div>
@@ -799,50 +802,50 @@ export const General = ({ ...props }) => {
         </div>
 
         <div className="flex flex-col gap-[5px] items-center justify-center shrink-0 relative">
-          <div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+        <a href="#guide" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Style Guide
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#colors" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Colors
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#typograrphy" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Typograrphy
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#interface" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Interface
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#prototype" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Prototype
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>

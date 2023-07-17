@@ -1,28 +1,47 @@
 import React from 'react';
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls,  } from "@react-three/drei";
+
+import { VectorModel } from './VectorModel';
 
 
 export const Vectorscopedevice = ({ ...props }) => {
   return (
-    <div
-      className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-    >
-      <div className="flex flex-col gap-0 items-start justify-start w-[1440px] absolute left-0 top-[54px]">
-        <div className="flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative">
-          <img
+    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
+      <div className="absolute left-0 top-[0px] flex w-[1440px] flex-col items-start justify-start gap-0">
+        <div className="relative flex shrink-0 flex-col items-center justify-start gap-2.5 self-stretch">
+          {/* <img
             className="self-stretch shrink-0 h-[970px] relative"
             src="vectorscope-1.png"
-          />
-
-          <div className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_248.5px)] top-[400px]">
+          /> */}
+          <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#3f3f3f]"
+          >
+            <ambientLight intensity={0.3} />
+            <directionalLight
+              color="white"
+              position={[1, 3, 5]}
+              intensity={1}
+            />
+            <Suspense fallback={null}>
+              <VectorModel />
+            </Suspense>
+            <OrbitControls autoRotate />
+          </Canvas>
+          <div className="absolute left-[calc(50%_-_248.5px)] top-[400px] flex shrink-0 flex-col items-center justify-start gap-5">
             <div
-              className="text-[#d7d7d7] text-left relative"
+              className="relative text-left text-[#d7d7d7]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
             >
               Follow your heart
             </div>
 
             <div
-              className="text-[#d7d7d7] text-left relative"
+              className="relative text-left text-[#d7d7d7]"
               style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
             >
               随心所欲、不逾矩
@@ -30,10 +49,10 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="self-stretch shrink-0 h-[907px] relative">
-          <div className="flex flex-col gap-0 items-center justify-start absolute left-[calc(50%_-_433px)] top-0">
+        <div className="relative h-[907px] shrink-0 self-stretch">
+          <div className="absolute left-[calc(50%_-_433px)] top-0 flex flex-col items-center justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -42,7 +61,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -51,9 +70,9 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[209px] left-[209px] bottom-[657px] top-[186px]">
+          <div className="absolute bottom-[657px] left-[209px] right-[209px] top-[186px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -64,7 +83,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -73,9 +92,9 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[209px] left-[209px] bottom-[581.5px] top-[261.5px]">
+          <div className="absolute bottom-[581.5px] left-[209px] right-[209px] top-[261.5px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -88,7 +107,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -99,26 +118,26 @@ export const Vectorscopedevice = ({ ...props }) => {
 
           <div className="absolute" style={{ inset: "0" }}>
             <img
-              className="w-[697.99px] absolute left-[209px] bottom-[-0.33px] top-[370px]"
+              className="absolute bottom-[-0.33px] left-[209px] top-[370px] w-[697.99px]"
               src="vectorscope-cj-2.png"
             />
 
             <img
-              className="w-[324.01px] absolute left-[906.99px] bottom-[0.21px] top-[638.395751953125px]"
+              className="absolute bottom-[0.21px] left-[906.99px] top-[638.395751953125px] w-[324.01px]"
               src="vectorscope-xj-4.png"
             />
 
             <img
-              className="w-[324.01px] absolute left-[906.99px] bottom-[268.6px] top-[370px]"
+              className="absolute bottom-[268.6px] left-[906.99px] top-[370px] w-[324.01px]"
               src="vectorscope-xj-3.png"
             />
           </div>
         </div>
 
-        <div className="bg-[#d7d7d7] self-stretch shrink-0 h-[1024px] relative">
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[626px] left-[209px] bottom-[624px] top-[282px]">
+        <div className="relative h-[1024px] shrink-0 self-stretch bg-[#d7d7d7]">
+          <div className="absolute bottom-[624px] left-[209px] right-[626px] top-[282px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -132,7 +151,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -142,13 +161,13 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
 
           <img
-            className="absolute right-0 left-[834px] bottom-0 top-0"
+            className="absolute bottom-0 left-[834px] right-0 top-0"
             src="vectorscope-cj-6.png"
           />
 
-          <div className="flex flex-col gap-0 items-start justify-start w-[397px] absolute left-[209px] top-[133px]">
+          <div className="absolute left-[209px] top-[133px] flex w-[397px] flex-col items-start justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -157,7 +176,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -167,20 +186,20 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
 
           <img
-            className="absolute right-[626px] left-[209px] bottom-0 top-[457px]"
+            className="absolute bottom-0 left-[209px] right-[626px] top-[457px]"
             src="vectorscope-xj-5.png"
           />
         </div>
 
-        <div className="self-stretch shrink-0 h-[1024px] relative">
+        <div className="relative h-[1024px] shrink-0 self-stretch">
           <img
-            className="h-[698px] absolute right-[209px] left-0 top-0"
+            className="absolute left-0 right-[209px] top-0 h-[698px]"
             src="vectorscope-cj-7.png"
           />
 
-          <div className="flex flex-col gap-0 items-start justify-start absolute left-[209px] top-[98px]">
+          <div className="absolute left-[209px] top-[98px] flex flex-col items-start justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -189,7 +208,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -200,14 +219,14 @@ export const Vectorscopedevice = ({ ...props }) => {
 
           <div className="absolute" style={{ inset: "0" }}>
             <img
-              className="h-[165.1px] absolute right-[401.76px] left-[521.0000000000073px] top-[694.89px]"
+              className="absolute left-[521.0000000000073px] right-[401.76px] top-[694.89px] h-[165.1px]"
               src="vectorscope-cj-8.png"
             />
 
-            <div className="w-[336.59px] h-[66.01px] static">
-              <div className="flex flex-col gap-0 items-start justify-start absolute right-[103.83px] left-[1100.16796875px] top-[748.19px]">
+            <div className="static h-[66.01px] w-[336.59px]">
+              <div className="absolute left-[1100.16796875px] right-[103.83px] top-[748.19px] flex flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -216,7 +235,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -226,7 +245,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <svg
-                className="absolute right-[364.95px] left-[999.58203125px] top-[742.18px] overflow-visible"
+                className="absolute left-[999.58203125px] right-[364.95px] top-[742.18px] overflow-visible"
                 style={{}}
                 width="77"
                 height="31"
@@ -241,10 +260,10 @@ export const Vectorscopedevice = ({ ...props }) => {
               </svg>
             </div>
 
-            <div className="w-[279.45px] h-[104.48px] static">
-              <div className="flex flex-col gap-0 items-start justify-start absolute right-[301.79px] left-[1008.21484375px] top-[813.91px]">
+            <div className="static h-[104.48px] w-[279.45px]">
+              <div className="absolute left-[1008.21484375px] right-[301.79px] top-[813.91px] flex flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -253,7 +272,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -263,7 +282,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <svg
-                className="absolute right-[461.58px] left-[858.76953125px] top-[769.43px] overflow-visible"
+                className="absolute left-[858.76953125px] right-[461.58px] top-[769.43px] overflow-visible"
                 style={{}}
                 width="121"
                 height="69"
@@ -278,10 +297,10 @@ export const Vectorscopedevice = ({ ...props }) => {
               </svg>
             </div>
 
-            <div className="w-[424.33px] h-[203.06px] static">
-              <div className="flex flex-col gap-0 items-start justify-start absolute right-[323.48px] left-[953.515625px] top-[907.68px]">
+            <div className="static h-[203.06px] w-[424.33px]">
+              <div className="absolute left-[953.515625px] right-[323.48px] top-[907.68px] flex flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -290,7 +309,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -300,7 +319,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <svg
-                className="absolute right-[514.97px] left-[692.18359375px] top-[764.62px] overflow-visible"
+                className="absolute left-[692.18359375px] right-[514.97px] top-[764.62px] overflow-visible"
                 style={{}}
                 width="234"
                 height="168"
@@ -315,10 +334,10 @@ export const Vectorscopedevice = ({ ...props }) => {
               </svg>
             </div>
 
-            <div className="w-[439.71px] h-[116.21px] static">
-              <div className="flex flex-col gap-0 items-start justify-start absolute right-[246.43px] left-[1106.56640625px] top-[642px]">
+            <div className="static h-[116.21px] w-[439.71px]">
+              <div className="absolute left-[1106.56640625px] right-[246.43px] top-[642px] flex flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -327,7 +346,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -337,7 +356,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <svg
-                className="absolute right-[365.4px] left-[753.8515625000073px] top-[666.04px] overflow-visible"
+                className="absolute left-[753.8515625000073px] right-[365.4px] top-[666.04px] overflow-visible"
                 style={{}}
                 width="322"
                 height="93"
@@ -352,7 +371,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </svg>
 
               <svg
-                className="absolute right-[364.48px] left-[947.5859375px] top-[666.04px] overflow-visible"
+                className="absolute left-[947.5859375px] right-[364.48px] top-[666.04px] overflow-visible"
                 style={{}}
                 width="129"
                 height="76"
@@ -367,7 +386,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </svg>
 
               <svg
-                className="absolute right-[483.21px] left-[809.9921875px] top-[666.04px] overflow-visible"
+                className="absolute left-[809.9921875px] right-[483.21px] top-[666.04px] overflow-visible"
                 style={{}}
                 width="148"
                 height="93"
@@ -384,15 +403,15 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#f2f2f2] self-stretch shrink-0 h-[1024px] relative">
+        <div className="relative h-[1024px] shrink-0 self-stretch bg-[#f2f2f2]">
           <img
-            className="absolute right-[834px] left-[209px] bottom-[683px] top-0"
+            className="absolute bottom-[683px] left-[209px] right-[834px] top-0"
             src="vectorscope-sy-9.png"
           />
 
-          <div className="flex flex-col gap-2.5 items-start justify-center absolute right-[209px] left-[626px] bottom-[683px] top-0">
+          <div className="absolute bottom-[683px] left-[626px] right-[209px] top-0 flex flex-col items-start justify-center gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -402,7 +421,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -411,9 +430,9 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-center absolute right-[626px] left-[209px] bottom-[341px] top-[341px]">
+          <div className="absolute bottom-[341px] left-[209px] right-[626px] top-[341px] flex flex-col items-start justify-center gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -424,7 +443,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -434,18 +453,18 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
 
           <img
-            className="absolute right-[209px] left-[834px] bottom-[341px] top-[341px]"
+            className="absolute bottom-[341px] left-[834px] right-[209px] top-[341px]"
             src="vectorscope-sy-10.png"
           />
 
           <img
-            className="absolute right-[834px] left-[209px] bottom-0 top-[683px]"
+            className="absolute bottom-0 left-[209px] right-[834px] top-[683px]"
             src="vectorscope-sy-11.png"
           />
 
-          <div className="flex flex-col gap-2.5 items-start justify-center absolute right-[209px] left-[626px] bottom-0 top-[683px]">
+          <div className="absolute bottom-0 left-[626px] right-[209px] top-[683px] flex flex-col items-start justify-center gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -454,7 +473,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -464,7 +483,7 @@ export const Vectorscopedevice = ({ ...props }) => {
           </div>
 
           <div
-            className="border-solid border-[#adadad] absolute right-[209px] left-[209px] bottom-[1024px] top-0"
+            className="absolute bottom-[1024px] left-[209px] right-[209px] top-0 border-solid border-[#adadad]"
             style={{
               borderWidth: "1px 0 0 0",
               transformOrigin: "0 0",
@@ -473,7 +492,7 @@ export const Vectorscopedevice = ({ ...props }) => {
           ></div>
 
           <div
-            className="border-solid border-[#adadad] absolute right-[209px] left-[209px] bottom-[683px] top-[341px]"
+            className="absolute bottom-[683px] left-[209px] right-[209px] top-[341px] border-solid border-[#adadad]"
             style={{
               borderWidth: "1px 0 0 0",
               transformOrigin: "0 0",
@@ -482,12 +501,12 @@ export const Vectorscopedevice = ({ ...props }) => {
           ></div>
 
           <div
-            className="border-solid border-[#adadad] absolute right-[209px] left-[209px] bottom-[341px] top-[683px]"
+            className="absolute bottom-[341px] left-[209px] right-[209px] top-[683px] border-solid border-[#adadad]"
             style={{ borderWidth: "1px 0 0 0" }}
           ></div>
 
           <div
-            className="border-solid border-[#000000] w-[1440px] h-0 absolute left-0 top-[1024px]"
+            className="absolute left-0 top-[1024px] h-0 w-[1440px] border-solid border-[#000000]"
             style={{
               borderWidth: "1px 0 0 0",
               transformOrigin: "0 0",
@@ -496,11 +515,11 @@ export const Vectorscopedevice = ({ ...props }) => {
           ></div>
         </div>
 
-        <div className="bg-[#d9d9d9] pt-[120px] pr-[183px] pb-[120px] pl-[183px] self-stretch shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[33px] items-start justify-start absolute right-[834px] left-[209px] top-[calc(50%_-_90px)]">
-            <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+        <div className="relative h-[1024px] shrink-0 self-stretch overflow-hidden bg-[#d9d9d9] pb-[120px] pl-[183px] pr-[183px] pt-[120px]">
+          <div className="absolute left-[209px] right-[834px] top-[calc(50%_-_90px)] flex flex-col items-start justify-start gap-[33px]">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
               <div
-                className="text-[#000000] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -510,7 +529,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -519,9 +538,9 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
               <div
-                className="text-[#000000] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -531,7 +550,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -541,13 +560,13 @@ export const Vectorscopedevice = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="bg-[#545454] absolute right-[209px] left-[626px] bottom-[216px] top-[216px]"></div>
+          <div className="absolute bottom-[216px] left-[626px] right-[209px] top-[216px] bg-[#545454]"></div>
         </div>
 
-        <div className="bg-[#5c5c5c] pt-[307px] pr-[270px] pb-[307px] pl-[270px] self-stretch shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[15px] items-start justify-start absolute right-[183px] left-[182px] top-[132px]">
+        <div className="relative h-[1024px] shrink-0 self-stretch overflow-hidden bg-[#5c5c5c] pb-[307px] pl-[270px] pr-[270px] pt-[307px]">
+          <div className="absolute left-[182px] right-[183px] top-[132px] flex flex-col items-start justify-start gap-[15px]">
             <svg
-              className="self-stretch shrink-0 relative overflow-visible"
+              className="relative shrink-0 self-stretch overflow-visible"
               style={{}}
               width="1075"
               height="3"
@@ -563,10 +582,10 @@ export const Vectorscopedevice = ({ ...props }) => {
               />
             </svg>
 
-            <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[900px] relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -575,7 +594,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -584,9 +603,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -595,7 +614,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -604,9 +623,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -615,7 +634,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -624,9 +643,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -635,7 +654,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -644,9 +663,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -655,7 +674,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -664,9 +683,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -675,7 +694,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -684,9 +703,9 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -695,7 +714,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -708,25 +727,22 @@ export const Vectorscopedevice = ({ ...props }) => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-[750px] items-start justify-start absolute right-[220px] left-[220px] top-[10px]">
+      <div  className="absolute left-[220px] right-[220px] top-[10px] flex flex-row items-start justify-between"
+        style={{ flexWrap: "wrap" }}>
         <div
-          className="text-[#ebebeb] text-left relative"
+          className="relative text-left text-[#ffffff]"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
         >
           Vectorscope device
         </div>
 
-        <div className="shrink-0 w-[138px] h-[18px] static">
-          <div
-            className="text-[#ebebeb] text-left absolute left-[863px] top-0"
-            style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
-          >
-            Design journal | 设计日志
-          </div>
+        <div
+          className="relative text-left text-[#ffffff]"
+          style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
+        >
+          Design journal | 设计日志
         </div>
       </div>
-
-
     </div>
   );
 };

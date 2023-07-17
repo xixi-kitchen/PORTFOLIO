@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Project() {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
+  
   const goVector = () => {
     goNavigate("/Vector");
   };

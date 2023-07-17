@@ -1,25 +1,43 @@
 import React from "react";
-
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, Box } from "@react-three/drei";
+import { Model_faceplate } from "./TwoFaceModel";
 
 export const TwoFaceplate = ({ ...props }) => {
   return (
-    <div
-      className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
-    >
-      <div className="flex flex-col gap-10 items-center justify-start w-[1440px] h-[6227px] absolute left-[calc(50%_-_720px)] top-[0px]">
-        <div className="flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 h-[970px] relative">
-          <img className="self-stretch flex-1 relative" src="faceplate-1.png" />
+    <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
+      <div className="absolute left-[calc(50%_-_720px)] top-[0px] flex h-[6227px] w-[1440px] flex-col items-center justify-start gap-10">
+        <div className="relative flex h-[970px] shrink-0 flex-col items-center justify-start gap-2.5 self-stretch">
+          {/* <img className="relative flex-1 self-stretch" src="faceplate-1.png" /> */}
+          <Canvas
+              shadows
+              dpr={[1, 2]}
+              camera={{ fov: 75 }}
+              className=" relative flex-1 self-stretch bg-[#3f3f3f]"
+            >
+              <ambientLight intensity={0.3} />
+              <directionalLight
+                color="white"
+                position={[1, 3, 5]}
+                intensity={1}
+              />
+              <Suspense fallback={null}>
+                <Model_faceplate />
+              </Suspense>
+              <OrbitControls autoRotate />
+            </Canvas>
 
-          <div className="flex flex-col items-center justify-start shrink-0 absolute left-[calc(50%_-_358px)] top-[403px]">
+          <div className="absolute left-[calc(50%_-_358px)] top-[403px] flex shrink-0 flex-col items-center justify-start drop-shadow-lg">
             <div
-              className="text-[#ffffff] text-left relative"
+              className="relative text-left text-[#ffffff]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
             >
               Thinner and cooler
             </div>
 
             <div
-              className="text-[#ffffff] text-left relative"
+              className="relative text-left text-[#ffffff]"
               style={{
                 margin: "-16px 0 0 0",
                 font: "300 40px/150% 'PingFang SC', sans-serif",
@@ -30,10 +48,10 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="self-stretch shrink-0 h-[280px] relative">
-          <div className="flex flex-col gap-0 items-center justify-start absolute right-[437.5px] left-[437.5px] top-0">
+        <div className="relative h-[280px] shrink-0 self-stretch">
+          <div className="absolute left-[437.5px] right-[437.5px] top-0 flex flex-col items-center justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -42,7 +60,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -51,9 +69,9 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[243px] left-[243px] top-[180px]">
+          <div className="absolute left-[243px] right-[243px] top-[180px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -68,7 +86,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -78,15 +96,15 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="self-stretch shrink-0 h-[747px] relative">
+        <div className="relative h-[747px] shrink-0 self-stretch">
           <img
-            className="h-[621px] absolute right-0 left-0 top-0"
+            className="absolute left-0 right-0 top-0 h-[621px]"
             src="faceplate-2.png"
           />
 
-          <div className="flex flex-col gap-2.5 items-center justify-center w-[856px] absolute left-[calc(50%_-_428px)] top-[113px]">
+          <div className="absolute left-[calc(50%_-_428px)] top-[113px] flex w-[856px] flex-col items-center justify-center gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -97,7 +115,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -106,9 +124,9 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-2.5 items-start justify-center w-[272px] absolute left-[calc(50%_-_136px)] top-[514px]">
+          <div className="absolute left-[calc(50%_-_136px)] top-[514px] flex w-[272px] flex-row items-start justify-center gap-2.5">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -117,7 +135,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -126,7 +144,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -136,10 +154,10 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="self-stretch shrink-0 h-[878px] relative">
-          <div className="flex flex-col gap-0 items-start justify-start absolute right-[965px] left-[251px] top-0">
+        <div className="relative h-[878px] shrink-0 self-stretch">
+          <div className="absolute left-[251px] right-[965px] top-0 flex flex-col items-start justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -148,7 +166,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -157,9 +175,9 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[243px] left-[490px] top-0">
+          <div className="absolute left-[490px] right-[243px] top-0 flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -174,7 +192,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -183,26 +201,26 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-0 items-start justify-start absolute right-0 left-0 top-[257px]">
-            <img className="flex-1 h-[621px] relative" src="faceplate-3.png" />
+          <div className="absolute left-0 right-0 top-[257px] flex flex-row items-start justify-start gap-0">
+            <img className="relative h-[621px] flex-1" src="faceplate-3.png" />
 
-            <img className="flex-1 h-[621px] relative" src="faceplate-4.png" />
+            <img className="relative h-[621px] flex-1" src="faceplate-4.png" />
           </div>
         </div>
 
         <div
-          className="pt-[100px] pr-0 pb-[100px] pl-0 flex flex-row items-end justify-center self-stretch shrink-0 relative"
+          className="relative flex shrink-0 flex-row items-end justify-center self-stretch pb-[100px] pl-0 pr-0 pt-[100px]"
           style={{ flexWrap: "wrap" }}
         >
-          <div className="flex flex-col gap-0 items-center justify-start flex-1 relative">
+          <div className="relative flex flex-1 flex-col items-center justify-start gap-0">
             <img
-              className="self-stretch shrink-0 h-[509.07px] relative"
+              className="relative h-[509.07px] shrink-0 self-stretch"
               src="faceplate-5.png"
             />
 
-            <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -211,7 +229,7 @@ export const TwoFaceplate = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -222,17 +240,17 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
 
           <div
-            className="flex flex-col gap-0 items-center justify-start flex-1 relative"
+            className="relative flex flex-1 flex-col items-center justify-start gap-0"
             style={{ margin: "0 0 0 -253px" }}
           >
             <img
-              className="self-stretch shrink-0 h-[695px] relative"
+              className="relative h-[695px] shrink-0 self-stretch "
               src="faceplate-6.png"
             />
 
-            <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -241,7 +259,7 @@ export const TwoFaceplate = ({ ...props }) => {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -252,10 +270,10 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="self-stretch shrink-0 h-[547px] relative">
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[811px] left-[162px] top-[206px]">
+        <div className="relative h-[547px] shrink-0 self-stretch">
+          <div className="absolute left-[162px] right-[811px] top-[206px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -266,7 +284,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -276,20 +294,20 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
 
           <img
-            className="h-[547px] absolute right-0 left-[649px] top-0"
+            className="absolute left-[649px] right-0 top-0 h-[547px]"
             src="faceplate-7.png"
           />
         </div>
 
-        <div className="self-stretch shrink-0 h-[546px] relative">
+        <div className="relative h-[546px] shrink-0 self-stretch">
           <img
-            className="h-[546px] absolute right-[649px] left-0 top-0"
+            className="absolute left-0 right-[649px] top-0 h-[546px]"
             src="faceplate-8.png"
           />
 
-          <div className="flex flex-col gap-2.5 items-start justify-start absolute right-[162px] left-[811px] top-[197px]">
+          <div className="absolute left-[811px] right-[162px] top-[197px] flex flex-col items-start justify-start gap-2.5">
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -301,7 +319,7 @@ export const TwoFaceplate = ({ ...props }) => {
             </div>
 
             <div
-              className="text-[#000000] text-left relative self-stretch"
+              className="relative self-stretch text-left text-[#000000]"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -311,10 +329,10 @@ export const TwoFaceplate = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#5c5c5c] pt-[307px] pr-[270px] pb-[307px] pl-[270px] self-stretch shrink-0 h-[1024px] relative overflow-hidden">
-          <div className="flex flex-col gap-[15px] items-start justify-start absolute right-[183px] left-[182px] top-[132px]">
+        <div className="relative h-[1024px] shrink-0 self-stretch overflow-hidden bg-[#5c5c5c] pb-[307px] pl-[270px] pr-[270px] pt-[307px]">
+          <div className="absolute left-[182px] right-[183px] top-[132px] flex flex-col items-start justify-start gap-[15px]">
             <svg
-              className="self-stretch shrink-0 relative overflow-visible"
+              className="relative shrink-0 self-stretch overflow-visible"
               style={{}}
               width="1075"
               height="3"
@@ -330,10 +348,10 @@ export const TwoFaceplate = ({ ...props }) => {
               />
             </svg>
 
-            <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[900px] relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -342,7 +360,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -351,9 +369,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -362,7 +380,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -371,9 +389,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -382,7 +400,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -391,9 +409,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -402,7 +420,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -411,9 +429,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -422,7 +440,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -431,9 +449,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -442,7 +460,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -451,9 +469,9 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -462,7 +480,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 </div>
 
                 <div
-                  className="text-[#ffffff] text-left relative"
+                  className="relative text-left text-[#ffffff]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -476,25 +494,23 @@ export const TwoFaceplate = ({ ...props }) => {
       </div>
 
       <div
-        className="flex flex-row items-start justify-between absolute right-[220px] left-[220px] top-[10px]"
+        className="absolute left-[220px] right-[220px] top-[10px] flex flex-row items-start justify-between"
         style={{ flexWrap: "wrap" }}
       >
         <div
-          className="text-[#ffffff] text-left relative"
+          className="relative text-left text-[#ffffff]"
           style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
         >
           Option two：Faceplate
         </div>
 
         <div
-          className="text-[#ffffff] text-left relative"
+          className="relative text-left text-[#ffffff]"
           style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
         >
           Design journal | 设计日志
         </div>
       </div>
-
-
     </div>
   );
 };

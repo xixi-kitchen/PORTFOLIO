@@ -1,4 +1,8 @@
 import React from "react";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Box } from "@react-three/drei";
+import { OnesurfaceModel } from "./OnesurfaceModel";
 
 export function Onesurfboard({ ...props }) {
   return (
@@ -7,10 +11,22 @@ export function Onesurfboard({ ...props }) {
     >
       <div className="absolute left-0 right-0 top-[0px] flex h-[6142px] flex-col items-center justify-start gap-0">
         <div className="relative flex h-[970px] shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden">
-          <img
-            className="relative h-[970.29px] shrink-0 self-stretch"
-            src="surfaceboard-1.png"
-          />
+        <Canvas
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#b4b4b4]"
+          >
+            <ambientLight intensity={2} />
+            <directionalLight
+              color="white"
+              position={[2, 3, 5]}
+              intensity={1} />
+            <Suspense fallback={null}>
+              <OnesurfaceModel/>
+            </Suspense>
+            <OrbitControls autoRotate />
+          </Canvas>
 
           <div className="absolute left-[422px] top-[725px] flex w-[596px] shrink-0 flex-col items-center justify-start gap-0">
             <div

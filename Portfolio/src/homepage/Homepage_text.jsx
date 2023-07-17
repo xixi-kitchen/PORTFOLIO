@@ -3,13 +3,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
+import { Suspense } from "react";
 
 import Tcc from "../Tcc";
 import Ttt from "../Ttt";
 import Box from "./Box";
 import AnimateSphere from "./AnimateSphere";
 import { Odel } from "./Draco";
-import { Suspense } from "react";
+
 import { Boot } from "./Boot";
 import { Fangzi } from "./Mini_room_art_copy";
 import { Model } from "./Model";

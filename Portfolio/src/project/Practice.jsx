@@ -6,7 +6,7 @@ export const Practice = ({ ...props }) => {
       className="bg-[#ffffff] w-[1440px] h-[4697px] relative"
     >
       <div className="flex flex-col gap-11 items-center justify-start absolute left-0 top-0">
-        <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+        <div id="color" className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <img
             className="shrink-0 w-[1440px] h-[270px] relative"
             src="practice-fengmian-1.png"
@@ -79,7 +79,7 @@ export const Practice = ({ ...props }) => {
 
                 <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
                   <div
-                    className="bg-colors-flat-smokyblack shrink-0 w-[102.8px] h-[102.8px] relative"
+                    className="bg-[#303030] shrink-0 w-[102.8px] h-[102.8px] relative"
                     style={{
                       transformOrigin: "0 0",
                       transform: "rotate(-90deg) scale(1, 1)",
@@ -100,7 +100,7 @@ export const Practice = ({ ...props }) => {
 
                 <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
                   <div
-                    className="bg-colors-flat-gray-2 shrink-0 w-[102.8px] h-[103.81px] relative"
+                    className="bg-[#B2B7C2] shrink-0 w-[102.8px] h-[103.81px] relative"
                     style={{
                       transformOrigin: "0 0",
                       transform: "rotate(-90deg) scale(1, 1)",
@@ -121,7 +121,7 @@ export const Practice = ({ ...props }) => {
 
                 <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
                   <div
-                    className="bg-colors-flat-white shrink-0 w-[102.8px] h-[102.8px] relative"
+                    className="bg-white shrink-0 w-[102.8px] h-[102.8px] relative"
                     style={{
                       transformOrigin: "0 0",
                       transform: "rotate(-90deg) scale(1, 1)",
@@ -142,7 +142,7 @@ export const Practice = ({ ...props }) => {
 
                 <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
                   <div
-                    className="bg-_1 shrink-0 w-[102.8px] h-[102.8px] relative"
+                    className="bg-white shrink-0 w-[102.8px] h-[102.8px] relative"
                     style={{
                       transformOrigin: "0 0",
                       transform: "rotate(-90deg) scale(1, 1)",
@@ -260,7 +260,7 @@ export const Practice = ({ ...props }) => {
         <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <div className="bg-[#dfdfdf] shrink-0 w-[1440px] h-[549px] relative"></div>
 
-          <div className="flex flex-col gap-[77px] items-start justify-start shrink-0 absolute left-[326px] top-[51px]">
+          <div id='fonts' className="flex flex-col gap-[77px] items-start justify-start shrink-0 absolute left-[326px] top-[51px]">
             <div
               className="text-[#000000] text-left relative w-[213.74px] h-[40.71px]"
               style={{ font: "900 64px 'Montserrat', sans-serif" }}
@@ -473,7 +473,7 @@ export const Practice = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#ffffff] flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 h-[670px] relative">
+        <div id='icons' className="bg-[#ffffff] flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 h-[670px] relative">
           <div className="flex flex-col gap-[55px] items-start justify-start shrink-0 relative">
             <div
               className="text-[#000000] text-left relative w-[269px]"
@@ -489,7 +489,7 @@ export const Practice = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+        <div id="cards" className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <div className="bg-[#c0c0c0] shrink-0 w-[1440px] h-[1304px] relative"></div>
 
           <div className="flex flex-col gap-[108px] items-start justify-start shrink-0 absolute left-[322px] top-[61px]">
@@ -1245,7 +1245,7 @@ export const Practice = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+        <div id='prototype' className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <img
             className="shrink-0 w-[1440px] h-[974.24px] relative"
             src="frame-2-1.png"
@@ -1278,7 +1278,7 @@ export const Practice = ({ ...props }) => {
                   To see more details please
                 </div>
 
-                <div
+                <a href='https://www.figma.com/proto/TQ56VLWYx7dWe9QBT6DruI/Practice-2-BanaMenu?page-id=0%3A1&node-id=24%3A3708&viewport=342%2C48%2C0.2&scaling=min-zoom&starting-point-node-id=24%3A3708' target='blank'><div
                   className="text-[#503e9d] text-center relative"
                   style={{
                     font: "700 22px/36px 'SF Pro Display', sans-serif",
@@ -1286,7 +1286,7 @@ export const Practice = ({ ...props }) => {
                   }}
                 >
                   click here
-                </div>
+                </div></a>
               </div>
             </div>
           </div>
@@ -1305,50 +1305,50 @@ export const Practice = ({ ...props }) => {
         </div>
 
         <div className="flex flex-col gap-[5px] items-center justify-center shrink-0 relative">
-          <div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+        <a href="#color" className="w-full"><div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Color
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#fonts" className="w-full"><div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Fonts
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#icons" className="w-full"><div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Icons
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#cards" className="w-full"><div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Cards
             </div>
-          </div>
+          </div></a>
 
-          <div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#prototype" className="w-full"><div className="bg-[#fa1f4b] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
             >
               Prototype
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>

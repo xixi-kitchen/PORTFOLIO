@@ -29,11 +29,29 @@ import { EscortBoat } from "../project/EscortBoat";
 import { EscortBoatplus } from "../project/EscortBoatplus";
 import { Aerobic } from "../project/Aerobic";
 import { NotLack } from "../project/NotLack";
+import { Innologo } from "../monomer/Innologo";
+import { Hours } from "../monomer/Hours";
+import { Typography } from "../monomer/Typography";
+import { Wallpaper } from "../monomer/Wallpaper";
+import { Fablabvi } from "../monomer/Fablabvi";
+import { Cacup } from "../monomer/Cacup";
+import { Endtables } from "../monomer/Endtables";
+import {Bowlmats} from "../monomer/Bowlmats";
+import {Countbuckets} from "../monomer/Countbuckets";
+import { Cabinets } from "../monomer/Cabinets";
+import {Jiaolong } from "../monomer/Jiaolong"
+import {Magnetic } from "../monomer/Magnetic";
+import {Propeller } from "../monomer/Propeller";
+import {Reticule } from "../monomer/Reticule";
+import {Reversecar} from "../monomer/Reversecar"
+import {Rollin} from "../monomer/Rollin";
+import {Sunwardred} from "../monomer/Sunwardred"
+import {Willinsert} from "../monomer/Willinsert"
 
-const RouterView = () => {
+
+function RouterView() {
   const appRoutesElement = useRoutes([
-  
-  //导航路由
+    //导航路由
     {
       path: "/",
       element: <Homepage />,
@@ -146,7 +164,100 @@ const RouterView = () => {
       element: <NotLack />,
       children: [],
     },
+    //Monomer单体内容路由
+    //平面内容路由
+    {
+      path: "/Innologo",
+      element: <Innologo />,
+      children: [],
+    },
+    {
+      path: "/Hours",
+      element: <Hours />,
+      children: [],
+    },
+    {
+      path: "/Typography",
+      element: <Typography />,
+      children: [],
+    },
+    {
+      path: "/Wallpaper",
+      element: <Wallpaper />,
+      children: [],
+    },
+    {
+      path: "/Fablabvi",
+      element: <Fablabvi />,
+      children: [],
+    },
+    //模型内容路由
+    {
+      path: "/Cacup",
+      element: <Cacup />,
+      children: [],
+    },
+    {
+      path: "/Endtables",
+      element: <Endtables />,
+      children: [],
+    },
+    {
+      path: "/Bowlmats",
+      element: <Bowlmats />,
+      children: [],
+    },
+    {
+      path: "/Cabinets",
+      element: <Cabinets />,
+      children: [],
+    },
+    {
+      path: "/Countbuckets",
+      element: <Countbuckets />,
+      children: [],
+    },
+    {
+      path: "/Jiaolong",
+      element: <Jiaolong />,
+      children: [],
+    },
+    {
+      path: "/Magnetic",
+      element: <Magnetic />,
+      children: [],
+    },
+    {
+      path: "/Propeller",
+      element: <Propeller />,
+      children: [],
+    },
+    {
+      path: "/Reticule",
+      element: <Reticule />,
+      children: [],
+    },
+    {
+      path: "/Reversecar",
+      element: <Reversecar />,
+      children: [],
+    },
+    {
+      path: "/Rollin",
+      element: <Rollin />,
+      children: [],
+    },
+    {
+      path: "/Sunwardred",
+      element: <Sunwardred />,
+      children: [],
+    },
+    {
+      path: "/Willinsert",
+      element: <Willinsert />,
+      children: [],
+    },
   ]);
   return appRoutesElement;
-};
+}
 export default RouterView;

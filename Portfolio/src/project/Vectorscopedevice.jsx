@@ -9,8 +9,8 @@ import { VectorModel } from './VectorModel';
 export const Vectorscopedevice = ({ ...props }) => {
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
-      <div className="absolute left-0 top-[0px] flex w-[1440px] flex-col items-start justify-start gap-0">
-        <div className="relative flex shrink-0 flex-col items-center justify-start gap-2.5 self-stretch">
+      <div className="flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 h-[970px] relative">
+        <div className="relative flex shrink-0 flex-col items-center h-[970px] justify-start gap-2.5 self-stretch">
           {/* <img
             className="self-stretch shrink-0 h-[970px] relative"
             src="vectorscope-1.png"
@@ -19,7 +19,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             shadows
             dpr={[1, 2]}
             camera={{ fov: 75 }}
-            className=" relative flex-1 self-stretch bg-[#3f3f3f]"
+            className=" relative flex-1 self-stretch  bg-[#3f3f3f]"
           >
             <ambientLight intensity={0.3} />
             <directionalLight

@@ -18,7 +18,7 @@ export function VectorModel(props) {
         rotation={[-2.559, 0.807, 2.697]}
         scale={0.001}
       />
-      <group scale={0.001}>
+      <group scale={0.01}>
         <group
           position={[101.319, 45.979, -125.322]}
           rotation={[-Math.PI / 2, 0, 0]}

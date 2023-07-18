@@ -1,5 +1,4 @@
 import React from "react";
-//import { NotLack } from './NotLack'
 import { useNavigate } from "react-router-dom";
 
 function Project() {

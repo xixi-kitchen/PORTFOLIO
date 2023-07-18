@@ -1,8 +1,70 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Monomer = () => {
+function Monomer() {
+  const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
+  //平面内容的导航方法
+  const goInnologo = () => {
+    goNavigate("/Innologo");
+  };
+  const goHours = () => {
+    goNavigate("/Hours");
+  };
+  const goTypography = () => {
+    goNavigate("/Typography");
+  };
+  const goWallpaper = () => {
+    goNavigate("/Wallpaper");
+  };
+  const goFablabvi = () => {
+    goNavigate("/Fablabvi");
+  };
+  //模型内容的导航方法
+  const goCacup = () => {
+    goNavigate("/Cacup");
+  };
+
+  const goEndtables = () => {
+    goNavigate("/Endtables");
+  };
+  const goBowlmats = () => {
+    goNavigate("/Bowlmats");
+  };
+
+  const goCabinets = () => {
+    goNavigate("/Cabinets");
+  };
+  const goCountbuckets = () => {
+    goNavigate("/Countbuckets");
+  };
+
+  const goJiaolong = () => {
+    goNavigate("/Jiaolong");
+  };
+  const goMagnetic = () => {
+    goNavigate("/Magnetic");
+  };
+  const goPropeller = () => {
+    goNavigate("/Propeller");
+  };
+  const goReticule = () => {
+    goNavigate("/Reticule");
+  };
+  const goReversecar = () => {
+    goNavigate("/Reversecar");
+  };
+  const goRollin = () => {
+    goNavigate("/Rollin");
+  };
+  const goSunwardred = () => {
+    goNavigate("/Sunwardred");
+  };
+  const goWillinsert = () => {
+    goNavigate("/Willinsert");
+  };
+
   return (
-    <div className="flex flex-col items-start justify-start gap-[60px]">
+    <div className="flex h-[1300px] w-full flex-col items-start   justify-start  gap-[60px]">
       <div className=" relative top-5 flex flex-col items-start justify-start gap-5">
         <div
           className="relative text-left text-[#000000]"
@@ -21,13 +83,11 @@ const Monomer = () => {
           单体
         </div>
       </div>
-      <div
-        className="relative flex w-full flex-1 flex-row items-start justify-start gap-[23px]"
-        style={{ flexWrap: "wrap" }}
-      >
+      <div className="relative mx-auto flex w-full flex-1 flex-row flex-wrap items-start justify-start gap-[45px] gap-y-[23px]">
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goCacup}
         >
           <img
             className="relative h-[153.92px] shrink-0 self-stretch rounded-[5px]"
@@ -124,6 +184,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goEndtables}
         >
           <img
             className="relative h-[137px] shrink-0 self-stretch rounded-[5px]"
@@ -220,6 +281,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goCabinets}
         >
           <img
             className="relative h-[139.8px] shrink-0 self-stretch rounded-[5px]"
@@ -316,6 +378,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goTypography}
         >
           <img
             className="relative h-[191px] shrink-0 self-stretch rounded-[5px]"
@@ -391,6 +454,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goWillinsert}
         >
           <img
             className="relative h-[141.39px] shrink-0 self-stretch rounded-[5px]"
@@ -485,6 +549,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goHours}
         >
           <img
             className="relative h-[203.35px] shrink-0 self-stretch"
@@ -560,6 +625,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goRollin}
         >
           <img
             className="relative h-[141.79px] shrink-0 self-stretch rounded-[5px]"
@@ -654,6 +720,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goReticule}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -750,6 +817,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goBowlmats}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -846,6 +914,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goWallpaper}
         >
           <img
             className="relative h-[201px] shrink-0 self-stretch"
@@ -921,6 +990,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goFablabvi}
         >
           <img
             className="relative h-[200px] shrink-0 self-stretch"
@@ -996,6 +1066,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goInnologo}
         >
           <img
             className="relative h-[139.84px] w-[100px] shrink-0"
@@ -1071,6 +1142,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goMagnetic}
         >
           <img
             className="relative h-[153.7px] shrink-0 self-stretch rounded-[5px]"
@@ -1082,7 +1154,7 @@ const Monomer = () => {
               <div
                 className="relative text-left text-[#202020]"
                 style={{
-                  font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
+                  font: "var(--en, 600 20px/100% 'PingFang SC', sans-serif)",
                 }}
               >
                 Magnetic pen case
@@ -1167,6 +1239,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goSunwardred}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -1263,6 +1336,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goJiaolong}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -1355,106 +1429,11 @@ const Monomer = () => {
             </div>
           </div>
         </div>
-
+        
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
-        >
-          <img
-            className="relative h-[141.18px] shrink-0 self-stretch rounded-[5px]"
-            src="monomer-count.png"
-          />
-
-          <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
-            <div className="relative flex shrink-0 flex-col items-start justify-start">
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                Count buckets
-              </div>
-
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  margin: "-10px 0 0 0",
-                  font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                计数桶
-              </div>
-            </div>
-
-            <div className="relative flex shrink-0 flex-col items-start justify-start">
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                Production time: 2019.09
-              </div>
-
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  margin: "-4px 0 0 0",
-                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                制作时间：2019.09
-              </div>
-            </div>
-
-            <div className="relative flex shrink-0 flex-col items-start justify-start">
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                Degree of completion: 100%
-              </div>
-
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  margin: "-4px 0 0 0",
-                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                完成度：100%
-              </div>
-            </div>
-
-            <div className="relative flex shrink-0 flex-col items-start justify-start">
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                Type: originality
-              </div>
-
-              <div
-                className="relative text-left text-[#202020]"
-                style={{
-                  margin: "-4px 0 0 0",
-                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
-                }}
-              >
-                类型：创意
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
-          style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goPropeller}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -1551,6 +1530,7 @@ const Monomer = () => {
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goReversecar}
         >
           <img
             className="relative h-[141.41px] shrink-0 self-stretch rounded-[5px]"
@@ -1644,7 +1624,106 @@ const Monomer = () => {
           </div>
         </div>
 
-        <div
+        {/* <div
+          className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
+          style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
+          onClick={goCountbuckets}
+        >
+          <img
+            className="relative h-[141.18px] shrink-0 self-stretch rounded-[5px]"
+            src="monomer-count.png"
+          />
+
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
+            <div className="relative flex shrink-0 flex-col items-start justify-start">
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Count buckets
+              </div>
+
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  margin: "-10px 0 0 0",
+                  font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                计数桶
+              </div>
+            </div>
+
+            <div className="relative flex shrink-0 flex-col items-start justify-start">
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Production time: 2019.09
+              </div>
+
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  margin: "-4px 0 0 0",
+                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                制作时间：2019.09
+              </div>
+            </div>
+
+            <div className="relative flex shrink-0 flex-col items-start justify-start">
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Degree of completion: 100%
+              </div>
+
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  margin: "-4px 0 0 0",
+                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                完成度：100%
+              </div>
+            </div>
+
+            <div className="relative flex shrink-0 flex-col items-start justify-start">
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Type: originality
+              </div>
+
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  margin: "-4px 0 0 0",
+                  font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                类型：创意
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+
+
+        {/* <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}
         >
@@ -1738,10 +1817,10 @@ const Monomer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
-};
+}
 
 export default Monomer;

@@ -31,4 +31,8 @@ export default defineConfig({
       },
     },
   },
+
+  publicPath: "./",
+  outputDir: "dist",
+  assetsDir: "static",
 });

@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build -r https://github.com/xixi-kitchen/PORTFOLIO.git -b website"
+    "deploy":"gh-pages -d dist -r https://github.com/xixi-kitchen/PORTFOLIO.git -b website"
   },
   "dependencies": {
     "@builder.io/html-to-figma": "^0.0.3",

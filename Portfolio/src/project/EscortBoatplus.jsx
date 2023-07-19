@@ -34,7 +34,10 @@ export function EscortBoatplus({ ...props }) {
               <EscortPlusModel />
               {/* <Box /> */}
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+             autoRotate />
           </Canvas>
 
           <div className="absolute left-[calc(50%_-_400px)] top-[715px] flex w-[800px] shrink-0 flex-col items-center justify-start gap-2.5">

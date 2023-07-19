@@ -5,8 +5,8 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { Suspense } from "react";
 
-import Tcc from "../Tcc";
-import Ttt from "../Ttt";
+// import Tcc from "../Tcc";
+// import Ttt from "../Ttt";
 import Box from "./Box";
 import AnimateSphere from "./AnimateSphere";
 import { Odel } from "./Draco";
@@ -16,7 +16,7 @@ import { Fangzi } from "./Mini_room_art_copy";
 import { Model } from "./Model";
 import { Xichenqi } from "./Xichenqi";
 
-function Homepage() {
+ function Homepage_text() {
   
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
   const goBlog = () => {
@@ -25,8 +25,7 @@ function Homepage() {
 
   return (
     <div>
-      <Ttt />
-      <Tcc />
+
       <h1 className="bg-yellow-900 text-3xl font-bold text-yellow-200 underline">
         Hello world!
       </h1>
@@ -138,4 +137,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Homepage_text;

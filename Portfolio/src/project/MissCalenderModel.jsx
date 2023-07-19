@@ -19,7 +19,7 @@ export function MissCalenderModel(props) {
         scale={0.001}
       />
       <group scale={0.016}>
-        <group position={[9.5, 0, -14.051]} rotation={[-Math.PI / 2, 0, 0]}>
+        <group position={[-10, -60, -14.051]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             castShadow
             receiveShadow

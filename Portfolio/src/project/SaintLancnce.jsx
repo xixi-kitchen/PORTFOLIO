@@ -19,7 +19,7 @@ export function Saintlancnce({ ...props }) {
               shadows
               dpr={[1, 2]}
               camera={{ fov: 75 }}
-              className=" relative flex-1 self-stretch bg-[#ffffff]"
+              className=" relative flex-1 self-stretch bg-[#cfcfcf]"
             >
               <ambientLight intensity={0.3} />
               <directionalLight
@@ -30,7 +30,10 @@ export function Saintlancnce({ ...props }) {
               <Suspense fallback={null}>
                 <SaintLancnceModel />
               </Suspense>
-              <OrbitControls autoRotate />
+              <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+              autoRotate />
             </Canvas>
           </div>
 

@@ -19,7 +19,7 @@ export function SaintLancnceModel(props) {
         scale={0.001}
       />
       <group scale={0.02}>
-        <group position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <group position={[-20, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             castShadow
             receiveShadow

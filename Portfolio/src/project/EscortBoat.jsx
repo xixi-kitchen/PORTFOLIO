@@ -1,10 +1,22 @@
 import React from "react";
+
+import { useNavigate } from "react-router-dom";
+
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 import { EscortBoatModel } from "./EscortBoatModel";
 
 export const EscortBoat = ({ ...props }) => {
+
+  const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
+  
+  const goEscortplus = () => {
+      goNavigate("/Escortplus");
+      window.scrollTo(0, 0)
+    };
+
+
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
@@ -30,13 +42,16 @@ export const EscortBoat = ({ ...props }) => {
             <Suspense fallback={null}>
               <EscortBoatModel/>
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+            autoRotate />
           </Canvas>
           </div>
 
           <div
-            className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_476px)] top-[373px]"
-            style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+            className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_476px)] top-[373px] drop-shadow-xl"
+           
           >
             <div
               className="text-[#ececec] text-left relative"
@@ -756,7 +771,7 @@ export const EscortBoat = ({ ...props }) => {
           </div>
         </div>
 
-        <div className="bg-[#090909] flex flex-col gap-[7px] items-center justify-center shrink-0 w-[1440px] h-[195px] relative">
+        <div className="bg-[#090909] flex flex-col gap-[7px] items-center justify-center shrink-0 w-[1440px] h-[195px] relative" onClick={goEscortplus}>
           <div
             className="text-[#ffffff] text-left relative"
             style={{
@@ -952,7 +967,7 @@ export const EscortBoat = ({ ...props }) => {
 
       <div className="flex flex-row items-start justify-between absolute right-[220px] left-[220px] top-[10px]">
         <div
-          className="text-[#3d3d3d] text-left relative"
+          className="text-[#d3d3d3] text-left relative"
           style={{ font: "600 12px/150% 'PingFang SC', sans-serif" }}
         >
           Escort boat
@@ -960,14 +975,14 @@ export const EscortBoat = ({ ...props }) => {
 
         <div className="flex flex-row gap-5 items-start justify-start shrink-0 relative">
           <div
-            className="text-[#3d3d3d] text-left relative"
+            className="text-[#d3d3d3] text-left relative"
             style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
           >
             Escort boat 2.0
           </div>
 
           <div
-            className="text-[#3d3d3d] text-left relative"
+            className="text-[#d3d3d3] text-left relative"
             style={{ font: "400 12px/150% 'PingFang SC', sans-serif" }}
           >
             Design journal | 设计日志

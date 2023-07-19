@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Homepage from "../homepage/Homepage";
+import Homepage_text from "../homepage/Homepage_text";
 import Project from "../project/Project";
 import Monomer from "../monomer/Monomer";
 import Blog from "../blog/Blog";
@@ -56,6 +57,11 @@ function RouterView() {
       path: "/",
       element: <Homepage />,
     },
+
+    // {
+    //   path: "/",
+    //   element: <Homepage_text />,
+    // },
 
     {
       path: "/project",

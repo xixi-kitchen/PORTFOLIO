@@ -28,7 +28,10 @@ export const NotLack = ({ ...props }) => {
             <Suspense fallback={null}>
               <NotlackModel />
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+              autoRotate />
           </Canvas>
 
           <div className="absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start">
@@ -232,7 +235,7 @@ export const NotLack = ({ ...props }) => {
                   </div>
 
                   <img
-                    className="relative h-[664px] w-[801px] shrink-0"
+                    className="relative h-[664px] w-[801px] shrink-0 "
                     src="miss-lianghzongdakai.png"
                   />
                 </div>

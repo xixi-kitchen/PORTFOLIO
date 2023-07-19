@@ -1633,10 +1633,10 @@ const Abspace = ({ ...props }) => {
 
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="case-study-overview-a-holistic-study-of-how-individuals-manage-all-their-belongings-from-storage-to-retrieval-and-how-to-make-the-process-more-efficient-and-less-burdensome-for-the-user-it-will-also-help-users-to-find-and-retrieve-items-more-quickly-when-they-need-them-this-makes-life-easier-for-people-span">
+                <span className="font-bold">
                   Case Study Overview{" "}
                 </span>
-                <span className="case-study-overview-a-holistic-study-of-how-individuals-manage-all-their-belongings-from-storage-to-retrieval-and-how-to-make-the-process-more-efficient-and-less-burdensome-for-the-user-it-will-also-help-users-to-find-and-retrieve-items-more-quickly-when-they-need-them-this-makes-life-easier-for-people-span2">
+                <span className="">
                   <br />
                   <br />A holistic study of how individuals manage all their
                   belongings, from storage to retrieval, and how to make the
@@ -1663,10 +1663,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-row items-start justify-start gap-8">
             <div className="text-gray-1 relative h-[444px] w-[617px] text-left">
               <span>
-                <span className="challenge-problem-overview-as-a-person-who-loves-to-store-but-also-has-neat-obsessive-compulsive-disorder-when-i-was-in-college-because-the-storage-space-provided-by-the-school-was-not-enough-and-i-had-a-lot-of-things-i-had-an-almost-paranoid-insistence-on-neatness-so-i-always-confronted-various-storage-methods-on-a-daily-basis-but-i-also-found-some-problems-when-i-was-in-storage-and-it-was-these-problems-that-prompted-me-to-have-this-creative-point-in-order-to-improve-neatness-in-storage-i-will-always-buy-a-lot-of-storage-boxes-to-display-items-but-in-use-i-found-that-because-of-the-state-of-the-large-box-set-and-the-small-box-and-the-length-width-and-height-of-each-item-are-different-it-will-lead-to-some-redundancy-in-the-space-under-the-traditional-placement-method-the-space-utilization-rate-is-relatively-low-and-not-neat-enough-but-this-is-just-a-way-if-you-change-the-way-of-placement-there-may-be-better-results-and-in-the-actual-process-it-is-often-used-to-exhaust-the-method-and-the-inspiration-method-to-find-the-best-emissions-the-whole-process-has-to-go-on-many-times-and-waste-time-span">
+                <span className="font-bold">
                   Challenge/Problem Overview
                 </span>
-                <span className="challenge-problem-overview-as-a-person-who-loves-to-store-but-also-has-neat-obsessive-compulsive-disorder-when-i-was-in-college-because-the-storage-space-provided-by-the-school-was-not-enough-and-i-had-a-lot-of-things-i-had-an-almost-paranoid-insistence-on-neatness-so-i-always-confronted-various-storage-methods-on-a-daily-basis-but-i-also-found-some-problems-when-i-was-in-storage-and-it-was-these-problems-that-prompted-me-to-have-this-creative-point-in-order-to-improve-neatness-in-storage-i-will-always-buy-a-lot-of-storage-boxes-to-display-items-but-in-use-i-found-that-because-of-the-state-of-the-large-box-set-and-the-small-box-and-the-length-width-and-height-of-each-item-are-different-it-will-lead-to-some-redundancy-in-the-space-under-the-traditional-placement-method-the-space-utilization-rate-is-relatively-low-and-not-neat-enough-but-this-is-just-a-way-if-you-change-the-way-of-placement-there-may-be-better-results-and-in-the-actual-process-it-is-often-used-to-exhaust-the-method-and-the-inspiration-method-to-find-the-best-emissions-the-whole-process-has-to-go-on-many-times-and-waste-time-span2">
+                <span className="">
                   <br />
                   <br />
                   As a person who loves to store, but also has neat
@@ -1816,10 +1816,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-center gap-[47px]">
             <div className="text-gray-1 relative w-[598px] text-left">
               <span>
-                <span className="research-analysis-3-span">
+                <span className="font-bold">
                   User interviews
                 </span>
-                <span className="research-analysis-3-span2">
+                <span className="">
                   <br />
                   <br />
                   The user interview scripts are based on the objectives
@@ -1879,8 +1879,8 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex w-[1040px] shrink-0 flex-col items-center justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="research-analysis-4-span">Data research</span>
-                <span className="research-analysis-4-span2">
+                <span className="font-bold">Data research</span>
+                <span className="">
                   <br />
                   <br />
                   Based on the results of the user interviews described above,
@@ -1913,10 +1913,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-col items-start justify-start gap-8">
             <div className="text-gray-1 relative w-[584px] text-left">
               <span>
-                <span className="research-analysis-5-span">
+                <span className="font-bold">
                   Competitor analysis
                 </span>
-                <span className="research-analysis-5-span2"> </span>
+                <span className=""> </span>
               </span>
             </div>
 
@@ -2045,8 +2045,8 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="findings-3-span">Users Experience Map</span>
-                <span className="findings-3-span2">
+                <span className="font-bold">Users Experience Map</span>
+                <span className="">
                   <br />
                   <br />
                   Use the User Experience Map to analyse the thoughts, actions,
@@ -2220,10 +2220,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span">
+                <span className="font-bold">
                   Design Overview
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span2">
+                <span className="">
                   <br />
                   <br />
                   Based on the above analysis, the App - A-B Space was born
@@ -2250,22 +2250,22 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span3">
+                <span className="font-bold">
                   Design Principles:
                   <br />
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span4">
+                <span className="">
                   For the convenience of storage, so his positioning is a tool,
                   so the interface should be simplified, with a minimum of
                   interfaces to complete all functions
                   <br />
                   <br />
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span5">
+                <span className="font-bold">
                   Design Points:
                   <br />
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span6">
+                <span className="">
                   The object is more reasonable to put into its storage space,
                   including how to scan the object, how to scan the space, the
                   two have something in common, are scanning size, so it is
@@ -2304,8 +2304,8 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="findings-3-span3">User Main Flow</span>
-                <span className="findings-3-span4">
+                <span className="font-bold">User Main Flow</span>
+                <span className="">
                   <br />
                   <br />
                   Explains and analyses the main processes and procedures for
@@ -3011,10 +3011,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex shrink-0 flex-col items-start justify-center gap-8">
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span7">
+                <span className="font-bold">
                   Wireframe
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span8">
+                <span className="">
                   <br />
                   <br />
                   Based on the previous analysis, the simplest wireframe
@@ -3026,10 +3026,10 @@ const Abspace = ({ ...props }) => {
 
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span9">
+                <span className="font-bold">
                   Lo-Fi Prototypes
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span10">
+                <span className="">
                   <br />
                   <br />
                   Adding new objects flow
@@ -6977,26 +6977,29 @@ const Abspace = ({ ...props }) => {
 
           <div className="text-gray-1 relative w-[1041px] text-left">
             <span>
-              <span className="interface-design-2-span">
+              <span className="font-bold">
                 Apple Interface Styles Design Overview
               </span>
-              <span className="interface-design-2-span2">
+              <span className="">
                 <br />
                 <br />
                 Why did you choose Apple&#039;s design styles?
                 <br />
                 <br />
               </span>
-              <span className="interface-design-2-span3">
-                As an app that is positioned as a tool, its design should not be
+              
+              <li>
+              As an app that is positioned as a tool, its design should not be
                 complicated。
-                <br />
-                This app was inspired in part by Apple&#039;s software, hats off
+              </li>
+              <li>
+              This app was inspired in part by Apple&#039;s software, hats off
                 to it!
-                <br />
-                Apple&#039;s own design, style, colours and systems are
+              </li>
+              <li>
+              Apple&#039;s own design, style, colours and systems are
                 excellent, proven and straightforward to use.{" "}
-              </span>
+              </li>
             </span>
           </div>
 
@@ -7075,10 +7078,10 @@ const Abspace = ({ ...props }) => {
 
           <div className="text-gray-1 relative w-[1041px] text-left">
             <span>
-              <span className="interface-design-2-span4">
+              <span className="font-bold">
                 Interface Design Overview
               </span>
-              <span className="interface-design-2-span5">
+              <span className="">
                 <br />
                 <br />
                 The functions and interface of the entire app have been designed
@@ -7089,24 +7092,17 @@ const Abspace = ({ ...props }) => {
                 <br />
                 <br />
               </span>
-              <span className="interface-design-2-span6">
+              <li>
                 The design of the instructions for reminding users of their use
                 is in the style of Apple, using icons to transform abstract
                 words into easy-to-understand icons for easy understanding.
-              </span>
+              </li>
             </span>
           </div>
         </div>
 
         <div className="relative flex h-[852px] shrink-0 flex-col items-start justify-start gap-[13px]">
-          <div
-            className="text-gray-1 relative text-left"
-            style={{
-              font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
-            }}
-          >
-            Interface Design
-          </div>
+         
 
           <div className="relative flex h-[772px] shrink-0 flex-col items-start justify-start gap-[19px]">
             <div className="static h-[564.79px] w-[1040px] shrink-0">
@@ -7133,10 +7129,10 @@ const Abspace = ({ ...props }) => {
 
             <div className="text-gray-1 relative h-[188px] w-[1040px] text-left">
               <span>
-                <span className="interface-design-3-span">
+                <span className="font-bold">
                   Access interface
                 </span>
-                <span className="interface-design-3-span2">
+                <span className="">
                   <br />
                   <br />
                   The design is in the style of Apple, placing the main
@@ -7145,13 +7141,15 @@ const Abspace = ({ ...props }) => {
                   <br />
                   <br />
                 </span>
-                <span className="interface-design-3-span3">
-                  The lower scan button pulses up and down in this screen to
+
+                <li>
+                The lower scan button pulses up and down in this screen to
                   remind the user how to use it.
-                  <br />
-                  Finger click on the scan button and drag it to the navigation
+              </li>
+              <li>
+              Finger click on the scan button and drag it to the navigation
                   area to start scanning
-                </span>
+              </li>
               </span>
             </div>
           </div>
@@ -7160,10 +7158,10 @@ const Abspace = ({ ...props }) => {
         <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-7">
           <div className="text-gray-1 relative w-[536px] text-left">
             <span>
-              <span className="interface-design-4-span">
+              <span className="font-bold">
                 Recognition interface
               </span>
-              <span className="interface-design-4-span2">
+              <span className="">
                 <br />
                 <br />
                 The overall design is based on the positioning of the tool to
@@ -7173,13 +7171,15 @@ const Abspace = ({ ...props }) => {
                 <br />
                 <br />
               </span>
-              <span className="interface-design-4-span3">
-                User-friendly design with graphical reminders to help users
+           
+              <li>
+              User-friendly design with graphical reminders to help users
                 learn how to use
-                <br />
-                Use of a striking yellow colour to alert the user that a
+              </li>
+              <li>
+              Use of a striking yellow colour to alert the user that a
                 scanning operation is in progress
-              </span>
+              </li>
             </span>
           </div>
 
@@ -7213,10 +7213,10 @@ const Abspace = ({ ...props }) => {
 
           <div className="text-gray-1 relative flex-1 text-left">
             <span>
-              <span className="interface-design-5-span">
+              <span className="font-bold">
                 Adding objects interface
               </span>
-              <span className="interface-design-5-span2">
+              <span className="">
                 <br />
                 <br />
                 When the recognition is complete, a label will automatically
@@ -7225,13 +7225,15 @@ const Abspace = ({ ...props }) => {
                 <br />
                 <br />
               </span>
-              <span className="interface-design-5-span3">
-                The Add button will highlight when the tag is selected to remind
+             
+              <li>
+              The Add button will highlight when the tag is selected to remind
                 you of the action
-                <br />
-                Clicking on the identify button will identify again on top of
+              </li>
+              <li>
+              Clicking on the identify button will identify again on top of
                 what is already there, clicking back will identify again
-              </span>
+              </li>
             </span>
           </div>
         </div>
@@ -7240,10 +7242,10 @@ const Abspace = ({ ...props }) => {
           <div className="relative flex w-[1040px] shrink-0 flex-row items-center justify-start gap-[140px]">
             <div className="text-gray-1 relative flex-1 text-left">
               <span>
-                <span className="interface-design-5-span4">
+                <span className="font-bold">
                   Object List Interface
                 </span>
-                <span className="interface-design-5-span5">
+                <span className="">
                   <br />
                   <br />
                   When you add an object, it appears in the object list and the
@@ -7251,9 +7253,9 @@ const Abspace = ({ ...props }) => {
                   <br />
                   <br />
                 </span>
-                <span className="interface-design-5-span6">
+                <li>
                   A navigation bar is provided here for easy viewing
-                </span>
+                </li>
               </span>
             </div>
 
@@ -7311,10 +7313,10 @@ const Abspace = ({ ...props }) => {
             <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
               <div className="text-gray-1 relative w-[1040px] text-left">
                 <span>
-                  <span className="conclusion-reflection-6-span">
+                  <span className="font-bold">
                     Conclusion
                   </span>
-                  <span className="conclusion-reflection-6-span2">
+                  <span className="">
                     <br />
                     <br />
                     For this project, the overall design process was complete
@@ -7341,10 +7343,10 @@ const Abspace = ({ ...props }) => {
             <div className="relative flex shrink-0 flex-row items-center justify-center gap-8">
               <div className="text-gray-1 relative w-[1040px] text-left">
                 <span>
-                  <span className="conclusion-reflection-6-span3">
+                  <span className="font-bold">
                     Reflection Result{" "}
                   </span>
-                  <span className="conclusion-reflection-6-span4">
+                  <span className="">
                     <br />
                     <br />
                     Although the overall design has basically met the initial
@@ -7363,11 +7365,11 @@ const Abspace = ({ ...props }) => {
 
             <div className="text-gray-1 relative w-[1040px] text-left">
               <span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span11">
+                <span className="font-bold">
                   Iterable update items
                   <br />
                 </span>
-                <span className="wireframe-lo-fi-skecthing-prototype-2-span12">
+                <span className="">
                   <br />
                   As a mature product, it should not be just a simple way of
                   storage, because if you have enough understanding of the

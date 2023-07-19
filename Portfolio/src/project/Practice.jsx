@@ -31,229 +31,163 @@ export const Practice = ({ ...props }) => {
               Color
             </div>
 
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
-              <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
-                <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-[#000000] shrink-0 w-[102.8px] h-[102.8px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
+            <div className="flex flex-col gap-0 items-start justify-start relative">
+      <div className="flex flex-row gap-0 items-start justify-start shrink-0 relative">
+        <div className="bg-[#000000] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+          <div
+            className="text-[#ffffff] text-center relative"
+            style={{
+              font: "700 16px/16px 'SF Pro Display', sans-serif",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            000000
+          </div>
+        </div>
 
-                  <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_31.4px)] top-[42.8px]"
-                    style={{
-                      font: "700 16px/16px 'SF Pro Display', sans-serif",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    000000
-                  </div>
-                </div>
+        <div
+          className="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(24, 29, 41, 1.00) 0%,rgba(39, 50, 70, 1.00) 100%)",
+          }}
+        >
+          <div
+            className="text-[#ffffff] text-center relative"
+            style={{
+              font: "700 16px/16px 'SF Pro Display', sans-serif",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            181D29
+            <br />-<br />
+            273246
+          </div>
+        </div>
 
-                <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-[#181d29] shrink-0 w-[102.8px] h-[102.8px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
+        <div className="bg-[#303030] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+          <div
+            className="text-[#ffffff] text-center relative"
+            style={{
+              font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            303030
+          </div>
+        </div>
 
-                  <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_29.4px)] top-[26.8px]"
-                    style={{
-                      font: "700 16px/16px 'SF Pro Display', sans-serif",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    181D29
-                    <br />-<br />
-                    273246
-                  </div>
-                </div>
+        <div className="bg-[#b2b7c2] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+          <div
+            className="text-[#ffffff] text-center relative"
+            style={{
+              font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            B2B7C2
+          </div>
+        </div>
 
-                <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-[#303030] shrink-0 w-[102.8px] h-[102.8px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
+        <div className="bg-[#ffffff] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+          <div
+            className="text-[#000000] text-center relative"
+            style={{
+              font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            FFFFFF
+          </div>
+        </div>
 
-                  <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_32.55px)] top-[32.8px] w-[64.12px] h-[36.64px]"
-                    style={{
-                      font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    303030
-                  </div>
-                </div>
+        <div className="bg-[#ffffff] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+          <div
+            className="text-[#000000] text-center relative"
+            style={{
+              font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+              transformOrigin: "0 0",
+              transform: "rotate(0deg) scale(1, 1)",
+            }}
+          >
+            FFFFFF
+          </div>
+        </div>
+      </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-[#B2B7C2] shrink-0 w-[102.8px] h-[103.81px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
+      <div className="bg-[#fdbc02] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+        <div
+          className="text-[#000000] text-center relative"
+          style={{
+            font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+            transformOrigin: "0 0",
+            transform: "rotate(0deg) scale(1, 1)",
+          }}
+        >
+          FDBC02
+        </div>
+      </div>
 
-                  <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_33.57px)] top-[32.8px] w-[65.14px] h-[36.64px]"
-                    style={{
-                      font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    B2B7C2
-                  </div>
-                </div>
+      <div className="bg-[#fa1f4b] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative">
+        <div
+          className="text-[#ffffff] text-center relative"
+          style={{
+            font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
+            transformOrigin: "0 0",
+            transform: "rotate(0deg) scale(1, 1)",
+          }}
+        >
+          FA1F4B
+        </div>
+      </div>
 
-                <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-white shrink-0 w-[102.8px] h-[102.8px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
+      <div
+        className="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative"
+        style={{
+          background:
+            "linear-gradient(225deg, rgba(253, 188, 2, 1.00) 0%,rgba(250, 161, 0, 1.00) 100%)",
+        }}
+      >
+        <div
+          className="text-[#ffffff] text-center relative"
+          style={{
+            font: "700 16px/16px 'SF Pro Display', sans-serif",
+            transformOrigin: "0 0",
+            transform: "rotate(0deg) scale(1, 1)",
+          }}
+        >
+          FDBC02
+          <br />-<br />
+          FAA100
+        </div>
+      </div>
 
-                  <div
-                    className="text-[#000000] text-center absolute left-[calc(50%_-_28.49px)] top-[32.8px] w-[54.96px] h-[36.64px]"
-                    style={{
-                      font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    FFFFFF
-                  </div>
-                </div>
-
-                <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                  <div
-                    className="bg-white shrink-0 w-[102.8px] h-[102.8px] relative"
-                    style={{
-                      transformOrigin: "0 0",
-                      transform: "rotate(-90deg) scale(1, 1)",
-                    }}
-                  ></div>
-
-                  <div
-                    className="text-[#000000] text-center absolute left-[calc(50%_-_28.05px)] top-[32.8px] w-[53.94px] h-[36.64px]"
-                    style={{
-                      font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                      transformOrigin: "0 0",
-                      transform: "rotate(0deg) scale(1, 1)",
-                    }}
-                  >
-                    FFFFFF
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                <div
-                  className="bg-colors-flat-orange shrink-0 w-[102.8px] h-[102.8px] relative"
-                  style={{
-                    transformOrigin: "0 0",
-                    transform: "rotate(-90deg) scale(1, 1)",
-                  }}
-                ></div>
-
-                <div
-                  className="text-[#000000] text-center absolute left-[calc(50%_-_31.55px)] top-[33.08px] w-[64.12px] h-[36.64px]"
-                  style={{
-                    font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                    transformOrigin: "0 0",
-                    transform: "rotate(0deg) scale(1, 1)",
-                  }}
-                >
-                  FDBC02
-                </div>
-              </div>
-
-              <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                <div
-                  className="bg-colors-flat-danger shrink-0 w-[102.8px] h-[102.8px] relative"
-                  style={{
-                    transformOrigin: "0 0",
-                    transform: "rotate(-90deg) scale(1, 1)",
-                  }}
-                ></div>
-
-                <div
-                  className="text-[#ffffff] text-center absolute left-[calc(50%_-_31.04px)] top-[32.57px] w-[63.1px] h-[36.64px]"
-                  style={{
-                    font: "var(--display, 700 16px/36px 'SF Pro Display', sans-serif)",
-                    transformOrigin: "0 0",
-                    transform: "rotate(0deg) scale(1, 1)",
-                  }}
-                >
-                  FA1F4B
-                </div>
-              </div>
-
-              <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                <div
-                  className="shrink-0 w-[103.81px] h-[102.8px] relative"
-                  style={{
-                    background:
-                      "var(--colors-gradient-orange, linear-gradient(-29.72deg, rgba(253, 188, 2, 1.00) 0%,rgba(250, 161, 0, 1.00) 100%))",
-                    transformOrigin: "0 0",
-                    transform: "rotate(-90deg) scale(1, 1)",
-                  }}
-                ></div>
-
-                <div
-                  className="text-[#ffffff] text-center absolute left-[calc(50%_-_31.4px)] top-[32.81px] w-[63.1px] h-[36.64px]"
-                  style={{
-                    font: "700 16px/16px 'SF Pro Display', sans-serif",
-                    transformOrigin: "0 0",
-                    transform: "rotate(0deg) scale(1, 1)",
-                  }}
-                >
-                  FDBC02
-                  <br />-<br />
-                  FAA100
-                </div>
-              </div>
-
-              <div className="flex flex-row gap-2.5 items-start justify-start shrink-0 relative">
-                <div
-                  className="shrink-0 w-[103.81px] h-[102.8px] relative"
-                  style={{
-                    background:
-                      "var(--colors-gradient-blue, linear-gradient(135.26deg, rgba(50, 255, 180, 1.00) 0%,rgba(0, 162, 255, 1.00) 100%))",
-                    transformOrigin: "0 0",
-                    transform: "rotate(-90deg) scale(1, 1)",
-                  }}
-                ></div>
-
-                <div
-                  className="text-[#ffffff] text-center absolute left-[calc(50%_-_31.4px)] top-[33.81px] w-[63.1px] h-[36.64px]"
-                  style={{
-                    font: "700 16px/16px 'SF Pro Display', sans-serif",
-                    transformOrigin: "0 0",
-                    transform: "rotate(0deg) scale(1, 1)",
-                  }}
-                >
-                  32FFB4
-                  <br />-<br />
-                  00A2FF
-                </div>
-              </div>
-            </div>
+      <div
+        className="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[100px] h-[100px] relative"
+        style={{
+          background:
+            "linear-gradient(45deg, rgba(50, 255, 180, 1.00) 0%,rgba(0, 162, 255, 1.00) 100%)",
+        }}
+      >
+        <div
+          className="text-[#ffffff] text-center relative"
+          style={{
+            font: "700 16px/16px 'SF Pro Display', sans-serif",
+            transformOrigin: "0 0",
+            transform: "rotate(0deg) scale(1, 1)",
+          }}
+        >
+          32FFB4
+          <br />-<br />
+          00A2FF
+        </div>
+      </div>
+    </div>
           </div>
         </div>
 

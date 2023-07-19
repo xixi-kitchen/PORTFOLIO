@@ -19,7 +19,7 @@ export const Vectorscopedevice = ({ ...props }) => {
             shadows
             dpr={[1, 2]}
             camera={{ fov: 75 }}
-            className=" relative flex-1 self-stretch  bg-[#3f3f3f]"
+            className=" relative flex-1 self-stretch  bg-[#a4a4a4]"
           >
             <ambientLight intensity={0.3} />
             <directionalLight
@@ -30,18 +30,21 @@ export const Vectorscopedevice = ({ ...props }) => {
             <Suspense fallback={null}>
               <VectorModel />
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+            autoRotate />
           </Canvas>
           <div className="absolute left-[calc(50%_-_248.5px)] top-[400px] flex shrink-0 flex-col items-center justify-start gap-5">
             <div
-              className="relative text-left text-[#d7d7d7]"
+              className="relative text-left text-[#f9f9f9]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
             >
               Follow your heart
             </div>
 
             <div
-              className="relative text-left text-[#d7d7d7]"
+              className="relative text-left text-[#f9f9f9]"
               style={{ font: "300 40px/150% 'PingFang SC', sans-serif" }}
             >
               随心所欲、不逾矩

@@ -19,7 +19,7 @@ export function CacupModel(props) {
         scale={0.001}
       />
       <group scale={0.02}>
-        <group position={[0, -40, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <group position={[-20, -40, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             castShadow
             receiveShadow

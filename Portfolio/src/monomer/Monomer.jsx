@@ -64,7 +64,7 @@ function Monomer() {
   };
 
   return (
-    <div className="flex h-[1300px] w-full flex-col items-start   justify-start  gap-[60px]">
+    <div className="flex h-[1300px] w-full flex-col items-start   justify-start  gap-[60px] scrollbar">
       <div className=" relative top-5 flex flex-col items-start justify-start gap-5">
         <div
           className="relative text-left text-[#000000]"

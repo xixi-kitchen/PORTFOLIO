@@ -10,7 +10,7 @@ export const Aerobic = ({ ...props }) => {
           <img className="self-stretch flex-1 relative" src="lo-10-1.png" />
 
           <div
-            className="flex flex-col items-center justify-center shrink-0 absolute left-[calc(50%_-_143px)] top-[calc(50%_-_95.5px)]"
+            className="flex flex-col items-center justify-center shrink-0 absolute left-[calc(50%_-_143px)] top-[calc(50%_-_95.5px)] drop-shadow-xl"
             style={{  }}
           >
             <div
@@ -33,7 +33,7 @@ export const Aerobic = ({ ...props }) => {
         </div>
 
         <div
-          className="flex flex-col gap-5 items-center justify-center w-[397px] absolute left-[calc(50%_-_511px)] top-[783px]"
+          className="flex drop-shadow-xl flex-col gap-5 items-center justify-center w-[397px] absolute left-[calc(50%_-_511px)] top-[783px]"
           style={{}}
         >
           <div
@@ -56,8 +56,8 @@ export const Aerobic = ({ ...props }) => {
         </div>
 
         <div
-          className="flex flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_115px)] top-[1015px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          className="flex  drop-shadow-xl flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_115px)] top-[1015px]"
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -80,7 +80,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_101px)] top-[6240px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -103,7 +103,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_78px)] top-[9000px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -126,7 +126,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_66px)] top-[10205px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -149,7 +149,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_153px)] top-[13146px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -172,7 +172,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_245px)] top-[15072px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -195,7 +195,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_111px)] top-[16405px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -218,7 +218,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_106px)] top-[19244px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"

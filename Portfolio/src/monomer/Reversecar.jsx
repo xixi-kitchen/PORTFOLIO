@@ -16,12 +16,15 @@ export function Reversecar() {
         camera={{ fov: 75 }}
         className=" relative flex-1 self-stretch bg-[#d5d5d5]"
       >
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={2} />
         <directionalLight color="white" position={[-2, 3, 5]} intensity={2} />
         <Suspense fallback={null}>
           <ReversecarModel />
         </Suspense>
-        <OrbitControls autoRotate />
+        <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5} 
+            autoRotate />
       </Canvas>
 
       <div className="absolute left-0 top-[845px] flex w-[1440px] flex-col items-start justify-start gap-0 pl-[200px] pr-[200px]">

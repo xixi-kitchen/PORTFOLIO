@@ -10,8 +10,8 @@ export function MigicComb({ ...props }) {
           <img className="self-stretch flex-1 relative" src="mc-2-4.png" />
 
           <div
-            className="flex flex-col gap-5 items-center justify-center shrink-0 absolute left-[calc(50%_-_207px)] top-[calc(50%_-_123.5px)]"
-            style={{ boxShadow: "6px 8px 8px 0px rgba(0, 0, 0, 0.50)" }}
+            className="flex flex-col gap-5 items-center justify-center shrink-0 absolute left-[calc(50%_-_207px)] top-[calc(50%_-_123.5px)] drop-shadow-xl"
+
           >
             <div
               className="text-[#ffffff] text-left relative"
@@ -51,7 +51,7 @@ export function MigicComb({ ...props }) {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_145px)] top-[1296px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -74,7 +74,7 @@ export function MigicComb({ ...props }) {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_205px)] top-[3728px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -97,7 +97,7 @@ export function MigicComb({ ...props }) {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_189px)] top-[6325px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"
@@ -120,7 +120,7 @@ export function MigicComb({ ...props }) {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_180px)] top-[7846px]"
-          style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+          
         >
           <div
             className="text-[#565656] text-left relative"

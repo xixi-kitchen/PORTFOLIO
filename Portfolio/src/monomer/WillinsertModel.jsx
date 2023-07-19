@@ -18,8 +18,8 @@ export function WillinsertModel(props) {
         rotation={[-0.336, -0.67, -0.214]}
         scale={0.001}
       />
-      <group scale={0.001}>
-        <group position={[0, 40, -40]}>
+      <group scale={0.03}>
+        <group position={[0, 10, -40]}>
           <mesh
             castShadow
             receiveShadow

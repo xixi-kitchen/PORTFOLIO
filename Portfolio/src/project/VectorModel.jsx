@@ -18,9 +18,9 @@ export function VectorModel(props) {
         rotation={[-2.559, 0.807, 2.697]}
         scale={0.001}
       />
-      <group scale={0.01}>
-        <group
-          position={[101.319, 45.979, -125.322]}
+      <group scale={0.015}>
+        {/* <group
+          position={[100, 45.979, -125.322]}
           rotation={[-Math.PI / 2, 0, 0]}
         >
           <mesh
@@ -605,9 +605,9 @@ export function VectorModel(props) {
             geometry={nodes.贴图_2.geometry}
             material={materials["贴图 0:0:255"]}
           />
-        </group>
+        </group> */}
         <group
-          position={[263.957, 45.979, 125.322]}
+          position={[0, 50, 0]}
           rotation={[-Math.PI / 2, 0, 0]}
         >
           <mesh

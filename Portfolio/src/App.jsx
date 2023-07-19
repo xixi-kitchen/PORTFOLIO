@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className=" relative top-0 containter w-[1440px] mx-auto flex flex-col  items-center">
+    <div className=" relative top-0 containter w-[1440px] mx-auto flex flex-col  items-center scrollbar">
       <nav className=" flex  flex-row justify-between w-full  h-12 text-xl font-bold no-underline bg-zinc-1000 items-center sticky">
         <Link to="/" className="mx-8 no-underline">
           Homepage

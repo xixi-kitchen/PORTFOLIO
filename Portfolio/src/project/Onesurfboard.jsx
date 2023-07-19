@@ -25,10 +25,13 @@ export function Onesurfboard({ ...props }) {
             <Suspense fallback={null}>
               <OnesurfaceModel/>
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+              autoRotate />
           </Canvas>
 
-          <div className="absolute left-[422px] top-[725px] flex w-[596px] shrink-0 flex-col items-center justify-start gap-0">
+          <div className=" drop-shadow-xl absolute left-[422px] top-[725px] flex w-[596px] shrink-0 flex-col items-center justify-start gap-0">
             <div
               className="relative text-left text-[#202020]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}

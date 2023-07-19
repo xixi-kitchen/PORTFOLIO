@@ -18,7 +18,7 @@ export function Model_faceplate(props) {
       />
       <group scale={0.007}>
         <group
-          position={[19.361, 177.435, -15.954]}
+          position={[19.361, 0, -15.954]}
           rotation={[-Math.PI / 2, 0, 0]}
         >
           <mesh

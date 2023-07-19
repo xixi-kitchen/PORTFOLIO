@@ -25,7 +25,10 @@ export const TwoFaceplate = ({ ...props }) => {
               <Suspense fallback={null}>
                 <Model_faceplate />
               </Suspense>
-              <OrbitControls autoRotate />
+              <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+              autoRotate />
             </Canvas>
 
           <div className="absolute left-[calc(50%_-_358px)] top-[403px] flex shrink-0 flex-col items-center justify-start drop-shadow-lg">
@@ -244,8 +247,9 @@ export const TwoFaceplate = ({ ...props }) => {
             style={{ margin: "0 0 0 -253px" }}
           >
             <img
-              className="relative h-[695px] shrink-0 self-stretch "
+              className="relative h-[695px] shrink-0 self-stretch mix-blend-multiply"
               src="faceplate-6.png"
+
             />
 
             <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">

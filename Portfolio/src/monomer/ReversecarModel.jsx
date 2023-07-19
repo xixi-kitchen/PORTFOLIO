@@ -18,8 +18,8 @@ export function ReversecarModel(props) {
         rotation={[-0.218, -0.593, -0.123]}
         scale={0.001}
       />
-      <group scale={0.025}>
-        <group position={[-30.947, -10, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+      <group scale={0.03}>
+        <group position={[-30.947, -30, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             castShadow
             receiveShadow

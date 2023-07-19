@@ -24,11 +24,14 @@ export function MissCalender({ ...props }) {
             <Suspense fallback={null}>
               <MissCalenderModel/>
             </Suspense>
-            <OrbitControls autoRotate />
+            <OrbitControls 
+            enableZoom={false}
+            autoRotateSpeed={0.5}
+            autoRotate />
           </Canvas>
           <div
-            className="absolute left-[calc(50%_-_257.5px)] top-[394px] flex shrink-0 flex-col items-center justify-center gap-5"
-            style={{ boxShadow: "4px 4px 20px 0px rgba(0, 0, 0, 0.25)" }}
+            className=" drop-shadow-xl absolute left-[calc(50%_-_257.5px)] top-[394px] flex shrink-0 flex-col items-center justify-center gap-5"
+           
           >
             <div
               className="relative text-left text-[#ffffff]"

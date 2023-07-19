@@ -16,8 +16,8 @@ export function RollinModel(props) {
         rotation={[-0.557, -1.186, -0.524]}
         scale={0.001}
       />
-      <group scale={0.012}>
-        <group position={[-72.06, -20, 78.884]} rotation={[-Math.PI / 2, 0, 0]}>
+      <group scale={0.013}>
+        <group position={[-72.06, -60, 78.884]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             castShadow
             receiveShadow

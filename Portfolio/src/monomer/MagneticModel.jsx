@@ -17,7 +17,7 @@ export function MagneticModel(props) {
         scale={0.001}
       />
       <group scale={0.01}>
-        <group position={[-150, 10.174, 25]} rotation={[-Math.PI / 2, 0, 0]}>
+        <group position={[-130, -40, 25]} rotation={[-Math.PI / 2, 0, 0]}>
           <group position={[300, 140, 0]}>
             <mesh
               castShadow

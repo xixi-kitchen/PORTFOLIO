@@ -18,9 +18,9 @@ export function ReticuleModel(props) {
         rotation={[-0.557, -1.186, -0.524]}
         scale={0.001}
       />
-      <group scale={0.00015}>
+      <group scale={0.00016}>
         <group
-          position={[0, 2000, -561]}
+          position={[0, -2000, 0]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={1000}
         >

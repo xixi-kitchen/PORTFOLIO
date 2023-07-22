@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const Fablabvi = ({ ...props }) => {
+export default function Fablabvi({ ...props }) {
   return (
     <div className="flex flex-col gap-[71px] items-start justify-start w-[1000px] h-[3200px] relative">
       <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
@@ -93,8 +93,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="flex flex-col gap-3 items-start justify-start shrink-0 relative">
                 <img
                   className="shrink-0 w-[519px] h-[754px] relative"
-                  src="fablabvi-1.png"
-                />
+                  src="fablabvi-1.png" />
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
                   <div
@@ -121,13 +120,11 @@ export const Fablabvi = ({ ...props }) => {
                 <div className="shrink-0 w-[421.77px] h-[754px] static">
                   <img
                     className="border-solid border-[#d5d5d5] border w-[421.77px] h-[378.95px] absolute left-0 top-[375.05px]"
-                    src="fablabvi-3.png"
-                  />
+                    src="fablabvi-3.png" />
 
                   <img
                     className="border-solid border-[#d5d5d5] border w-[421.77px] h-[368.56px] absolute left-0 top-0"
-                    src="fablabvi-2.png"
-                  />
+                    src="fablabvi-2.png" />
                 </div>
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -156,8 +153,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="shrink-0 w-[1000px] h-[468.18px] static">
                 <img
                   className="w-[1000px] h-[468.18px] absolute left-[calc(50%_-_500px)] top-0"
-                  src="fablabvi-4.png"
-                />
+                  src="fablabvi-4.png" />
 
                 <div className="bg-[#fcfeff] w-[399px] h-[60px] absolute left-[531px] top-[29px]"></div>
               </div>
@@ -220,8 +216,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="flex flex-col gap-[13px] items-start justify-start shrink-0 relative">
                 <img
                   className="border-solid border-[#d5d5d5] border shrink-0 w-[502px] h-[680px] relative"
-                  src="fablabvi-5.png"
-                />
+                  src="fablabvi-5.png" />
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
                   <div
@@ -247,8 +242,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="flex flex-col gap-[13px] items-start justify-start shrink-0 relative">
                 <img
                   className="border-solid border-[#d5d5d5] border shrink-0 w-[447px] h-[680px] relative"
-                  src="fablabvi-6.png"
-                />
+                  src="fablabvi-6.png" />
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
                   <div
@@ -276,8 +270,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="flex flex-col gap-[13px] items-start justify-start shrink-0 relative">
                 <img
                   className="shrink-0 w-[418px] h-[351px] relative"
-                  src="fablabvi-7.png"
-                />
+                  src="fablabvi-7.png" />
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
                   <div
@@ -303,8 +296,7 @@ export const Fablabvi = ({ ...props }) => {
               <div className="flex flex-col gap-[11px] items-start justify-start shrink-0 relative">
                 <img
                   className="shrink-0 w-[481px] h-[317px] relative"
-                  src="fablabvi-8.png"
-                />
+                  src="fablabvi-8.png" />
 
                 <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
                   <div
@@ -332,4 +324,4 @@ export const Fablabvi = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

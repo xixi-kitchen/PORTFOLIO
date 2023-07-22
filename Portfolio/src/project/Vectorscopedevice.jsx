@@ -6,15 +6,15 @@ import { OrbitControls,  } from "@react-three/drei";
 import { VectorModel } from './VectorModel';
 
 
-export const Vectorscopedevice = ({ ...props }) => {
+export default function Vectorscopedevice({ ...props }) {
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
       <div className="flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 h-[970px] relative">
         <div className="relative flex shrink-0 flex-col items-center h-[970px] justify-start gap-2.5 self-stretch">
           {/* <img
-            className="self-stretch shrink-0 h-[970px] relative"
-            src="vectorscope-1.png"
-          /> */}
+              className="self-stretch shrink-0 h-[970px] relative"
+              src="vectorscope-1.png"
+            /> */}
           <Canvas
             shadows
             dpr={[1, 2]}
@@ -25,15 +25,14 @@ export const Vectorscopedevice = ({ ...props }) => {
             <directionalLight
               color="white"
               position={[1, 3, 5]}
-              intensity={1}
-            />
+              intensity={1} />
             <Suspense fallback={null}>
               <VectorModel />
             </Suspense>
-            <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5}
-            autoRotate />
+            <OrbitControls
+              enableZoom={false}
+              autoRotateSpeed={0.5}
+              autoRotate />
           </Canvas>
           <div className="absolute left-[calc(50%_-_248.5px)] top-[400px] flex shrink-0 flex-col items-center justify-start gap-5">
             <div
@@ -122,18 +121,15 @@ export const Vectorscopedevice = ({ ...props }) => {
           <div className="absolute" style={{ inset: "0" }}>
             <img
               className="absolute bottom-[-0.33px] left-[209px] top-[370px] w-[697.99px]"
-              src="vectorscope-cj-2.png"
-            />
+              src="vectorscope-cj-2.png" />
 
             <img
               className="absolute bottom-[0.21px] left-[906.99px] top-[638.395751953125px] w-[324.01px]"
-              src="vectorscope-xj-4.png"
-            />
+              src="vectorscope-xj-4.png" />
 
             <img
               className="absolute bottom-[268.6px] left-[906.99px] top-[370px] w-[324.01px]"
-              src="vectorscope-xj-3.png"
-            />
+              src="vectorscope-xj-3.png" />
           </div>
         </div>
 
@@ -165,8 +161,7 @@ export const Vectorscopedevice = ({ ...props }) => {
 
           <img
             className="absolute bottom-0 left-[834px] right-0 top-0"
-            src="vectorscope-cj-6.png"
-          />
+            src="vectorscope-cj-6.png" />
 
           <div className="absolute left-[209px] top-[133px] flex w-[397px] flex-col items-start justify-start gap-0">
             <div
@@ -190,15 +185,13 @@ export const Vectorscopedevice = ({ ...props }) => {
 
           <img
             className="absolute bottom-0 left-[209px] right-[626px] top-[457px]"
-            src="vectorscope-xj-5.png"
-          />
+            src="vectorscope-xj-5.png" />
         </div>
 
         <div className="relative h-[1024px] shrink-0 self-stretch">
           <img
             className="absolute left-0 right-[209px] top-0 h-[698px]"
-            src="vectorscope-cj-7.png"
-          />
+            src="vectorscope-cj-7.png" />
 
           <div className="absolute left-[209px] top-[98px] flex flex-col items-start justify-start gap-0">
             <div
@@ -223,8 +216,7 @@ export const Vectorscopedevice = ({ ...props }) => {
           <div className="absolute" style={{ inset: "0" }}>
             <img
               className="absolute left-[521.0000000000073px] right-[401.76px] top-[694.89px] h-[165.1px]"
-              src="vectorscope-cj-8.png"
-            />
+              src="vectorscope-cj-8.png" />
 
             <div className="static h-[66.01px] w-[336.59px]">
               <div className="absolute left-[1100.16796875px] right-[103.83px] top-[748.19px] flex flex-col items-start justify-start gap-0">
@@ -258,8 +250,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M76.0514 30.2332H35.0955L0.582031 0.179199"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
             </div>
 
@@ -295,8 +286,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M120.416 68.9518H79.4602L0.769531 0.428711"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
             </div>
 
@@ -332,8 +322,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M233.034 167.72H192.078L0.183594 0.619629"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
             </div>
 
@@ -369,8 +358,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M321.596 0.043457H106.693L0.851562 92.2091"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
 
               <svg
@@ -384,8 +372,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M128.516 0.043457H87.5598L0.585938 75.7795"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
 
               <svg
@@ -399,8 +386,7 @@ export const Vectorscopedevice = ({ ...props }) => {
               >
                 <path
                   d="M147.789 0.043457H106.833L0.992188 92.2091"
-                  stroke="black"
-                />
+                  stroke="black" />
               </svg>
             </div>
           </div>
@@ -409,8 +395,7 @@ export const Vectorscopedevice = ({ ...props }) => {
         <div className="relative h-[1024px] shrink-0 self-stretch bg-[#f2f2f2]">
           <img
             className="absolute bottom-[683px] left-[209px] right-[834px] top-0"
-            src="vectorscope-sy-9.png"
-          />
+            src="vectorscope-sy-9.png" />
 
           <div className="absolute bottom-[683px] left-[626px] right-[209px] top-0 flex flex-col items-start justify-center gap-2.5">
             <div
@@ -457,13 +442,11 @@ export const Vectorscopedevice = ({ ...props }) => {
 
           <img
             className="absolute bottom-[341px] left-[834px] right-[209px] top-[341px]"
-            src="vectorscope-sy-10.png"
-          />
+            src="vectorscope-sy-10.png" />
 
           <img
             className="absolute bottom-0 left-[209px] right-[834px] top-[683px]"
-            src="vectorscope-sy-11.png"
-          />
+            src="vectorscope-sy-11.png" />
 
           <div className="absolute bottom-0 left-[626px] right-[209px] top-[683px] flex flex-col items-start justify-center gap-2.5">
             <div
@@ -581,8 +564,7 @@ export const Vectorscopedevice = ({ ...props }) => {
                 d="M0 0L1075 2.40492"
                 stroke="#DCDCDC"
                 strokeWidth="2"
-                strokeLinecap="round"
-              />
+                strokeLinecap="round" />
             </svg>
 
             <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
@@ -730,7 +712,7 @@ export const Vectorscopedevice = ({ ...props }) => {
         </div>
       </div>
 
-      <div  className="absolute left-[220px] right-[220px] top-[10px] flex flex-row items-start justify-between"
+      <div className="absolute left-[220px] right-[220px] top-[10px] flex flex-row items-start justify-between"
         style={{ flexWrap: "wrap" }}>
         <div
           className="relative text-left text-[#ffffff]"
@@ -748,4 +730,4 @@ export const Vectorscopedevice = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

@@ -11,7 +11,7 @@ import { MagneticModel } from './MagneticModel';
 
 
 
-export function Magnetic() {
+export default function Magnetic() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

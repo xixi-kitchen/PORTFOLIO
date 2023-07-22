@@ -7,7 +7,7 @@ import { OrbitControls } from "@react-three/drei";
 import { OriginStatus } from './MonoStatus';
 import { RollinModel } from "./RollinModel";
 
-export function Rollin() {
+export default function Rollin() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

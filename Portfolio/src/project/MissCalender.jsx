@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 import { MissCalenderModel } from "./MissCalenderModel";
 
-export function MissCalender({ ...props }) {
+export default function MissCalender({ ...props }) {
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
       <div className="absolute left-0 right-0 top-[0px] flex flex-col items-center justify-start gap-0">

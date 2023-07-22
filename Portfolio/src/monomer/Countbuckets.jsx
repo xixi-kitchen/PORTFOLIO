@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Countbuckets() {
+export default function Countbuckets() {
   return (
     <div>
       

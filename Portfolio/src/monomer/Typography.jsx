@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Typography = ({ ...props }) => {
+export default function Typography({ ...props }) {
   return (
     <div className="flex flex-col gap-[104px] items-center justify-start w-[1000px]  h-[5100px] relative">
       <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
@@ -106,18 +106,15 @@ export const Typography = ({ ...props }) => {
           <div className="flex flex-row items-start justify-between shrink-0 w-[1000px] relative">
             <img
               className="shrink-0 w-80 h-[479.94px] relative"
-              src="typography-110-haibao-1.png"
-            />
+              src="typography-110-haibao-1.png" />
 
             <img
               className="shrink-0 w-80 h-[479.94px] relative"
-              src="typography-110-haibao-2.png"
-            />
+              src="typography-110-haibao-2.png" />
 
             <img
               className="shrink-0 w-80 h-[479.94px] relative"
-              src="typography-110-haibao-3.png"
-            />
+              src="typography-110-haibao-3.png" />
           </div>
         </div>
 
@@ -169,8 +166,7 @@ export const Typography = ({ ...props }) => {
 
             <img
               className="border-solid border-[#cccccc] border shrink-0 w-[1000px] h-[707.28px] relative"
-              src="typographyshouce-1.png"
-            />
+              src="typographyshouce-1.png" />
           </div>
 
           <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -196,8 +192,7 @@ export const Typography = ({ ...props }) => {
 
             <img
               className="border-solid border-[#cccccc] border shrink-0 w-[1000px] h-[707.28px] relative"
-              src="typographyshouce-2.png"
-            />
+              src="typographyshouce-2.png" />
           </div>
 
           <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -223,8 +218,7 @@ export const Typography = ({ ...props }) => {
 
             <img
               className="border-solid border-[#cccccc] border shrink-0 w-[1000px] h-[707.28px] relative"
-              src="typographyshouce-3.png"
-            />
+              src="typographyshouce-3.png" />
           </div>
 
           <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -250,8 +244,7 @@ export const Typography = ({ ...props }) => {
 
             <img
               className="border-solid border-[#cccccc] border shrink-0 w-[1000px] h-[707.28px] relative"
-              src="typographyshouce-4.png"
-            />
+              src="typographyshouce-4.png" />
           </div>
         </div>
 
@@ -284,8 +277,7 @@ export const Typography = ({ ...props }) => {
             <div className="flex flex-col gap-[22px] items-center justify-start shrink-0 relative">
               <img
                 className="border-solid border-[#e5e5e5] border shrink-0 w-[598px] h-[423px] relative"
-                src="typographyba-1.png"
-              />
+                src="typographyba-1.png" />
 
               <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
                 <div
@@ -311,8 +303,7 @@ export const Typography = ({ ...props }) => {
             <div className="flex flex-col gap-[22px] items-center justify-start shrink-0 relative">
               <img
                 className="border-solid border-[#e5e5e5] border shrink-0 w-[299px] h-[423px] relative"
-                src="typographyba-2.png"
-              />
+                src="typographyba-2.png" />
 
               <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
                 <div
@@ -339,4 +330,4 @@ export const Typography = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

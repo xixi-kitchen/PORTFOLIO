@@ -4,15 +4,15 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { NotlackModel } from "./NotlackModel";
 
-export const NotLack = ({ ...props }) => {
+export default function NotLack({ ...props }) {
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
       <div className="relative flex flex-col items-center justify-start gap-0">
         <div className="relative flex h-[970px] shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
           {/* <img
-            className="relative flex-1 self-stretch"
-            src="notlack-zhutu.png"
-          /> */}
+              className="relative flex-1 self-stretch"
+              src="notlack-zhutu.png"
+            /> */}
           <Canvas
             shadows
             dpr={[1, 2]}
@@ -23,14 +23,13 @@ export const NotLack = ({ ...props }) => {
             <directionalLight
               color="white"
               position={[-2, 3, 5]}
-              intensity={2}
-            />
+              intensity={2} />
             <Suspense fallback={null}>
               <NotlackModel />
             </Suspense>
-            <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5}
+            <OrbitControls
+              enableZoom={false}
+              autoRotateSpeed={0.5}
               autoRotate />
           </Canvas>
 
@@ -60,8 +59,7 @@ export const NotLack = ({ ...props }) => {
           <div className="relative flex h-[1024px] shrink-0 flex-col items-start justify-start gap-2.5">
             <img
               className="relative h-[1024px] w-[1440px] shrink-0"
-              src="miss-xinyuxin.png"
-            />
+              src="miss-xinyuxin.png" />
 
             <div className="absolute left-[305px] top-[115px] flex shrink-0 flex-col items-center justify-start gap-[390px]">
               <div className="relative flex shrink-0 flex-col items-center justify-start gap-3">
@@ -236,8 +234,7 @@ export const NotLack = ({ ...props }) => {
 
                   <img
                     className="relative h-[664px] w-[801px] shrink-0 "
-                    src="miss-lianghzongdakai.png"
-                  />
+                    src="miss-lianghzongdakai.png" />
                 </div>
               </div>
             </div>
@@ -266,8 +263,7 @@ export const NotLack = ({ ...props }) => {
 
                 <img
                   className="relative h-[311px] w-[407px] shrink-0"
-                  src="miss-pingfang.png"
-                />
+                  src="miss-pingfang.png" />
               </div>
 
               <div className="relative flex shrink-0 flex-col items-end justify-start gap-[67px]">
@@ -293,8 +289,7 @@ export const NotLack = ({ ...props }) => {
 
                 <img
                   className="relative h-[523px] w-[493.03px] shrink-0"
-                  src="miss-lifang.png"
-                />
+                  src="miss-lifang.png" />
               </div>
             </div>
 
@@ -424,8 +419,7 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
                     className="relative h-60 w-[520px] shrink-0"
-                    src="miss-lanse.png"
-                  />
+                    src="miss-lanse.png" />
 
                   <div className="absolute left-[114px] top-[130px] h-[60px] w-[60px] shrink-0 rounded-[50%] bg-[#adc3ff]"></div>
                 </div>
@@ -433,8 +427,7 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
                     className="relative h-60 w-[520px] shrink-0"
-                    src="miss-hongse.png"
-                  />
+                    src="miss-hongse.png" />
 
                   <div className="absolute left-[114px] top-[147px] h-[60px] w-[60px] shrink-0 rounded-[50%] bg-[#ffc6bf]"></div>
                 </div>
@@ -479,28 +472,23 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
                     className="relative h-[166.98px] w-[166.98px] shrink-0"
-                    src="miss-sunset.png"
-                  />
+                    src="miss-sunset.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-sunset-1.png"
-                  />
+                    src="miss-sunset-1.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-sunset-2.png"
-                  />
+                    src="miss-sunset-2.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="vmiss-sunset-3.png"
-                  />
+                    src="vmiss-sunset-3.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-sunset-4.png"
-                  />
+                    src="miss-sunset-4.png" />
                 </div>
               </div>
 
@@ -517,23 +505,19 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
                     className="relative h-[166.98px] w-[166.98px] shrink-0"
-                    src="miss-moss.png"
-                  />
+                    src="miss-moss.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-moss-1.png"
-                  />
+                    src="miss-moss-1.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-moss-2.png"
-                  />
+                    src="miss-moss-2.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-moss-3.png"
-                  />
+                    src="miss-moss-3.png" />
                 </div>
               </div>
 
@@ -550,23 +534,19 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
                     className="relative h-[166.98px] w-[166.98px] shrink-0"
-                    src="miss-fairy.png"
-                  />
+                    src="miss-fairy.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-fairy-1.png"
-                  />
+                    src="miss-fairy-1.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-fairy-2.png"
-                  />
+                    src="miss-fairy-2.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-fairy-3.png"
-                  />
+                    src="miss-fairy-3.png" />
                 </div>
               </div>
 
@@ -583,28 +563,23 @@ export const NotLack = ({ ...props }) => {
                 <div className="relative flex shrink-0 flex-row items-start justify-start gap-0">
                   <img
                     className="relative h-[166.98px] w-[166.98px] shrink-0"
-                    src="miss-docks.png"
-                  />
+                    src="miss-docks.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-docks-1.png"
-                  />
+                    src="miss-docks-1.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-docks-2.png"
-                  />
+                    src="miss-docks-2.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-docks-3.png"
-                  />
+                    src="miss-docks-3.png" />
 
                   <img
                     className="relative h-[166.98px] w-[208.26px] shrink-0"
-                    src="miss-docks-4.png"
-                  />
+                    src="miss-docks-4.png" />
                 </div>
               </div>
             </div>
@@ -728,8 +703,7 @@ export const NotLack = ({ ...props }) => {
               <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
                 <img
                   className="relative h-[505px] w-[715px] shrink-0"
-                  src="miss-structure.png"
-                />
+                  src="miss-structure.png" />
 
                 <div className="relative flex shrink-0 flex-col items-start justify-start gap-[200px]">
                   <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
@@ -802,13 +776,11 @@ export const NotLack = ({ ...props }) => {
             <div className="relative flex w-[1000px] shrink-0 flex-row items-center justify-between">
               <img
                 className="relative h-[514px] w-[602px] shrink-0"
-                src="miss-packing-1.png"
-              />
+                src="miss-packing-1.png" />
 
               <img
                 className="relative h-[406px] w-[521px] shrink-0"
-                src="miss-packing-2.png"
-              />
+                src="miss-packing-2.png" />
             </div>
 
             <div className="relative flex shrink-0 flex-row items-start justify-start gap-[198px]">
@@ -890,8 +862,7 @@ export const NotLack = ({ ...props }) => {
                 d="M0 0L999.998 2.23713"
                 stroke="#DCDCDC"
                 strokeWidth="2"
-                strokeLinecap="round"
-              />
+                strokeLinecap="round" />
             </svg>
 
             <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
@@ -1056,4 +1027,4 @@ export const NotLack = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

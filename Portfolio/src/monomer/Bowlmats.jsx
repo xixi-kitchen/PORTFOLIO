@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 import { BowlmatsModel } from "./BowlmatsModel";
 
-export const Bowlmats = ({ ...props }) => {
+export default function Bowlmats({ ...props }) {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas
@@ -18,10 +18,10 @@ export const Bowlmats = ({ ...props }) => {
         <Suspense fallback={null}>
           <BowlmatsModel />
         </Suspense>
-        <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5} 
-            autoRotate />
+        <OrbitControls
+          enableZoom={false}
+          autoRotateSpeed={0.5}
+          autoRotate />
       </Canvas>
 
       <div className="absolute left-0 top-[845px] flex w-[1440px] flex-col items-start justify-start gap-0 pl-[200px] pr-[200px]">
@@ -131,4 +131,4 @@ export const Bowlmats = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

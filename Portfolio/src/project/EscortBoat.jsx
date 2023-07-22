@@ -7,14 +7,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 import { EscortBoatModel } from "./EscortBoatModel";
 
-export const EscortBoat = ({ ...props }) => {
+export default function EscortBoat({ ...props }) {
 
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
-  
+
   const goEscortplus = () => {
-      goNavigate("/Escortplus");
-      window.scrollTo(0, 0)
-    };
+    goNavigate("/Escortplus");
+    window.scrollTo(0, 0);
+  };
 
 
   return (
@@ -29,29 +29,29 @@ export const EscortBoat = ({ ...props }) => {
               src="escort-zhutu.png"
             /> */}
             <Canvas
-            shadows
-            dpr={[1, 2]}
-            camera={{ fov: 75 }}
-            className=" relative flex-1 self-stretch bg-[#777777]"
-          >
-            <ambientLight intensity={2} />
-            <directionalLight
-              color="white"
-              position={[2, 3, 5]}
-              intensity={1} />
-            <Suspense fallback={null}>
-              <EscortBoatModel/>
-            </Suspense>
-            <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5}
-            autoRotate />
-          </Canvas>
+              shadows
+              dpr={[1, 2]}
+              camera={{ fov: 75 }}
+              className=" relative flex-1 self-stretch bg-[#777777]"
+            >
+              <ambientLight intensity={2} />
+              <directionalLight
+                color="white"
+                position={[2, 3, 5]}
+                intensity={1} />
+              <Suspense fallback={null}>
+                <EscortBoatModel />
+              </Suspense>
+              <OrbitControls
+                enableZoom={false}
+                autoRotateSpeed={0.5}
+                autoRotate />
+            </Canvas>
           </div>
 
           <div
             className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_476px)] top-[373px] drop-shadow-xl"
-           
+
           >
             <div
               className="text-[#ececec] text-left relative"
@@ -93,8 +93,7 @@ export const EscortBoat = ({ ...props }) => {
           <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
             <img
               className="shrink-0 w-[189px] h-[297px] relative"
-              src="escort-shousuo.png"
-            />
+              src="escort-shousuo.png" />
 
             <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[605px] relative">
               <div
@@ -121,8 +120,7 @@ export const EscortBoat = ({ ...props }) => {
           <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
             <img
               className="shrink-0 w-[605px] h-[271px] relative"
-              src="escort-kuozhang.png"
-            />
+              src="escort-kuozhang.png" />
 
             <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[397px] relative">
               <div
@@ -261,8 +259,7 @@ export const EscortBoat = ({ ...props }) => {
 
           <img
             className="shrink-0 w-[814px] h-[456px] relative"
-            src="escort-gongnengfenli.png"
-          />
+            src="escort-gongnengfenli.png" />
 
           <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative">
             <div
@@ -342,8 +339,7 @@ export const EscortBoat = ({ ...props }) => {
 
           <img
             className="shrink-0 w-[814px] h-[510px] relative"
-            src="escort-fangshuicailiao.png"
-          />
+            src="escort-fangshuicailiao.png" />
 
           <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative">
             <div
@@ -419,8 +415,7 @@ export const EscortBoat = ({ ...props }) => {
 
           <img
             className="shrink-0 w-[1022px] h-[424px] relative"
-            src="escort-mokuaihua.png"
-          />
+            src="escort-mokuaihua.png" />
 
           <div className="flex flex-row gap-5 items-start justify-start shrink-0 relative">
             <div className="flex flex-col gap-[13px] items-start justify-start shrink-0 relative">
@@ -817,8 +812,7 @@ export const EscortBoat = ({ ...props }) => {
               d="M0 0L999.998 2.23713"
               stroke="#DCDCDC"
               strokeWidth="2"
-              strokeLinecap="round"
-            />
+              strokeLinecap="round" />
           </svg>
 
           <div className="flex flex-col gap-[15px] items-start justify-start shrink-0 w-[1000px] relative">
@@ -992,4 +986,4 @@ export const EscortBoat = ({ ...props }) => {
 
     </div>
   );
-};
+}

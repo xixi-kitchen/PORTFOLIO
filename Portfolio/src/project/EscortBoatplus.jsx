@@ -6,7 +6,7 @@ import { EscortPlusModel } from "./EscortPlusModel";
 import { useNavigate } from "react-router-dom";
 
 
-export function EscortBoatplus({ ...props }) {
+export default function EscortBoatplus({ ...props }) {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
  
   const goEscort = () => {

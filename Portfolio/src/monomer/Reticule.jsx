@@ -6,7 +6,7 @@ import { OrbitControls } from "@react-three/drei";
 import { OriginStatus } from './MonoStatus';
 import { ReticuleModel } from './ReticuleModel';
 
-export function Reticule() {
+export default function Reticule() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

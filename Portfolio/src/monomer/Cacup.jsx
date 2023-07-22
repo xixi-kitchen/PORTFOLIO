@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { CacupModel } from "./CacupModel";
 
-export function Cacup({ ...props }) {
+export default function Cacup({ ...props }) {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

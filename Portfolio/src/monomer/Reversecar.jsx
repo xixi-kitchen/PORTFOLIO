@@ -7,7 +7,7 @@ import { OrbitControls } from "@react-three/drei";
 import { RequStatus } from './MonoStatus'
 import { ReversecarModel } from './ReversecarModel';
 
-export function Reversecar() {
+export default function Reversecar() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

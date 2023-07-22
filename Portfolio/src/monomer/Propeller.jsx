@@ -8,7 +8,7 @@ import { RequStatus } from './MonoStatus'
 
 import { PropellerModel } from './PropellerModel'
 
-export function Propeller() {
+export default function Propeller() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Innologo({ ...props }) {
+export default function Innologo({ ...props }) {
     return (
         <div className="flex flex-col gap-[60px] items-center justify-center w-[1000px]  h-[1300px] relative ">
             <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">

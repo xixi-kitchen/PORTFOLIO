@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls,  } from "@react-three/drei";
 import { SaintLancnceModel } from "./SaintLancnceModel";
 
-export function Saintlancnce({ ...props }) {
+export default function Saintlancnce({ ...props }) {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Aerobic = ({ ...props }) => {
+export default function Aerobic({ ...props }) {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"
@@ -11,7 +11,7 @@ export const Aerobic = ({ ...props }) => {
 
           <div
             className="flex flex-col items-center justify-center shrink-0 absolute left-[calc(50%_-_143px)] top-[calc(50%_-_95.5px)] drop-shadow-xl"
-            style={{  }}
+            style={{}}
           >
             <div
               className="text-[#ffffff] text-left relative"
@@ -57,7 +57,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex  drop-shadow-xl flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_115px)] top-[1015px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -80,7 +80,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_101px)] top-[6240px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -103,7 +103,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-start absolute left-[calc(50%_-_78px)] top-[9000px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -126,7 +126,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_66px)] top-[10205px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -149,7 +149,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_153px)] top-[13146px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -172,7 +172,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_245px)] top-[15072px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -195,7 +195,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_111px)] top-[16405px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -218,7 +218,7 @@ export const Aerobic = ({ ...props }) => {
 
         <div
           className="flex flex-col gap-5 items-center justify-center absolute left-[calc(50%_-_106px)] top-[19244px]"
-          
+
         >
           <div
             className="text-[#565656] text-left relative"
@@ -241,8 +241,7 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[679px] absolute right-[209px] left-[209px] top-[19523px]"
-          src="lo-49-1.png"
-        />
+          src="lo-49-1.png" />
 
         <div className="flex flex-col gap-2.5 items-start justify-start h-[110px] absolute right-[209px] left-[626px] top-[798px]">
           <div
@@ -518,8 +517,7 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="w-[292px] h-[400px] absolute left-[209px] top-[2557px]"
-          src="lo-4-1.png"
-        />
+          src="lo-4-1.png" />
 
         <div className="flex flex-col gap-0 items-start justify-start absolute left-[209px] top-[1404px]">
           <div
@@ -643,8 +641,7 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[973px] absolute right-[209px] left-[209px] top-[7840px]"
-          src="lo-12-1.png"
-        />
+          src="lo-12-1.png" />
 
         <div className="flex flex-col gap-0 items-start justify-start absolute right-[626px] left-[209px] top-[6460px]">
           <div
@@ -688,8 +685,7 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[1035px] absolute right-[209px] left-[209px] top-[6587px]"
-          src="lo-11-1.png"
-        />
+          src="lo-11-1.png" />
 
         <div className="flex flex-col gap-0 items-start justify-start absolute left-[834px] top-[1404px]">
           <div
@@ -733,53 +729,43 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[505px] absolute right-[730px] left-[209px] top-[1484px]"
-          src="lo-1-1.png"
-        />
+          src="lo-1-1.png" />
 
         <img
           className="h-64 absolute right-[209px] left-[834px] top-[1484px]"
-          src="lo-2-1.png"
-        />
+          src="lo-2-1.png" />
 
         <img
           className="h-[194px] absolute right-[209px] left-[834px] top-[1860px]"
-          src="lo-3-1.png"
-        />
+          src="lo-3-1.png" />
 
         <img
           className="h-[600px] absolute right-[209px] left-[209px] top-[3156px]"
-          src="lo-5-1.png"
-        />
+          src="lo-5-1.png" />
 
         <img
           className="h-[640px] absolute right-[209px] left-[209px] top-[4520px]"
-          src="lo-8-1.png"
-        />
+          src="lo-8-1.png" />
 
         <img
           className="w-[605px] h-[403px] absolute left-[626px] top-[5647px]"
-          src="lo-9-1.png"
-        />
+          src="lo-9-1.png" />
 
         <img
           className="h-[718px] absolute right-[209px] left-[209px] top-[9278px]"
-          src="lo-1-12.png"
-        />
+          src="lo-1-12.png" />
 
         <img
           className="h-[1103px] absolute right-[209px] left-[209px] top-[10399px]"
-          src="lo-14-1.png"
-        />
+          src="lo-14-1.png" />
 
         <img
           className="h-[1347px] absolute right-[209px] left-[209px] top-[11553px]"
-          src="lo-15-1.png"
-        />
+          src="lo-15-1.png" />
 
         <img
           className="h-[1449px] absolute right-[209px] left-[209px] top-[13364px]"
-          src="lo-13-1.png"
-        />
+          src="lo-13-1.png" />
 
         <div
           className="text-[#000000] text-left absolute right-[1043px] left-[209px] top-[15379px]"
@@ -950,13 +936,11 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[742px] absolute right-[104px] left-[730px] top-[21645px]"
-          src="lo-52-1.png"
-        />
+          src="lo-52-1.png" />
 
         <img
           className="h-[738px] absolute right-[834px] left-[209px] top-[21547px]"
-          src="lo-51-1.png"
-        />
+          src="lo-51-1.png" />
 
         <div className="flex flex-col gap-0 items-start justify-start w-[188px] absolute left-[209px] top-[15538px]">
           <div
@@ -980,38 +964,31 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="h-[555px] absolute right-[209px] left-[209px] top-[15637px]"
-          src="lo-16-1.png"
-        />
+          src="lo-16-1.png" />
 
         <img
           className="h-[413px] absolute right-[209px] left-[626px] top-[17191px]"
-          src="lo-21-1.png"
-        />
+          src="lo-21-1.png" />
 
         <img
           className="h-[339px] absolute right-[626px] left-[209px] top-[18302px]"
-          src="lo-38.png"
-        />
+          src="lo-38.png" />
 
         <img
           className="h-56 absolute right-[209px] left-[834px] top-[18417px]"
-          src="lo-39.png"
-        />
+          src="lo-39.png" />
 
         <img
           className="h-[282px] absolute right-[730px] left-[209px] top-[18664px]"
-          src="lo-40.png"
-        />
+          src="lo-40.png" />
 
         <img
           className="h-[300px] absolute right-[313px] left-[730px] top-[18664px]"
-          src="lo-41.png"
-        />
+          src="lo-41.png" />
 
         <img
           className="h-[1137px] absolute right-[209px] left-[209px] top-[20410px]"
-          src="lo-50-1.png"
-        />
+          src="lo-50-1.png" />
 
         <div className="flex flex-col gap-2.5 items-center justify-start absolute right-[104px] left-[730px] top-[22374px]">
           <div
@@ -1035,53 +1012,43 @@ export const Aerobic = ({ ...props }) => {
 
         <img
           className="w-[1022px] h-[1019px] absolute left-[209px] top-[22700px]"
-          src="lo-53-1.png"
-        />
+          src="lo-53-1.png" />
 
         <img
           className="w-[29.77px] h-[76px] absolute left-[313px] top-[4150px]"
-          src="lo-7.png"
-        />
+          src="lo-7.png" />
 
         <img
           className="w-[22px] h-[76px] absolute left-[313px] top-[4035px]"
-          src="lo-6.png"
-        />
+          src="lo-6.png" />
 
         <img
           className="h-[452px] absolute right-[626px] left-[209px] top-[16719px]"
-          src="lo-17.png"
-        />
+          src="lo-17.png" />
 
         <img
           className="h-[218px] absolute right-[313px] left-[834px] top-[16719px]"
-          src="lo-18.png"
-        />
+          src="lo-18.png" />
 
         <img
           className="h-[299px] absolute right-[834px] left-[209px] top-[17191px]"
-          src="lo-19.png"
-        />
+          src="lo-19.png" />
 
         <img
           className="h-[222px] absolute right-[209px] left-[834px] top-[16949px]"
-          src="lo-20.png"
-        />
+          src="lo-20.png" />
 
         <img
           className="h-[282px] absolute right-[730px] left-[209px] top-[17645px]"
-          src="lo-22-1.png"
-        />
+          src="lo-22-1.png" />
 
         <img
           className="h-[283px] absolute right-[730px] left-[209px] top-[17949px]"
-          src="lo-24.png"
-        />
+          src="lo-24.png" />
 
         <img
           className="h-[280px] absolute right-[209px] left-[730px] top-[17646px]"
-          src="lo-23.png"
-        />
+          src="lo-23.png" />
 
         <div className="flex flex-col gap-0 items-start justify-start absolute left-[209px] top-[21454px]">
           <div
@@ -1105,4 +1072,4 @@ export const Aerobic = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

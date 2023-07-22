@@ -4,32 +4,31 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, Box } from "@react-three/drei";
 import { Model_faceplate } from "./TwoFaceModel";
 
-export const TwoFaceplate = ({ ...props }) => {
+export default function TwoFaceplate({ ...props }) {
   return (
     <div className="relative h-[1024px] w-[1440px] bg-[#ffffff]">
       <div className="absolute left-[calc(50%_-_720px)] top-[0px] flex h-[6227px] w-[1440px] flex-col items-center justify-start gap-10">
         <div className="relative flex h-[970px] shrink-0 flex-col items-center justify-start gap-2.5 self-stretch">
           {/* <img className="relative flex-1 self-stretch" src="faceplate-1.png" /> */}
           <Canvas
-              shadows
-              dpr={[1, 2]}
-              camera={{ fov: 75 }}
-              className=" relative flex-1 self-stretch bg-[#3f3f3f]"
-            >
-              <ambientLight intensity={0.3} />
-              <directionalLight
-                color="white"
-                position={[1, 3, 5]}
-                intensity={1}
-              />
-              <Suspense fallback={null}>
-                <Model_faceplate />
-              </Suspense>
-              <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5}
+            shadows
+            dpr={[1, 2]}
+            camera={{ fov: 75 }}
+            className=" relative flex-1 self-stretch bg-[#3f3f3f]"
+          >
+            <ambientLight intensity={0.3} />
+            <directionalLight
+              color="white"
+              position={[1, 3, 5]}
+              intensity={1} />
+            <Suspense fallback={null}>
+              <Model_faceplate />
+            </Suspense>
+            <OrbitControls
+              enableZoom={false}
+              autoRotateSpeed={0.5}
               autoRotate />
-            </Canvas>
+          </Canvas>
 
           <div className="absolute left-[calc(50%_-_358px)] top-[403px] flex shrink-0 flex-col items-center justify-start drop-shadow-lg">
             <div
@@ -102,8 +101,7 @@ export const TwoFaceplate = ({ ...props }) => {
         <div className="relative h-[747px] shrink-0 self-stretch">
           <img
             className="absolute left-0 right-0 top-0 h-[621px]"
-            src="faceplate-2.png"
-          />
+            src="faceplate-2.png" />
 
           <div className="absolute left-[calc(50%_-_428px)] top-[113px] flex w-[856px] flex-col items-center justify-center gap-2.5">
             <div
@@ -218,8 +216,7 @@ export const TwoFaceplate = ({ ...props }) => {
           <div className="relative flex flex-1 flex-col items-center justify-start gap-0">
             <img
               className="relative h-[509.07px] shrink-0 self-stretch"
-              src="faceplate-5.png"
-            />
+              src="faceplate-5.png" />
 
             <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
@@ -248,9 +245,7 @@ export const TwoFaceplate = ({ ...props }) => {
           >
             <img
               className="relative h-[695px] shrink-0 self-stretch mix-blend-multiply"
-              src="faceplate-6.png"
-
-            />
+              src="faceplate-6.png" />
 
             <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
               <div
@@ -299,15 +294,13 @@ export const TwoFaceplate = ({ ...props }) => {
 
           <img
             className="absolute left-[649px] right-0 top-0 h-[547px]"
-            src="faceplate-7.png"
-          />
+            src="faceplate-7.png" />
         </div>
 
         <div className="relative h-[546px] shrink-0 self-stretch">
           <img
             className="absolute left-0 right-[649px] top-0 h-[546px]"
-            src="faceplate-8.png"
-          />
+            src="faceplate-8.png" />
 
           <div className="absolute left-[811px] right-[162px] top-[197px] flex flex-col items-start justify-start gap-2.5">
             <div
@@ -348,8 +341,7 @@ export const TwoFaceplate = ({ ...props }) => {
                 d="M0 0L1075 2.40492"
                 stroke="#DCDCDC"
                 strokeWidth="2"
-                strokeLinecap="round"
-              />
+                strokeLinecap="round" />
             </svg>
 
             <div className="relative flex w-[900px] shrink-0 flex-col items-start justify-start gap-[15px]">
@@ -517,4 +509,4 @@ export const TwoFaceplate = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

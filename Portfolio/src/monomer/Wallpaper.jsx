@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Wallpaper = ({ ...props }) => {
+export default function Wallpaper({ ...props }) {
   return (
     <div className="flex flex-col gap-[58px] items-start justify-start  h-[2800px] relative">
       <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">
@@ -104,8 +104,7 @@ export const Wallpaper = ({ ...props }) => {
 
             <img
               className="shrink-0 w-[400px] h-[864px] relative"
-              src="wallpaper-1.png"
-            />
+              src="wallpaper-1.png" />
           </div>
 
           <div
@@ -114,8 +113,7 @@ export const Wallpaper = ({ ...props }) => {
           >
             <img
               className="shrink-0 w-[400px] h-[864px] relative"
-              src="wallpaper-2.png"
-            />
+              src="wallpaper-2.png" />
 
             <div className="flex flex-col gap-5 items-start justify-start shrink-0 relative">
               <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -208,8 +206,7 @@ export const Wallpaper = ({ ...props }) => {
 
             <img
               className="shrink-0 w-[400px] h-[864px] relative"
-              src="wallpaper-3.png"
-            />
+              src="wallpaper-3.png" />
           </div>
 
           <div
@@ -218,8 +215,7 @@ export const Wallpaper = ({ ...props }) => {
           >
             <img
               className="shrink-0 w-[400px] h-[864px] relative"
-              src="wallpaper-4.png"
-            />
+              src="wallpaper-4.png" />
 
             <div className="flex flex-col gap-5 items-start justify-start shrink-0 relative">
               <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
@@ -268,4 +264,4 @@ export const Wallpaper = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

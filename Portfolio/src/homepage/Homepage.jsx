@@ -1,36 +1,32 @@
 import React from "react";
 
-
 import { useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 
 function Homepage({ ...props }) {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
-  
-
-
 
   const goaboutus = () => {
     goNavigate("/aboutus");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
-//项目内容
+  //项目内容
   const goAbspace = () => {
     goNavigate("/Abspace");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   const goTour = () => {
     goNavigate("/Tour");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   const goGeneral = () => {
     goNavigate("/General");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   const goPractice = () => {
     goNavigate("/Practice");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
 
   // const goVector = () => {
@@ -41,18 +37,18 @@ function Homepage({ ...props }) {
   // };
   const goSaint = () => {
     goNavigate("/Saint");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goMiss = () => {
   //   goNavigate("/Miss");
   // };
   const goMigiccomb = () => {
     goNavigate("/Migiccomb");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   const goTwoface = () => {
     goNavigate("/Twoface");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goEscort = () => {
   //   goNavigate("/Escort");
@@ -62,21 +58,21 @@ function Homepage({ ...props }) {
   // };
   const goAerobic = () => {
     goNavigate("/Aerobic");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   const goNotlack = () => {
     goNavigate("/Notlack");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
-//单体内容
+  //单体内容
   const goCacup = () => {
     goNavigate("/Cacup");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
 
   const goEndtables = () => {
     goNavigate("/Endtables");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goBowlmats = () => {
   //   goNavigate("/Bowlmats");
@@ -84,7 +80,7 @@ function Homepage({ ...props }) {
 
   const goCabinets = () => {
     goNavigate("/Cabinets");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goCountbuckets = () => {
   //   goNavigate("/Countbuckets");
@@ -101,30 +97,30 @@ function Homepage({ ...props }) {
   // };
   const goReticule = () => {
     goNavigate("/Reticule");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goReversecar = () => {
   //   goNavigate("/Reversecar");
   // };
   const goRollin = () => {
     goNavigate("/Rollin");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
   // const goSunwardred = () => {
   //   goNavigate("/Sunwardred");
   // };
   const goWillinsert = () => {
     goNavigate("/Willinsert");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
 
   return (
-<div className="bg-[#ffffff] h-[7500px] relative">
-      <div className="flex flex-col gap-[258px] items-center justify-start h-[7140px] absolute right-0 left-0 top-[226px] scrollbar">
-        <div className="flex flex-col gap-[61px] items-center justify-start shrink-0 w-[1022px] relative">
-          <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
+    <div className="relative h-[7500px] bg-[#ffffff]">
+      <div className="scrollbar absolute left-0 right-0 top-[226px] flex h-[7140px] flex-col items-center justify-start gap-[258px]">
+        <div className="relative flex w-[1022px] shrink-0 flex-col items-center justify-start gap-[61px]">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
               }}
@@ -133,7 +129,7 @@ function Homepage({ ...props }) {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -142,9 +138,9 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
             <div
-              className="text-left relative self-stretch"
+              className="relative self-stretch text-left"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -156,9 +152,7 @@ function Homepage({ ...props }) {
                 <span className="text-[#8158FC]">
                   a designer who likes to do all kinds of novelty experiments
                 </span>
-                <span className="">
-                  , and an{" "}
-                </span>
+                <span className="">, and an </span>
                 <span className="text-[#8158FC]">
                   artificial intelligence (who is actually a person)
                 </span>
@@ -171,18 +165,20 @@ function Homepage({ ...props }) {
             </div>
 
             <div
-              className="text-left relative self-stretch"
+              className="relative self-stretch text-left"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
             >
               <span>
-                <span className="">
-                  人类设计工作室是一个虚拟的工作室，由
+                <span className="">人类设计工作室是一个虚拟的工作室，由</span>
+                <span className="text-[#8158FC]">
+                  一个喜欢做各类新奇尝试的设计师
                 </span>
-                <span className="text-[#8158FC]">一个喜欢做各类新奇尝试的设计师</span>
                 <span className="">和一个</span>
-                <span className="text-[#8158FC]">人工智能组成（其实就是一个人）</span>
+                <span className="text-[#8158FC]">
+                  人工智能组成（其实就是一个人）
+                </span>
                 <span className="">
                   。当我们的设计理念是不变的，就是让设计能更加贴合生活，利于生活、造福生活，让设计服务于人类。
                 </span>
@@ -190,10 +186,10 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-0.5 items-center justify-center self-stretch shrink-0 relative">
-            <div className="flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-center justify-center gap-0.5 self-stretch">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5">
               <div
-                className="text-[#606060] text-left relative"
+                className="relative text-left text-[#606060]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -202,7 +198,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#8158fc] text-left relative"
+                className="relative text-left text-[#8158fc]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -211,7 +207,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#606060] text-left relative"
+                className="relative text-left text-[#606060]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -220,9 +216,9 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="bg-[#8158fc] p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative rounded-2xl ">
+            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-[#8158fc] p-2.5 ">
               <div
-                className="text-[#ffffff] text-center relative flex-1"
+                className="relative flex-1 text-center text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -233,11 +229,11 @@ function Homepage({ ...props }) {
           </div>
         </div>
 
-        <div className="flex flex-row gap-10 items-center  justify-between shrink-0 w-[1022px] relative">
-          <div className="flex flex-col gap-8 items-start justify-start shrink-0 relative">
-            <div className="flex flex-row gap-5 items-center justify-start shrink-0 relative">
+        <div className="relative flex w-[1022px] shrink-0  flex-row items-center justify-between gap-10">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-8">
+            <div className="relative flex shrink-0 flex-row items-center justify-start gap-5">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -246,7 +242,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -255,7 +251,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -264,10 +260,10 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[7px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[7px]">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 100 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -276,7 +272,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 100 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -285,9 +281,9 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[336px] relative">
+              <div className="relative flex w-[336px] shrink-0 flex-col items-start justify-start gap-2.5">
                 <div
-                  className="text-left relative self-stretch"
+                  className="relative self-stretch text-left"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -298,14 +294,12 @@ function Homepage({ ...props }) {
                       don&#039;t want to be defined by industrial design alone,
                       I prefer to call myself a{" "}
                     </span>
-                    <span className=" text-[#8158FC]">
-                      [designer]
-                    </span>
+                    <span className=" text-[#8158FC]">[designer]</span>
                   </span>
                 </div>
 
                 <div
-                  className="text-left relative self-stretch"
+                  className="relative self-stretch text-left"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -320,10 +314,10 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 items-start justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-3">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 100 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -332,7 +326,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="text-[#000000] text-left relative"
+                  className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--en, 100 20px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -341,11 +335,11 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-1.5 items-start justify-start shrink-0 relative">
-                <div className="flex flex-row gap-1 items-start justify-start shrink-0 relative">
-                  <div className="bg-[#ffe69e] rounded-md flex flex-col gap-1.5 items-center justify-center shrink-0 w-[77px] h-16 relative">
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-1.5">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-1">
+                  <div className="relative flex h-16 w-[120px] shrink-0 flex-col items-center justify-center gap-1.5 rounded-md bg-[#ffd765]">
                     <div
-                      className="text-[#686868] text-center relative"
+                      className="relative text-center text-[#686868]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -354,7 +348,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#686868] text-left relative"
+                      className="relative text-left text-[#686868]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -363,10 +357,10 @@ function Homepage({ ...props }) {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-1 items-start justify-start shrink-0 relative">
-                    <div className="bg-[#ffe69e] rounded-md flex flex-row gap-0 items-center justify-center shrink-0 w-[179px] h-[30px] relative">
+                  <div className="relative flex shrink-0 flex-col items-start justify-start gap-1">
+                    <div className="relative flex h-[30px] w-[179px] shrink-0 flex-row items-center justify-center gap-0 rounded-md bg-[#ffe69e]">
                       <div
-                        className="text-[#686868] text-center relative"
+                        className="relative text-center text-[#686868]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -375,7 +369,7 @@ function Homepage({ ...props }) {
                       </div>
 
                       <div
-                        className="text-[#686868] text-left relative"
+                        className="relative text-left text-[#686868]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -384,9 +378,9 @@ function Homepage({ ...props }) {
                       </div>
                     </div>
 
-                    <div className="bg-[#ffe69e] rounded-md flex flex-row gap-0 items-center justify-center self-stretch shrink-0 h-[30px] relative">
+                    <div className="relative flex h-[30px] shrink-0 flex-row items-center justify-center gap-0 self-stretch rounded-md bg-[#ffe69e]">
                       <div
-                        className="text-[#686868] text-center relative"
+                        className="relative text-center text-[#686868]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -395,7 +389,7 @@ function Homepage({ ...props }) {
                       </div>
 
                       <div
-                        className="text-[#686868] text-left relative"
+                        className="relative text-left text-[#686868]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -406,10 +400,10 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-1 items-start justify-start shrink-0 relative">
-                  <div className="bg-[#abbaff] rounded-md flex flex-col gap-1.5 items-center justify-center shrink-0 w-[120px] h-16 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-1">
+                  <div className="relative flex h-16 w-[120px] shrink-0 flex-col items-center justify-center gap-1.5 rounded-md bg-[#8197ff]">
                     <div
-                      className="text-[#686868] text-center relative"
+                      className="relative text-center text-[#ffffff]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -418,7 +412,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#686868] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -427,10 +421,10 @@ function Homepage({ ...props }) {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-1 items-start justify-start shrink-0 w-[179px] relative">
-                    <div className="bg-[#abbaff] rounded-md flex flex-row gap-1.5 items-center justify-center self-stretch shrink-0 h-[30px] relative">
+                  <div className="relative flex w-[179px] shrink-0 flex-col items-start justify-start gap-1">
+                    <div className="relative flex h-[30px] shrink-0 flex-row items-center justify-center gap-1.5 self-stretch rounded-md bg-[#abbaff]">
                       <div
-                        className="text-[#686868] text-center relative"
+                        className="relative text-center text-[#686868]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -439,7 +433,7 @@ function Homepage({ ...props }) {
                       </div>
 
                       <div
-                        className="text-[#686868] text-left relative"
+                        className="relative text-left text-[#686868]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -448,9 +442,9 @@ function Homepage({ ...props }) {
                       </div>
                     </div>
 
-                    <div className="bg-[#abbaff] rounded-md flex flex-row gap-1.5 items-center justify-center self-stretch shrink-0 h-[30px] relative">
+                    <div className="relative flex h-[30px] shrink-0 flex-row items-center justify-center gap-1.5 self-stretch rounded-md bg-[#abbaff]">
                       <div
-                        className="text-[#686868] text-center relative"
+                        className="relative text-center text-[#686868]"
                         style={{
                           font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -459,7 +453,7 @@ function Homepage({ ...props }) {
                       </div>
 
                       <div
-                        className="text-[#686868] text-left relative"
+                        className="relative text-left text-[#686868]"
                         style={{
                           font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                         }}
@@ -470,10 +464,10 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-1 items-start justify-start shrink-0 relative">
-                  <div className="bg-[#ffa8a8] rounded-md flex flex-row gap-1.5 items-center justify-center shrink-0 w-[120px] h-10 relative">
+                <div className="relative flex shrink-0 flex-row items-start justify-start gap-1">
+                  <div className="relative flex h-10 w-[120px] shrink-0 flex-row items-center justify-center gap-1.5 rounded-md bg-[#ff8989]">
                     <div
-                      className="text-[#686868] text-center relative"
+                      className="relative text-center text-[#ffffff]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -482,7 +476,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#686868] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -491,9 +485,9 @@ function Homepage({ ...props }) {
                     </div>
                   </div>
 
-                  <div className="bg-[#dca4ff] rounded-md flex flex-row gap-1.5 items-center justify-center shrink-0 w-[120px] h-10 relative">
+                  <div className="relative flex h-10 w-[120px] shrink-0 flex-row items-center justify-center gap-1.5 rounded-md bg-[#cb77ff]">
                     <div
-                      className="text-[#686868] text-center relative"
+                      className="relative text-center text-[#ffffff]"
                       style={{
                         font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -502,7 +496,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#686868] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                       }}
@@ -514,9 +508,12 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="bg-[#424242] rounded-[5px] pt-0.5 pr-2.5 pb-0.5 pl-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 w-[152px] relative hover:scale-105" onClick={goaboutus}>
+            <div
+              className="relative flex w-[152px] shrink-0 flex-row items-center justify-center gap-2.5 rounded-[5px] bg-[#424242] pb-0.5 pl-2.5 pr-2.5 pt-0.5 hover:scale-105"
+              onClick={goaboutus}
+            >
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -525,7 +522,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#ffffff] text-left relative"
+                className="relative text-left text-[#ffffff]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -535,14 +532,14 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <img className="w-[553px] h-[551px] relative" src="homepage-1.png" />
+          <img className="relative h-[551px] w-[553px]" src="homepage-1.png" />
         </div>
 
-        <div className="flex flex-col gap-20 items-center justify-start shrink-0 relative">
-          <div className="flex flex-col gap-[79px] items-center justify-start shrink-0 relative">
-            <div className="flex flex-row gap-5 items-start justify-center shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-center justify-start gap-20">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-[79px]">
+            <div className="relative flex shrink-0 flex-row items-start justify-center gap-5">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -551,7 +548,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#202020] text-left relative"
+                className="relative text-left text-[#202020]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -560,7 +557,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#202020] text-left relative"
+                className="relative text-left text-[#202020]"
                 style={{
                   font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -569,9 +566,9 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative">
+            <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-2.5">
               <div
-                className="text-left relative self-stretch"
+                className="relative self-stretch text-left"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -581,9 +578,7 @@ function Homepage({ ...props }) {
                     The works of the project category are mainly some works with
                     a relatively complete{" "}
                   </span>
-                  <span className="text-[#8158FC]">
-                    design log
-                  </span>
+                  <span className="text-[#8158FC]">design log</span>
                   <span className="">
                     . The design log of these works records the whole process of
                     the work from the initial demand proposal, to the demand
@@ -598,15 +593,13 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-left relative self-stretch"
+                className="relative self-stretch text-left"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
               >
                 <span>
-                  <span className="">
-                    项目类的作品主要是一些有着较为完整的
-                  </span>
+                  <span className="">项目类的作品主要是一些有着较为完整的</span>
                   <span className="text-[#8158FC]">设计日志</span>
                   <span className="">
                     的作品。这些作品的设计日志记录了该作品从最开始的需求提出，到需求调研、设计分析、灵感迸发、模型验证和最后成品确认的全过程，较为完整的记录了一件设计产品如何从需求到最终呈现的全过程，因为整个过程较为完善，所以作为一个项目进行展示，设计日志则做单独的页面进行介绍
@@ -616,54 +609,61 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-[57px] items-center justify-start shrink-0 relative">
-            <div className="flex flex-col gap-[18px] items-start justify-start shrink-0 relative">
-            <div className="flex flex-row items-end justify-between self-stretch shrink-0 relative">
-      <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
-        <div
-          className="text-[#000000] text-left relative"
-          style={{ font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)" }}
-        >
-          Interactive column
-        </div>
-
-        <div
-          className="text-[#000000] text-left relative"
-          style={{ font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)" }}
-        >
-          交互专栏
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-0 items-start justify-start shrink-0 relative">
-        <div
-          className="text-[#650000] text-left relative"
-          style={{ font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)" }}
-        >
-          Interactive column content can only be accessed from the home page
-        </div>
-
-        <div
-          className="text-[#650000] text-left relative"
-          style={{ font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)" }}
-        >
-          交互专栏内容只能从主页进入
-        </div>
-      </div>
-    </div>
-
-              <div className="flex flex-col gap-[9px] items-start justify-start shrink-0 relative">
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative ">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-[57px]">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[18px]">
+              <div className="relative flex shrink-0 flex-row items-end justify-between self-stretch">
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
                   <div
-                    className="text-left relative self-stretch"
+                    className="relative text-left text-[#000000]"
+                    style={{
+                      font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
+                    }}
+                  >
+                    Interactive column
+                  </div>
+
+                  <div
+                    className="relative text-left text-[#000000]"
+                    style={{
+                      font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
+                    }}
+                  >
+                    交互专栏
+                  </div>
+                </div>
+
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-0">
+                  <div
+                    className="relative text-left text-[#650000]"
+                    style={{
+                      font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                    }}
+                  >
+                    Interactive column content can only be accessed from the
+                    home page
+                  </div>
+
+                  <div
+                    className="relative text-left text-[#650000]"
+                    style={{
+                      font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                    }}
+                  >
+                    交互专栏内容只能从主页进入
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative flex shrink-0 flex-col items-start justify-start gap-[9px]">
+                <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-2.5 ">
+                  <div
+                    className="relative self-stretch text-left"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
                   >
                     <span>
-                      <span className="">
-                        A-B Space and TOUR are two{" "}
-                      </span>
+                      <span className="">A-B Space and TOUR are two </span>
                       <span className="text-[#8158FC]">
                         interaction design research reports
                       </span>
@@ -679,18 +679,14 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="text-left relative self-stretch"
+                    className="relative self-stretch text-left"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
                   >
                     <span>
-                      <span className="">
-                        A-B Space 和 TOUR 是两篇
-                      </span>
-                      <span className="text-[#8158FC]">
-                        交互设计调研报告
-                      </span>
+                      <span className="">A-B Space 和 TOUR 是两篇</span>
+                      <span className="text-[#8158FC]">交互设计调研报告</span>
                       <span className="">
                         ，记录了两个项目从开始立项到最终完成高还原度原型的全过程，其中还包含了交互设计中所使用的调研和研究方式，最终生成一份完整的交互设计报告。
                       </span>
@@ -698,9 +694,9 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative">
+                <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-2.5">
                   <div
-                    className="text-left relative self-stretch"
+                    className="relative self-stretch text-left"
                     style={{
                       font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -709,9 +705,7 @@ function Homepage({ ...props }) {
                       <span className="">
                         General UI and PRACTICE are two complete{" "}
                       </span>
-                      <span className="text-[#8158FC]">
-                        design systems
-                      </span>
+                      <span className="text-[#8158FC]">design systems</span>
                       <span className="">
                         {" "}
                         that can be directly put into use. Among them, General
@@ -722,7 +716,7 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="text-left relative self-stretch"
+                    className="relative self-stretch text-left"
                     style={{
                       font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -731,9 +725,7 @@ function Homepage({ ...props }) {
                       <span className="">
                         GENERAL UI 和 PRACTICE 则是两套完整的
                       </span>
-                      <span className="text-[#8158FC]">
-                        设计系统
-                      </span>
+                      <span className="text-[#8158FC]">设计系统</span>
                       <span className="">
                         ，可以直接投入使用，其中 GENERAL UI
                         是一套通用的体系，拥有各类应用所需的通用型组件。
@@ -744,10 +736,10 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 items-center justify-start shrink-0 relative">
-              <div className="flex flex-col gap-1 items-start justify-center shrink-0 relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-4">
+              <div className="relative flex shrink-0 flex-col items-start justify-center gap-1">
                 <div
-                  className="text-[#8158fc] text-left relative self-stretch"
+                  className="relative self-stretch text-left text-[#8158fc]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -756,7 +748,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="text-[#8158fc] text-center relative self-stretch"
+                  className="relative self-stretch text-center text-[#8158fc]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -765,43 +757,52 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-5 items-start justify-start shrink-0 w-[1440px] h-[1080px] relative ">
-                <div className="flex flex-row gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goAbspace}>
+              <div className="relative flex h-[1080px] w-[1440px] shrink-0 flex-row items-start justify-start gap-5 ">
+                <div
+                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goAbspace}
+                >
                   <img
-                    className="self-stretch flex-1 relative rounded-2xl"
+                    className="relative flex-1 self-stretch rounded-2xl"
                     src="homepage-2.png"
                   />
 
                   <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_151.5px)] top-[calc(50%_-_32px)] w-[305px]"
+                    className="absolute left-[calc(50%_-_151.5px)] top-[calc(50%_-_32px)] w-[305px] text-center text-[#ffffff]"
                     style={{ font: "600 60px 'Archivo', sans-serif" }}
                   >
                     A-B Space
                   </div>
                 </div>
 
-                <div className="flex flex-row gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goTour}>
+                <div
+                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goTour}
+                >
                   <img
-                    className="shrink-0 w-[345px] h-[1080px] relative rounded-2xl"
+                    className="relative h-[1080px] w-[345px] shrink-0 rounded-2xl"
                     src="homepage-3.png"
                   />
 
                   <div
-                    className="text-[#a30000] text-left absolute left-[37px] top-[468px]"
+                    className="absolute left-[37px] top-[468px] text-left text-[#a30000]"
                     style={{ font: "600 96px/150% 'PingFang SC', sans-serif" }}
                   >
                     TOUR
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goGeneral}>
+                <div
+                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goGeneral}
+                >
                   <img
-                    className="self-stretch flex-1 relative rounded-2xl"
+                    className="relative flex-1 self-stretch rounded-2xl"
                     src="homepage-4.png"
                   />
 
                   <div
-                    className="text-[#ffffff] text-center absolute left-[calc(50%_-_163.5px)] top-[calc(50%_-_60px)]"
+                    className="absolute left-[calc(50%_-_163.5px)] top-[calc(50%_-_60px)] text-center text-[#ffffff]"
                     style={{ font: "600 40px/150% 'PingFang SC', sans-serif" }}
                   >
                     GENERAL UI <br />
@@ -809,14 +810,17 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goPractice}>
+                <div
+                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goPractice}
+                >
                   <img
-                    className="self-stretch flex-1 relative rounded-2xl"
+                    className="relative flex-1 self-stretch rounded-2xl"
                     src="homepage-5.png"
                   />
 
                   <div
-                    className="text-[#ffffff] text-left absolute left-[calc(50%_-_159.5px)] top-[calc(50%_-_48px)]"
+                    className="absolute left-[calc(50%_-_159.5px)] top-[calc(50%_-_48px)] text-left text-[#ffffff]"
                     style={{ font: "600 64px/150% 'PingFang SC', sans-serif" }}
                   >
                     PRACTICE
@@ -826,10 +830,10 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-10 items-center justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-start shrink-0 w-[1022px] relative">
+          <div className="relative flex shrink-0 flex-col items-center justify-start gap-10">
+            <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-0">
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--en, 600 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -838,7 +842,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#000000] text-left relative"
+                className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--cn, 300 20px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -847,10 +851,10 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 items-center justify-start shrink-0 relative">
-              <div className="flex flex-col gap-0 items-start justify-center shrink-0 w-[1022px] relative">
+            <div className="relative flex shrink-0 flex-col items-center justify-start gap-3">
+              <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-center gap-0">
                 <div
-                  className="text-[#8158fc] text-left relative self-stretch"
+                  className="relative self-stretch text-left text-[#8158fc]"
                   style={{
                     font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -859,7 +863,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="text-[#8158fc] text-left relative self-stretch"
+                  className="relative self-stretch text-left text-[#8158fc]"
                   style={{
                     font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                   }}
@@ -868,19 +872,19 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-10 items-center justify-start shrink-0 w-[1440px] h-[1672px] relative " >
-                <div className="flex flex-row gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goAerobic}>
+              <div className="relative flex h-[1672px] w-[1440px] shrink-0 flex-col items-center justify-start gap-10 ">
+                <div
+                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goAerobic}
+                >
                   <img
-                    className="self-stretch flex-1 relative rounded-2xl"
+                    className="relative flex-1 self-stretch rounded-2xl"
                     src="homepage-6.png"
                   />
 
-                  <div
-                    className="flex flex-col items-center justify-center shrink-0 absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96.2px)] drop-shadow-xl"
-
-                  >
+                  <div className="absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96.2px)] flex shrink-0 flex-col items-center justify-center drop-shadow-xl">
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "600 80px/150% 'PingFang SC', sans-serif",
                       }}
@@ -889,7 +893,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         margin: "-20px 0 0 0",
                         font: "100 60px/150% 'PingFang SC', sans-serif",
@@ -900,18 +904,18 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goMigiccomb}>
+                <div
+                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goMigiccomb}
+                >
                   <img
-                    className="self-stretch flex-1 relative"
+                    className="relative flex-1 self-stretch"
                     src="homepage-7.png"
                   />
 
-                  <div
-                    className="flex flex-col gap-5 items-center justify-center shrink-0 absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.6px)] drop-shadow-xl"
-             
-                  >
+                  <div className="absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.6px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-xl">
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "600 60px/150% 'PingFang SC', sans-serif",
                       }}
@@ -920,7 +924,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "300 40px/150% 'PingFang SC', sans-serif",
                       }}
@@ -930,20 +934,23 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="bg-[#f3f3f3] flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105"onClick={goSaint}>
-                  <div className="flex flex-col gap-2.5 items-center justify-start self-stretch flex-1 relative">
+                <div
+                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch bg-[#f3f3f3] hover:scale-105"
+                  onClick={goSaint}
+                >
+                  <div className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch">
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-8.png"
                     />
                   </div>
 
                   <div
-                    className="flex flex-col gap-5 items-center justify-start shrink-0 absolute left-[calc(50%_-_170px)] top-[calc(50%_-_72.2px)]"
+                    className="absolute left-[calc(50%_-_170px)] top-[calc(50%_-_72.2px)] flex shrink-0 flex-col items-center justify-start gap-5"
                     style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                   >
                     <div
-                      className="text-[#ececec] text-left relative"
+                      className="relative text-left text-[#ececec]"
                       style={{
                         font: "600 60px/150% 'PingFang SC', sans-serif",
                       }}
@@ -952,7 +959,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#ececec] text-left relative"
+                      className="relative text-left text-[#ececec]"
                       style={{
                         font: "300 40px/150% 'PingFang SC', sans-serif",
                       }}
@@ -962,15 +969,18 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-center justify-start self-stretch flex-1 relative hover:scale-105" onClick={goTwoface}>
+                <div
+                  className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goTwoface}
+                >
                   <img
-                    className="self-stretch flex-1 relative"
+                    className="relative flex-1 self-stretch"
                     src="homepage-9.png"
                   />
 
-                  <div className="flex flex-col items-center justify-start shrink-0 absolute left-[calc(50%_-_358px)] top-[calc(50%_-_82.2px)]">
+                  <div className="absolute left-[calc(50%_-_358px)] top-[calc(50%_-_82.2px)] flex shrink-0 flex-col items-center justify-start">
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         font: "600 80px/150% 'PingFang SC', sans-serif",
                       }}
@@ -979,7 +989,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#ffffff] text-left relative"
+                      className="relative text-left text-[#ffffff]"
                       style={{
                         margin: "-16px 0 0 0",
                         font: "300 40px/150% 'PingFang SC', sans-serif",
@@ -990,15 +1000,18 @@ function Homepage({ ...props }) {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2.5 items-start justify-start self-stretch flex-1 relative hover:scale-105" onClick={goNotlack}>
+                <div
+                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  onClick={goNotlack}
+                >
                   <img
-                    className="self-stretch flex-1 relative"
+                    className="relative flex-1 self-stretch"
                     src="homepage-10.png"
                   />
 
-                  <div className="flex flex-col items-center justify-start shrink-0 absolute left-[calc(50%_-_516px)] top-[calc(50%_-_67.2px)] drop-shadow-xl">
+                  <div className="absolute left-[calc(50%_-_516px)] top-[calc(50%_-_67.2px)] flex shrink-0 flex-col items-center justify-start drop-shadow-xl">
                     <div
-                      className="text-[#202020] text-left relative"
+                      className="relative text-left text-[#202020]"
                       style={{
                         font: "600 60px/150% 'PingFang SC', sans-serif",
                       }}
@@ -1007,7 +1020,7 @@ function Homepage({ ...props }) {
                     </div>
 
                     <div
-                      className="text-[#202020] text-left relative"
+                      className="relative text-left text-[#202020]"
                       style={{
                         margin: "-16px 0 0 0",
                         font: "300 40px/150% 'PingFang SC', sans-serif",
@@ -1022,10 +1035,10 @@ function Homepage({ ...props }) {
           </div>
         </div>
 
-        <div  className="flex flex-col gap-[61px] items-center justify-start shrink-0 relative">
-          <div className="flex flex-row gap-5 items-start justify-center shrink-0 relative">
+        <div className="relative flex shrink-0 flex-col items-center justify-start gap-[61px]">
+          <div className="relative flex shrink-0 flex-row items-start justify-center gap-5">
             <div
-              className="text-[#000000] text-left relative"
+              className="relative text-left text-[#000000]"
               style={{
                 font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -1034,7 +1047,7 @@ function Homepage({ ...props }) {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -1043,7 +1056,7 @@ function Homepage({ ...props }) {
             </div>
 
             <div
-              className="text-[#202020] text-left relative"
+              className="relative text-left text-[#202020]"
               style={{
                 font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
               }}
@@ -1052,9 +1065,9 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 w-[1022px] relative">
+          <div className="relative flex w-[1022px] shrink-0 flex-col items-start justify-start gap-2.5">
             <div
-              className="text-left relative self-stretch"
+              className="relative self-stretch text-left"
               style={{
                 font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -1063,16 +1076,9 @@ function Homepage({ ...props }) {
                 <span className="">
                   Individual works are usually products derived from the{" "}
                 </span>
-                <span className="text-[#8158FC]">
-                  determined needs
-                </span>
-                <span className="">
-                  {" "}
-                  of others and the{" "}
-                </span>
-                <span className="text-[#8158FC]">
-                  temporary creativity
-                </span>
+                <span className="text-[#8158FC]">determined needs</span>
+                <span className=""> of others and the </span>
+                <span className="text-[#8158FC]">temporary creativity</span>
                 <span className="">
                   {" "}
                   of individuals, and there is no complete design log or
@@ -1083,7 +1089,7 @@ function Homepage({ ...props }) {
             </div>
 
             <div
-              className="text-left relative self-stretch"
+              className="relative self-stretch text-left"
               style={{
                 font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
               }}
@@ -1100,10 +1106,10 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-3.5 items-start justify-start shrink-0 relative">
-            <div className="flex flex-col gap-0 items-start justify-center shrink-0 relative">
+          <div className="relative flex shrink-0 flex-col items-start justify-start gap-3.5">
+            <div className="relative flex shrink-0 flex-col items-start justify-center gap-0">
               <div
-                className="text-[#8158fc] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#8158fc]"
                 style={{
                   font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -1112,7 +1118,7 @@ function Homepage({ ...props }) {
               </div>
 
               <div
-                className="text-[#8158fc] text-left relative self-stretch"
+                className="relative self-stretch text-left text-[#8158fc]"
                 style={{
                   font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
                 }}
@@ -1121,15 +1127,15 @@ function Homepage({ ...props }) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-[72px] items-start justify-start shrink-0 relative">
-              <div className="flex flex-row gap-5 items-start justify-start shrink-0 w-[1022px] h-[360px] relative">
+            <div className="relative flex shrink-0 flex-col items-start justify-start gap-[72px]">
+              <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-start justify-start gap-5">
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goCacup}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1138,21 +1144,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-11.png"
                     />
 
                     <div
-                      className="flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 h-9 relative"
+                      className="relative flex h-9 shrink-0 flex-row flex-wrap items-start justify-between self-stretch"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1161,7 +1167,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1171,9 +1177,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1182,7 +1188,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1192,9 +1198,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1203,7 +1209,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1217,12 +1223,12 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goEndtables}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1231,21 +1237,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-12.png"
                     />
 
                     <div
-                      className="flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 h-8 relative"
+                      className="relative flex h-8 shrink-0 flex-row flex-wrap items-start justify-between self-stretch"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1254,7 +1260,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1264,9 +1270,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1275,7 +1281,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1285,9 +1291,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start pb-0.5 pl-2 pr-2 pt-0.5">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1296,7 +1302,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1310,14 +1316,14 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-5 items-start justify-start shrink-0 w-[1022px] h-[360px] relative">
+              <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-start justify-start gap-5">
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goCabinets}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1326,21 +1332,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-13.png"
                     />
 
                     <div
-                      className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 relative"
+                      className="relative flex shrink-0 flex-row flex-wrap items-start justify-between self-stretch pb-0.5 pl-2 pr-2 pt-0.5"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1349,7 +1355,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1359,9 +1365,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1370,7 +1376,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1380,9 +1386,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1391,7 +1397,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1405,12 +1411,12 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goWillinsert}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1419,21 +1425,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-14.png"
                     />
 
                     <div
-                      className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 h-8 relative"
+                      className="relative flex h-8 shrink-0 flex-row flex-wrap items-start justify-between self-stretch pb-0.5 pl-2 pr-2 pt-0.5"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1442,7 +1448,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1452,9 +1458,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1463,7 +1469,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1473,9 +1479,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1484,7 +1490,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1498,14 +1504,14 @@ function Homepage({ ...props }) {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-5 items-end justify-start shrink-0 w-[1022px] h-[360px] relative">
+              <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-end justify-start gap-5">
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goRollin}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1514,21 +1520,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-15.png"
                     />
 
                     <div
-                      className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 relative"
+                      className="relative flex shrink-0 flex-row flex-wrap items-start justify-between self-stretch pb-0.5 pl-2 pr-2 pt-0.5"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1537,7 +1543,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1547,9 +1553,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1558,7 +1564,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1568,9 +1574,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1579,7 +1585,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1593,12 +1599,12 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="rounded-xl flex flex-col items-center justify-start self-stretch flex-1 relative overflow-hidden"
+                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goReticule}
                 >
                   <div
-                    className="text-[#202020] text-left relative self-stretch z-10"
+                    className="relative z-10 self-stretch text-left text-[#202020]"
                     style={{
                       font: "var(--en, 600 40px/150% 'PingFang SC', sans-serif)",
                     }}
@@ -1607,21 +1613,21 @@ function Homepage({ ...props }) {
                   </div>
 
                   <div
-                    className="flex flex-col items-center justify-start self-stretch flex-1 relative"
+                    className="relative flex flex-1 flex-col items-center justify-start self-stretch"
                     style={{ margin: "-79px 0 0 0" }}
                   >
                     <img
-                      className="self-stretch flex-1 relative"
+                      className="relative flex-1 self-stretch"
                       src="homepage-16.png"
                     />
 
                     <div
-                      className="pt-0.5 pr-2 pb-0.5 pl-2 flex flex-row items-start justify-between flex-wrap self-stretch shrink-0 relative"
+                      className="relative flex shrink-0 flex-row flex-wrap items-start justify-between self-stretch pb-0.5 pl-2 pr-2 pt-0.5"
                       style={{ margin: "-68px 0 0 0" }}
                     >
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1630,7 +1636,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1640,9 +1646,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1651,7 +1657,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
@@ -1661,9 +1667,9 @@ function Homepage({ ...props }) {
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-start justify-start shrink-0 relative">
+                      <div className="relative flex shrink-0 flex-col items-start justify-start">
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
                           }}
@@ -1672,7 +1678,7 @@ function Homepage({ ...props }) {
                         </div>
 
                         <div
-                          className="text-[#202020] text-left relative"
+                          className="relative text-left text-[#202020]"
                           style={{
                             margin: "-4px 0 0 0",
                             font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",

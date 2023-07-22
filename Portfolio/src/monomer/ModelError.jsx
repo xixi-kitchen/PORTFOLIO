@@ -1,13 +1,12 @@
 import React from 'react';
 
 
-export const ModelError = ({ ...props }) => {
+export default function ModelError({ ...props }) {
   return (
     <div className="flex flex-row gap-0 items-center justify-start w-[1306px] relative">
       <img
         className="shrink-0 w-[512px] h-[512px] relative"
-        src="cryptocurrency-token.png"
-      />
+        src="cryptocurrency-token.png" />
 
       <div className="flex flex-col gap-[27px] items-start justify-start shrink-0 relative">
         <div className="flex flex-col gap-0 items-start justify-start shrink-0 w-[794px] relative">
@@ -53,4 +52,4 @@ export const ModelError = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

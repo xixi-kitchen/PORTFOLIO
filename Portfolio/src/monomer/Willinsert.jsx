@@ -7,7 +7,7 @@ import { OrbitControls } from "@react-three/drei";
 import { OriginStatus } from './MonoStatus';
 import { WillinsertModel } from './WillinsertModel';
 
-export function Willinsert() {
+export default function Willinsert() {
   return (
     <div className="relative h-screen w-screen bg-[#ffffff]">
       <Canvas

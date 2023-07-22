@@ -1,6 +1,6 @@
 import React from "react";
 
-export function MigicComb({ ...props }) {
+export default function MigicComb({ ...props }) {
   return (
     <div
       className="bg-[#ffffff] w-[1440px] h-[1024px] relative"

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export function Hours({ ...props }) {
+export default function Hours({ ...props }) {
   return (
     <div className="flex flex-col gap-[200px] items-start justify-start w-[1000px] relative">
       <div className="flex flex-row items-center justify-between shrink-0 w-[1000px] relative">

@@ -1,14 +1,13 @@
 import React from 'react';
 
-export const General = ({ ...props }) => {
+export default function General({ ...props }) {
   return (
     <div className="w-[1440px] h-[4959px] relative">
       <div className="flex flex-col gap-10 items-center justify-start absolute left-0 top-0">
         <div className="flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
           <img
             className="shrink-0 w-[1440px] h-[1024px] relative"
-            src="general-fengmian-1.png"
-          />
+            src="general-fengmian-1.png" />
 
           <div
             className="text-[#ffffff] text-center absolute left-[calc(50%_-_283px)] top-[calc(50%_-_134px)]"
@@ -66,8 +65,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#6478D3"
-                      />
+                        fill="#6478D3" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -105,8 +103,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#F7B579"
-                      />
+                        fill="#F7B579" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -144,8 +141,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#22242A"
-                      />
+                        fill="#22242A" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -183,8 +179,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#F1F8FC"
-                      />
+                        fill="#F1F8FC" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -222,8 +217,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#EF4B5F"
-                      />
+                        fill="#EF4B5F" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -261,8 +255,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#51DC8E"
-                      />
+                        fill="#51DC8E" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -302,8 +295,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M34.5 68C53.2777 68 68.5 52.7777 68.5 34C68.5 15.2223 53.2777 0 34.5 0C15.7223 0 0.5 15.2223 0.5 34C0.5 52.7777 15.7223 68 34.5 68Z"
-                        fill="white"
-                      />
+                        fill="white" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -342,8 +334,7 @@ export const General = ({ ...props }) => {
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z"
-                          fill="white"
-                        />
+                          fill="white" />
                       </g>
                       <defs>
                         <filter
@@ -357,31 +348,26 @@ export const General = ({ ...props }) => {
                         >
                           <feFlood
                             floodOpacity="0"
-                            result="BackgroundImageFix"
-                          />
+                            result="BackgroundImageFix" />
                           <feColorMatrix
                             in="SourceAlpha"
                             type="matrix"
                             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha"
-                          />
+                            result="hardAlpha" />
                           <feOffset dy="5" />
                           <feGaussianBlur stdDeviation="10" />
                           <feColorMatrix
                             type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
-                          />
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
                           <feBlend
                             mode="normal"
                             in2="BackgroundImageFix"
-                            result="effect1_dropShadow_224_6392"
-                          />
+                            result="effect1_dropShadow_224_6392" />
                           <feBlend
                             mode="normal"
                             in="SourceGraphic"
                             in2="effect1_dropShadow_224_6392"
-                            result="shape"
-                          />
+                            result="shape" />
                         </filter>
                       </defs>
                     </svg>
@@ -423,8 +409,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#F7F8FA"
-                      />
+                        fill="#F7F8FA" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -462,8 +447,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#F1F3F8"
-                      />
+                        fill="#F1F3F8" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -501,8 +485,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#CDCDD7"
-                      />
+                        fill="#CDCDD7" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-center justify-start shrink-0 relative">
@@ -540,8 +523,7 @@ export const General = ({ ...props }) => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M35.5 70C54.83 70 70.5 54.33 70.5 35C70.5 15.67 54.83 0 35.5 0C16.17 0 0.5 15.67 0.5 35C0.5 54.33 16.17 70 35.5 70Z"
-                        fill="#8D92A3"
-                      />
+                        fill="#8D92A3" />
                     </svg>
 
                     <div className="flex flex-col gap-[5px] items-start justify-start shrink-0 relative">
@@ -749,15 +731,13 @@ export const General = ({ ...props }) => {
         </div>
 
         <img
-        id='interface'
+          id='interface'
           className="shrink-0 w-[1440px] h-[968px] relative"
-          src="general-yemian-1.png"
-        />
+          src="general-yemian-1.png" />
 
         <img
           className="shrink-0 w-[1440px] h-[967px] relative"
-          src="general-yemian-2.png"
-        />
+          src="general-yemian-2.png" />
 
         <div id="prototype" className="bg-[#22242b] p-2.5 flex flex-col gap-2.5 items-center justify-center shrink-0 w-[1440px] h-[647px] relative">
           <div className="flex flex-col gap-[53px] items-center justify-start shrink-0 relative text-[#6478D3]">
@@ -772,7 +752,6 @@ export const General = ({ ...props }) => {
               className="text-center relative"
               style={{
                 font: "500 48px/22px 'Montserrat', sans-serif",
-
               }}
             >
               <span>
@@ -780,9 +759,9 @@ export const General = ({ ...props }) => {
                   To see more details please{" "}
                 </span>
                 <a href='https://www.figma.com/proto/G9UCUbHggvCVKHLl4G3ALf/General-UI-screens?page-id=17%3A6868&node-id=28%3A11465&viewport=342%2C48%2C0.15&scaling=contain&starting-point-node-id=28%3A11472' target='blank'>
-                <span className="to-see-more-details-please-click-here-span2 underline text-[#6478D3]">
-                  click here
-                </span>
+                  <span className="to-see-more-details-please-click-here-span2 underline text-[#6478D3]">
+                    click here
+                  </span>
                 </a>
               </span>
             </div>
@@ -802,7 +781,7 @@ export const General = ({ ...props }) => {
         </div>
 
         <div className="flex flex-col gap-[5px] items-center justify-center shrink-0 relative">
-        <a href="#guide" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+          <a href="#guide" className="w-full"><div className="bg-[#214ebd] rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
             <div
               className="text-[#ffffff] text-center relative"
               style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -850,4 +829,4 @@ export const General = ({ ...props }) => {
       </div>
     </div>
   );
-};
+}

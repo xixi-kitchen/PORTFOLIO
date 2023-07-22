@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 import { OnesurfaceModel } from "./OnesurfaceModel";
 
-export function Onesurfboard({ ...props }) {
+export default function Onesurfboard({ ...props }) {
   return (
     <div
       className="relative h-[1024px] w-[1440px] bg-[#ffffff]"

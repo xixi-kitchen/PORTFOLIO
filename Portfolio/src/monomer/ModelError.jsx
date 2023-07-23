@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function ModelError({ ...props }) {
+export function ModelError({ ...props }) {
   return (
     <div className="flex flex-row gap-0 items-center justify-start w-[1306px] relative">
       <img

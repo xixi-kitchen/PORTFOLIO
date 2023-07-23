@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function OriginStatus() {
+export function OriginStatus() {
   return (
     <div className="relative flex shrink-0 flex-col items-start justify-start">
       <div

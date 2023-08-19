@@ -5,62 +5,62 @@ function Monomer() {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
   //平面内容的导航方法
   const goInnologo = () => {
-    goNavigate("/Innologo");
+    goNavigate("/innologo");
   };
   const goHours = () => {
-    goNavigate("/Hours");
+    goNavigate("/hours");
   };
   const goTypography = () => {
-    goNavigate("/Typography");
+    goNavigate("/typography");
   };
   const goWallpaper = () => {
-    goNavigate("/Wallpaper");
+    goNavigate("/wallpaper");
   };
   const goFablabvi = () => {
-    goNavigate("/Fablabvi");
+    goNavigate("/fablabvi");
   };
   //模型内容的导航方法
   const goCacup = () => {
-    goNavigate("/Cacup");
+    goNavigate("/cacup");
   };
 
   const goEndtables = () => {
-    goNavigate("/Endtables");
+    goNavigate("/endtables");
   };
   const goBowlmats = () => {
-    goNavigate("/Bowlmats");
+    goNavigate("/bowlmats");
   };
 
   const goCabinets = () => {
-    goNavigate("/Cabinets");
+    goNavigate("/cabinets");
   };
   const goCountbuckets = () => {
-    goNavigate("/Countbuckets");
+    goNavigate("/countbuckets");
   };
 
   const goJiaolong = () => {
-    goNavigate("/Jiaolong");
+    goNavigate("/jiaolong");
   };
   const goMagnetic = () => {
-    goNavigate("/Magnetic");
+    goNavigate("/magnetic");
   };
   const goPropeller = () => {
-    goNavigate("/Propeller");
+    goNavigate("/propeller");
   };
   const goReticule = () => {
-    goNavigate("/Reticule");
+    goNavigate("/reticule");
   };
   const goReversecar = () => {
-    goNavigate("/Reversecar");
+    goNavigate("/reversecar");
   };
   const goRollin = () => {
-    goNavigate("/Rollin");
+    goNavigate("/rollin");
   };
   const goSunwardred = () => {
-    goNavigate("/Sunwardred");
+    goNavigate("/sunwardred");
   };
   const goWillinsert = () => {
-    goNavigate("/Willinsert");
+    goNavigate("/willinsert");
   };
 
   return (

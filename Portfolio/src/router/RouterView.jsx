@@ -1,11 +1,15 @@
 import React, { Suspense, lazy } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Routes,
-  useRoutes,
-} from "react-router-dom";
+// import {
+//   BrowserRouter,
+//   HashRouter as Router,
+//   Route,
+//   Link,
+//   Routes,
+//   useRoutes,
+// } from "react-router-dom";
+
+import * as ReactDOM from "react-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 //const ManageAll =lazy(()=> import("../pages/Conf/ManageAll"))
 
@@ -95,18 +99,12 @@ const Sunwardred = lazy(() => import("../monomer/Sunwardred"));
 const Willinsert = lazy(() => import("../monomer/Willinsert"));
 
 function RouterView() {
-  const appRoutesElement = useRoutes([
-    //导航路由
+  const appRoutesElement = createHashRouter([
     {
       path: "/",
       element: <Homepage />,
+      children: [],
     },
-
-    // {
-    //   path: "/",
-    //   element: <Homepage_text />,
-    // },
-
     {
       path: "/project",
       element: (
@@ -118,7 +116,7 @@ function RouterView() {
     },
 
     {
-      path: "/monomer",
+      path: "monomer",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Monomer />
@@ -127,7 +125,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/blog",
+      path: "blog",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Blog />
@@ -142,7 +140,7 @@ function RouterView() {
     },
 
     {
-      path: "/teamwork",
+      path: "teamwork",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Teamwork />
@@ -151,7 +149,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/aboutus",
+      path: "aboutus",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Aboutus />
@@ -163,7 +161,7 @@ function RouterView() {
     //project的内容路由
     //交互专辑的路由
     {
-      path: "/Abspace",
+      path: "abspace",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Abspace />
@@ -172,7 +170,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Tour",
+      path: "tour",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Tour />
@@ -181,7 +179,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/General",
+      path: "general",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <General />
@@ -190,7 +188,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Practice",
+      path: "practice",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Practice />
@@ -200,7 +198,7 @@ function RouterView() {
     },
     //工业设计内容的路由
     {
-      path: "/Vector",
+      path: "vector",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Vectorscopedevice />
@@ -210,7 +208,7 @@ function RouterView() {
     },
 
     {
-      path: "/One",
+      path: "one",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Onesurfboard />
@@ -219,7 +217,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Saint",
+      path: "saint",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Saintlancnce />
@@ -228,7 +226,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Miss",
+      path: "miss",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <MissCalender />
@@ -237,7 +235,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Migiccomb",
+      path: "migiccomb",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <MigicComb />
@@ -246,7 +244,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Twoface",
+      path: "twoface",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <TwoFaceplate />
@@ -255,7 +253,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Escort",
+      path: "escort",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <EscortBoat />
@@ -264,7 +262,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Escortplus",
+      path: "escortplus",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <EscortBoatplus />
@@ -273,7 +271,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Aerobic",
+      path: "aerobic",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Aerobic />
@@ -282,7 +280,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Notlack",
+      path: "notlack",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <NotLack />
@@ -293,7 +291,7 @@ function RouterView() {
     //Monomer单体内容路由
     //平面内容路由
     {
-      path: "/Innologo",
+      path: "innologo",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Innologo />
@@ -302,7 +300,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Hours",
+      path: "hours",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Hours />
@@ -311,7 +309,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Typography",
+      path: "typography",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Typography />
@@ -320,7 +318,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Wallpaper",
+      path: "wallpaper",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Wallpaper />
@@ -329,7 +327,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Fablabvi",
+      path: "fablabvi",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Fablabvi />
@@ -339,7 +337,7 @@ function RouterView() {
     },
     //模型内容路由
     {
-      path: "/Cacup",
+      path: "cacup",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Cacup />
@@ -348,7 +346,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Endtables",
+      path: "endtables",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Endtables />
@@ -357,7 +355,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Bowlmats",
+      path: "bowlmats",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Bowlmats />
@@ -366,7 +364,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Cabinets",
+      path: "cabinets",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Cabinets />
@@ -375,7 +373,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Countbuckets",
+      path: "countbuckets",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Countbuckets />
@@ -384,7 +382,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Jiaolong",
+      path: "jiaolong",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Jiaolong />
@@ -393,7 +391,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Magnetic",
+      path: "magnetic",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Magnetic />
@@ -402,7 +400,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Propeller",
+      path: "propeller",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Propeller />
@@ -411,7 +409,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Reticule",
+      path: "reticule",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Reticule />
@@ -420,7 +418,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Reversecar",
+      path: "reversecar",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Reversecar />
@@ -429,7 +427,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Rollin",
+      path: "rollin",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Rollin />
@@ -438,7 +436,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Sunwardred",
+      path: "sunwardred",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Sunwardred />
@@ -447,7 +445,7 @@ function RouterView() {
       children: [],
     },
     {
-      path: "/Willinsert",
+      path: "willinsert",
       element: (
         <Suspense fallback={<div style={{ display: "none" }}>lodding</div>}>
           <Willinsert />
@@ -455,7 +453,18 @@ function RouterView() {
       ),
       children: [],
     },
+    // {
+    //   path: "/",
+    //   element: <Homepage_text />,
+    // },
   ]);
   return appRoutesElement;
 }
 export default RouterView;
+
+// function RouterView() {
+//   const appRoutesElement = useRoutes([
+//     //导航路由
+//   ]);
+//   return appRoutesElement;
+// }

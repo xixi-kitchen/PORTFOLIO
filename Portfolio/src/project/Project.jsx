@@ -6,34 +6,34 @@ function Project() {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
 
   const goVector = () => {
-    goNavigate("/Vector");
+    goNavigate("/vector");
   };
   const goOne = () => {
-    goNavigate("/One");
+    goNavigate("/one");
   };
   const goSaint = () => {
-    goNavigate("/Saint");
+    goNavigate("/saint");
   };
   const goMiss = () => {
-    goNavigate("/Miss");
+    goNavigate("/miss");
   };
   const goMigiccomb = () => {
-    goNavigate("/Migiccomb");
+    goNavigate("/migiccomb");
   };
   const goTwoface = () => {
-    goNavigate("/Twoface");
+    goNavigate("/twoface");
   };
   const goEscort = () => {
-    goNavigate("/Escort");
+    goNavigate("/escort");
   };
   const goEscortplus = () => {
-    goNavigate("/Escortplus");
+    goNavigate("/escortplus");
   };
   const goAerobic = () => {
-    goNavigate("/Aerobic");
+    goNavigate("/aerobic");
   };
   const goNotlack = () => {
-    goNavigate("/Notlack");
+    goNavigate("/notlack");
   };
 
   return (

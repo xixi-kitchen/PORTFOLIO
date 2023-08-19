@@ -13,19 +13,19 @@ function Homepage({ ...props }) {
   };
   //项目内容
   const goAbspace = () => {
-    goNavigate("/Abspace");
+    goNavigate("/abspace");
     window.scrollTo(0, 0);
   };
   const goTour = () => {
-    goNavigate("/Tour");
+    goNavigate("/tour");
     window.scrollTo(0, 0);
   };
   const goGeneral = () => {
-    goNavigate("/General");
+    goNavigate("/general");
     window.scrollTo(0, 0);
   };
   const goPractice = () => {
-    goNavigate("/Practice");
+    goNavigate("/practice");
     window.scrollTo(0, 0);
   };
 
@@ -36,18 +36,18 @@ function Homepage({ ...props }) {
   //   goNavigate("/One");
   // };
   const goSaint = () => {
-    goNavigate("/Saint");
+    goNavigate("/saint");
     window.scrollTo(0, 0);
   };
   // const goMiss = () => {
   //   goNavigate("/Miss");
   // };
   const goMigiccomb = () => {
-    goNavigate("/Migiccomb");
+    goNavigate("/migiccomb");
     window.scrollTo(0, 0);
   };
   const goTwoface = () => {
-    goNavigate("/Twoface");
+    goNavigate("/twoface");
     window.scrollTo(0, 0);
   };
   // const goEscort = () => {
@@ -57,21 +57,21 @@ function Homepage({ ...props }) {
   //   goNavigate("/Escortplus");
   // };
   const goAerobic = () => {
-    goNavigate("/Aerobic");
+    goNavigate("/aerobic");
     window.scrollTo(0, 0);
   };
   const goNotlack = () => {
-    goNavigate("/Notlack");
+    goNavigate("/notlack");
     window.scrollTo(0, 0);
   };
   //单体内容
   const goCacup = () => {
-    goNavigate("/Cacup");
+    goNavigate("/cacup");
     window.scrollTo(0, 0);
   };
 
   const goEndtables = () => {
-    goNavigate("/Endtables");
+    goNavigate("/endtables");
     window.scrollTo(0, 0);
   };
   // const goBowlmats = () => {
@@ -79,7 +79,7 @@ function Homepage({ ...props }) {
   // };
 
   const goCabinets = () => {
-    goNavigate("/Cabinets");
+    goNavigate("/cabinets");
     window.scrollTo(0, 0);
   };
   // const goCountbuckets = () => {
@@ -96,21 +96,21 @@ function Homepage({ ...props }) {
   //   goNavigate("/Propeller");
   // };
   const goReticule = () => {
-    goNavigate("/Reticule");
+    goNavigate("/reticule");
     window.scrollTo(0, 0);
   };
   // const goReversecar = () => {
   //   goNavigate("/Reversecar");
   // };
   const goRollin = () => {
-    goNavigate("/Rollin");
+    goNavigate("/rollin");
     window.scrollTo(0, 0);
   };
   // const goSunwardred = () => {
   //   goNavigate("/Sunwardred");
   // };
   const goWillinsert = () => {
-    goNavigate("/Willinsert");
+    goNavigate("/willinsert");
     window.scrollTo(0, 0);
   };
 

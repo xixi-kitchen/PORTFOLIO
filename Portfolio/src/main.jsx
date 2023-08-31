@@ -490,7 +490,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Link
           to="/"
           reloadDocument
-          className="mx-8 no-underline hover:text-[#8158fc]"
+          className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
         >
           Homepage
         </Link>
@@ -498,31 +498,31 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Link
             to="/project"
             reloadDocument
-            className="mx-8 no-underline hover:text-[#8158fc]"
+            className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
           >
             Project
           </Link>
           <Link
             to="/monomer"
             reloadDocument
-            className="mx-8 no-underline hover:text-[#8158fc]"
+            className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
           >
             Monomer
           </Link>
           <Link
             to="/blog"
             reloadDocument
-            className="mx-8 no-underline hover:text-[#8158fc]"
+            className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
           >
             Blog
           </Link>
-          <Link to="/teamwork" reloadDocument className="">
+          {/* <Link to="/teamwork" reloadDocument className="">
             Teamwork
-          </Link>
+          </Link> */}
           <Link
             to="/aboutus"
             reloadDocument
-            className="mx-8 no-underline hover:text-[#8158fc]"
+            className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
           >
             Aboutus
           </Link>

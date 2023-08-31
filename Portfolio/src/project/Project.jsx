@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 // import Anchor from "react-anchor-without-hash";
 
+import { motion } from "framer-motion";
+
 function Project() {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
 
@@ -36,6 +38,97 @@ function Project() {
     goNavigate("/notlack");
   };
 
+  function goNavAerobic() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("aerobic");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavMigic() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("migic");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavTwo() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("two");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavSaint() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("saint");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavVector() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("vector");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavEscortplus() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("escortplus");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavNotlack() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("notlack");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavEscort() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("escort");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "center",
+      // inline:"nearest"
+    });
+  }
+  function goNavOne() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("one");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+  function goNavRili() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("rili");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+
   // const goaerobic = () => {
   //   var aerobic = document.getElementById("aerobic");
   //   aerobic.scrollIntoView();
@@ -45,11 +138,11 @@ function Project() {
   // aerobic.scrollIntoView();
 
   return (
-    <div className="relative flex w-[1440px] flex-col justify-center">
-      <div className="relative flex flex-1 snap-y snap-mandatory flex-col items-start justify-start gap-0 self-stretch scroll-smooth">
+    <div className="relative flex flex-col justify-center">
+      <div className="relative flex w-screen h-screen flex-1 snap-y snap-mandatory flex-col items-start justify-start gap-0 self-stretch scroll-smooth overflow-y-auto">
         <div
           id="aerobic"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-row items-start justify-start gap-2.5 self-stretch"
+          className="relative flex w-full shrink-0 snap-center flex-row items-start justify-start gap-2.5 self-stretch"
           onClick={goAerobic}
         >
           <img
@@ -57,7 +150,7 @@ function Project() {
             src="projectbig-1.png"
           />
 
-          <div className="absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96px)] flex shrink-0 flex-col items-center justify-center drop-shadow-2xl">
+          <div className="absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96px)] flex shrink-0 flex-col items-center justify-center drop-shadow-2xl cursor-pointer">
             <div
               className="relative text-left text-[#ffffff]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
@@ -79,7 +172,7 @@ function Project() {
 
         <div
           id="migic"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
+          className="relative flex w-full shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
           onClick={goMigiccomb}
         >
           <img
@@ -87,7 +180,7 @@ function Project() {
             src="projectbig-2.png"
           />
 
-          <div className="absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.4px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-2xl">
+          <div className="absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.4px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-2xl cursor-pointer">
             <div
               className="relative text-left text-[#ffffff] drop-shadow-xl"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -106,7 +199,7 @@ function Project() {
 
         <div
           id="two"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
+          className="relative flex w-full shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
           onClick={goTwoface}
         >
           <img
@@ -114,7 +207,7 @@ function Project() {
             src="projectbig-3.png"
           />
 
-          <div className="absolute left-[calc(50%_-_358px)] top-[calc(50%_-_82px)] flex shrink-0 flex-col items-center justify-start">
+          <div className="absolute left-[calc(50%_-_358px)] top-[calc(50%_-_82px)] flex shrink-0 flex-col items-center justify-start cursor-pointer">
             <div
               className="relative text-left text-[#ffffff]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
@@ -136,7 +229,7 @@ function Project() {
 
         <div
           id="saint"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
+          className="relative flex w-full shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
           onClick={goSaint}
         >
           <img
@@ -144,7 +237,7 @@ function Project() {
             src="projectbig-4.png"
           />
 
-          <div className="absolute left-[calc(50%_-_169px)] top-[165px] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl ">
+          <div className="absolute left-[calc(50%_-_169px)] top-[165px] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl cursor-pointer">
             <div
               className="relative text-left text-[#ececec] "
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -163,7 +256,7 @@ function Project() {
 
         <div
           id="vector"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
+          className="relative flex w-full shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
           onClick={goVector}
         >
           <img
@@ -171,7 +264,7 @@ function Project() {
             src="projectbig-5.png"
           />
 
-          <div className="absolute left-[calc(50%_-_248.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5">
+          <div className="absolute left-[calc(50%_-_248.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5 cursor-pointer">
             <div
               className="relative text-left text-[#f9f9f9]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -190,15 +283,15 @@ function Project() {
 
         <div
           id="escortplus"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          className="relative flex w-full shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch "
           onClick={goEscortplus}
         >
           <img
-            className="absolute left-[698px] right-0 top-0 h-[810px] shrink-0"
+            className="relative flex-1 self-stretch"
             src="projectbig-6.png"
           />
 
-          <div className="absolute left-[209px] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-start justify-start gap-5 drop-shadow-xl">
+          <div className="absolute left-[209px] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-start justify-start gap-5 drop-shadow-xl cursor-pointer">
             <div
               className="relative text-left text-[#595959]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -217,7 +310,7 @@ function Project() {
 
         <div
           id="notlack"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          className="relative flex w-full shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
           onClick={goNotlack}
         >
           <img
@@ -225,7 +318,7 @@ function Project() {
             src="projectbig-7.png"
           />
 
-          <div className=" absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start drop-shadow-xl">
+          <div className=" absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start drop-shadow-xl cursor-pointer">
             <div
               className="relative text-left text-[#202020]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -247,7 +340,7 @@ function Project() {
 
         <div
           id="escort"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          className="relative flex w-full shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
           onClick={goEscort}
         >
           <img
@@ -255,7 +348,7 @@ function Project() {
             src="projectbig-8.png"
           />
 
-          <div className="absolute left-[calc(50%_-_476px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl">
+          <div className="absolute left-[calc(50%_-_476px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl cursor-pointer">
             <div
               className="relative text-left text-[#3d3d3d]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -274,7 +367,7 @@ function Project() {
 
         <div
           id="one"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden"
+          className="relative flex w-full shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden"
           onClick={goOne}
         >
           <img
@@ -282,7 +375,7 @@ function Project() {
             src="projectbig-0.png"
           />
 
-          <div className=" absolute left-[calc(50%_-_298px)] top-[calc(50%_-_-149px)] flex shrink-0 flex-col items-center justify-start gap-0 drop-shadow-xl">
+          <div className=" absolute left-[calc(50%_-_298px)] top-[calc(50%_-_-149px)] flex shrink-0 flex-col items-center justify-start gap-0 drop-shadow-xl cursor-pointer">
             <div
               className="relative text-left text-[#202020]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
@@ -301,7 +394,7 @@ function Project() {
 
         <div
           id="rili"
-          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-center gap-2.5 self-stretch overflow-hidden bg-[#d7d7d7]"
+          className="relative flex w-full shrink-0 snap-center flex-col items-center justify-center gap-2.5 self-stretch overflow-hidden bg-[#d7d7d7]"
           onClick={goMiss}
         >
           <div className="relative flex flex-1 flex-col items-center justify-center gap-2.5 self-stretch">
@@ -310,7 +403,7 @@ function Project() {
               src="projectbig-10.png"
             />
 
-            <div className="absolute left-[calc(50%_-_257.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-xl">
+            <div className="absolute left-[calc(50%_-_257.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-xl cursor-pointer">
               <div
                 className="relative text-left text-[#5b5b5b]"
                 style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -328,127 +421,114 @@ function Project() {
           </div>
         </div>
       </div>
-
-      {/* <div className=" flex w-[1440px] shrink-0 flex-row items-center justify-between gap-0 self-stretch">
-        <a href="/#aerobic">
-          <img
-            className="relative  z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-1.png"
-          />
-        </a>
-
-        <a href="/#migic">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-2.png"
-          />
-        </a>
-
-        <a href="/#two">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-3.png"
-          />
-        </a>
-
-        <a href="/saint">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-4.png"
-          />
-        </a>
-
-        <a href="#vector">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-5.png"
-          />
-        </a>
-
-        <a href="#escortplus">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-6.png"
-          />
-        </a>
-
-        <a href="#notlack">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-7.png"
-          />
-        </a>
-
-        <a href="#escort">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-8.png"
-          />
-        </a>
-
-        <a href="#one">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-9.png"
-          />
-        </a>
-
-        <a href="#rili">
-          <img
-            className="relative z-10 h-20 flex-1 hover:scale-105"
-            src="projectsmall-10.png"
-          />
-        </a>
-      </div> */}
-      {/* <svg
-        className="absolute left-[99px] top-[500px] shrink-0 overflow-visible"
-        style={{ transform: "translate(-44px, -115.41px)" }}
-        width="44"
-        height="112"
-        viewBox="0 0 44 112"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        // className="fixed flex w-[130px] flex-col items-center justify-center gap-1 rounded-xl bg-[#ffffff] p-1.5 z-10"
+        className="fixed left-5 top-[calc(50%_-_360px)] flex w-[130px] flex-col items-center justify-center gap-1 rounded-xl border border-solid border-[#f9f9f9] bg-[#ffffff] p-1.5 shadow-xl"
+        style={{ backdropFilter: "blur(2px)" }}
       >
-        <path
-          d="M29.3359 112L8.58988 72.6025C3.21486 62.3951 3.21487 50.1947 8.58988 39.9873L29.3359 0.58975"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+        <div
+          className="relative text-left text-[#6b6b6b]"
+          style={{ font: "600 20px/150% 'PingFang SC', sans-serif" }}
+        >
+          Navigation
+        </div>
+        <img
+          onClick={goNavAerobic}
+          className=" relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-1.png"
         />
-        <path
-          d="M44 112L23.2539 72.6025C17.8789 62.3951 17.8789 50.1947 23.2539 39.9873L44 0.58975"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+        <img
+          onClick={goNavMigic}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-2.png"
         />
-      </svg>
+        <img
+          onClick={goNavTwo}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-3.png"
+        />
+        <img
+          onClick={goNavSaint}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-4.png"
+        />
+        <img
+          onClick={goNavVector}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110 "
+          src="projectsmall-5.png"
+        />
+        <img
+          onClick={goNavEscortplus}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-6.png"
+        />
+        <img
+          onClick={goNavNotlack}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-7.png"
+        />
+        <img
+          onClick={goNavEscort}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-8.png"
+        />
+        <img
+          onClick={goNavOne}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-9.png"
+        />
+        <img
+          onClick={goNavRili}
+          className="relative flex-1 cursor-pointer self-stretch rounded-[10px] border border-solid border-[#ebebeb] hover:scale-105 hover:border-[#6b6b6b] hover:brightness-110"
+          src="projectsmall-10.png"
+        />
+      </div>
 
-      <svg
-        className="absolute left-[1342px] top-[389px] shrink-0 overflow-visible"
-        style={{}}
-        width="44"
-        height="112"
-        viewBox="0 0 44 112"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.6641 0L35.4101 39.3975C40.7851 49.6049 40.7851 61.8053 35.4101 72.0127L14.6641 111.41"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M0 0L20.7461 39.3975C26.1211 49.6049 26.1211 61.8053 20.746 72.0127L0 111.41"
-          stroke="black"
-          strokeWidth="8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg> */}
+      <div className=" fixed left-[calc(50%_-_100px)] top-[calc(90%)] flex flex-row items-center justify-center gap-[16px]">
+        <motion.svg
+          animate={{ y: [-5, 5] }}
+          // transition={{ ease: "easeOut", duration: 2 }}
+          transition={{
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "reverse",
+            duration: 1,
+            // type: 'spring'
+          }}
+          className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 overflow-visible"
+          style={{}}
+          width="20"
+          height="35"
+          viewBox="0 0 20 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            width="20"
+            height="35"
+            rx="10"
+            stroke="#9D9D9D"
+            strokeWidth="4"
+          />
+          <path
+            d="M10 12V18"
+            stroke="#8158FC"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        </motion.svg>
+
+        <div
+          className="relative text-left text-[#6b6b6b]"
+          style={{ font: "600 16px 'PingFang SC', sans-serif" }}
+        >
+          滚动鼠标查看其他项目    
+          <div>
+            <span className="text-[#8158FC]">点击进入</span>
+            对应项目</div>
+          
+        </div>
+      </div>
     </div>
   );
 }

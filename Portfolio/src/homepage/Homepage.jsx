@@ -4,6 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 
+//动画库
+import { Animated } from "react-animated-css";
+import { motion } from "framer-motion";
+import { gsap } from "gsap";
+
 function Homepage({ ...props }) {
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对象
 
@@ -116,27 +121,33 @@ function Homepage({ ...props }) {
 
   return (
     <div className="relative h-[7500px] bg-[#ffffff]">
-      <div className="scrollbar absolute left-0 right-0 top-[226px] flex h-[7140px] flex-col items-center justify-start gap-[258px]">
+      <div className="scrollbar absolute left-0 right-0 top-[150px] flex h-[7140px] flex-col items-center justify-start gap-[258px]">
         <div className="relative flex w-[1022px] shrink-0 flex-col items-center justify-start gap-[61px]">
-          <div className="relative flex shrink-0 flex-col items-center justify-start gap-0">
-            <div
-              className="relative text-left text-[#000000]"
-              style={{
-                font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
-              }}
-            >
-              Human Design Studio
-            </div>
+          <Animated
+            animationIn="bounceInLeft"
+            animationOut="fadeOut"
+            isVisible={true}
+          >
+            <div className="animate__animated animate__bounce relative flex shrink-0 flex-col items-center justify-start gap-0">
+              <div
+                className="relative text-left text-[#000000]"
+                style={{
+                  font: "var(--en, 600 64px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                Human Design Studio
+              </div>
 
-            <div
-              className="relative text-left text-[#202020]"
-              style={{
-                font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
-              }}
-            >
-              [人类设计工作室]
+              <div
+                className="relative text-left text-[#202020]"
+                style={{
+                  font: "var(--cn, 300 40px/150% 'PingFang SC', sans-serif)",
+                }}
+              >
+                [人类设计工作室]
+              </div>
             </div>
-          </div>
+          </Animated>
 
           <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5 self-stretch">
             <div
@@ -186,7 +197,18 @@ function Homepage({ ...props }) {
             </div>
           </div>
 
-          <div className="relative flex shrink-0 flex-col items-center justify-center gap-0.5 self-stretch">
+          <motion.div
+            animate={{ x: [-50,50] }}
+            // transition={{ ease: "easeOut", duration: 2 }}
+            transition={{
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 2,
+              // type: 'spring'
+            }}
+            className="relative flex shrink-0 flex-col items-center justify-center gap-0.5 self-stretch"
+          >
             <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5">
               <div
                 className="relative text-left text-[#606060]"
@@ -226,7 +248,7 @@ function Homepage({ ...props }) {
                 Design benefits humanbeings
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="relative flex w-[1022px] shrink-0  flex-row items-center justify-between gap-10">

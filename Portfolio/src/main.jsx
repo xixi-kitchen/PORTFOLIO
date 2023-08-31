@@ -529,7 +529,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </div>
       </nav>
     </HashRouter>
-    <div className=" containter scrollbar relative top-[48px] mx-auto flex w-[1440px]  flex-col items-center">
+    <div className=" containter  absolute top-[48px] mx-auto flex w-screen  flex-col items-center">
       <RouterProvider router={appRoutesElement} />
     </div>
   </React.StrictMode>

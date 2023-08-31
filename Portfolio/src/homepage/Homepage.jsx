@@ -142,7 +142,7 @@ function Homepage({ ...props }) {
             <div
               className="relative self-stretch text-left"
               style={{
-                font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                font: "var(--en, 600 16px/150% 'PingFang SC', sans-serif)",
               }}
             >
               <span>
@@ -167,7 +167,7 @@ function Homepage({ ...props }) {
             <div
               className="relative self-stretch text-left"
               style={{
-                font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                font: "var(--cn, 300 16px/150% 'PingFang SC', sans-serif)",
               }}
             >
               <span>
@@ -285,7 +285,7 @@ function Homepage({ ...props }) {
                 <div
                   className="relative self-stretch text-left"
                   style={{
-                    font: "var(--en, 600 12px/150% 'PingFang SC', sans-serif)",
+                    font: "var(--en, 600 16px/150% 'PingFang SC', sans-serif)",
                   }}
                 >
                   <span>
@@ -301,7 +301,7 @@ function Homepage({ ...props }) {
                 <div
                   className="relative self-stretch text-left"
                   style={{
-                    font: "var(--cn, 300 12px/150% 'PingFang SC', sans-serif)",
+                    font: "var(--cn, 300 16px/150% 'PingFang SC', sans-serif)",
                   }}
                 >
                   <span>
@@ -759,7 +759,7 @@ function Homepage({ ...props }) {
 
               <div className="relative flex h-[1080px] w-[1440px] shrink-0 flex-row items-start justify-start gap-5 ">
                 <div
-                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goAbspace}
                 >
                   <img
@@ -776,7 +776,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goTour}
                 >
                   <img
@@ -793,7 +793,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goGeneral}
                 >
                   <img
@@ -811,7 +811,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goPractice}
                 >
                   <img
@@ -874,7 +874,7 @@ function Homepage({ ...props }) {
 
               <div className="relative flex h-[1672px] w-[1440px] shrink-0 flex-col items-center justify-start gap-10 ">
                 <div
-                  className="relative flex flex-1 flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-row items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goAerobic}
                 >
                   <img
@@ -905,7 +905,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goMigiccomb}
                 >
                   <img
@@ -935,7 +935,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch bg-[#f3f3f3] hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-start justify-start gap-2.5 self-stretch bg-[#f3f3f3] hover:scale-105"
                   onClick={goSaint}
                 >
                   <div className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch">
@@ -970,7 +970,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goTwoface}
                 >
                   <img
@@ -1001,7 +1001,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
+                  className="relative flex flex-1 cursor-pointer flex-col items-start justify-start gap-2.5 self-stretch hover:scale-105"
                   onClick={goNotlack}
                 >
                   <img
@@ -1130,7 +1130,7 @@ function Homepage({ ...props }) {
             <div className="relative flex shrink-0 flex-col items-start justify-start gap-[72px]">
               <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-start justify-start gap-5">
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goCacup}
                 >
@@ -1223,7 +1223,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goEndtables}
                 >
@@ -1318,7 +1318,7 @@ function Homepage({ ...props }) {
 
               <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-start justify-start gap-5">
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goCabinets}
                 >
@@ -1411,7 +1411,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goWillinsert}
                 >
@@ -1506,7 +1506,7 @@ function Homepage({ ...props }) {
 
               <div className="relative flex h-[360px] w-[1022px] shrink-0 flex-row items-end justify-start gap-5">
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goRollin}
                 >
@@ -1599,7 +1599,7 @@ function Homepage({ ...props }) {
                 </div>
 
                 <div
-                  className="relative flex flex-1 flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
+                  className="relative flex flex-1 cursor-pointer flex-col items-center justify-start self-stretch overflow-hidden rounded-xl"
                   style={{ boxShadow: "4px 4px 10px 0px rgba(0, 0, 0, 0.25)" }}
                   onClick={goReticule}
                 >

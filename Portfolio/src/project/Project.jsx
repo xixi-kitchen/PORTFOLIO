@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+// import Anchor from "react-anchor-without-hash";
 
 function Project() {
-
   const goNavigate = useNavigate(); //在Home组件里初始化一个uN对
 
   const goVector = () => {
@@ -36,24 +36,28 @@ function Project() {
     goNavigate("/notlack");
   };
 
-  return (
-    <div className="relative w-[1440px] flex flex-col justify-center">
+  // const goaerobic = () => {
+  //   var aerobic = document.getElementById("aerobic");
+  //   aerobic.scrollIntoView();
+  // };
 
-      
-      <div
-        className="relative flex flex-1 snap-x snap-mandatory flex-row items-start justify-start gap-0 self-stretch overflow-x-scroll scrollbar overflow-y-hidden"
- 
-      >
-        <div id="aerobic" className="relative flex w-[1440px] shrink-0 snap-center flex-row items-start justify-start gap-2.5 self-stretch" onClick={goAerobic}>
+  // var aerobic = document.getElementById("aerobic");
+  // aerobic.scrollIntoView();
+
+  return (
+    <div className="relative flex w-[1440px] flex-col justify-center">
+      <div className="relative flex flex-1 snap-y snap-mandatory flex-col items-start justify-start gap-0 self-stretch scroll-smooth">
+        <div
+          id="aerobic"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-row items-start justify-start gap-2.5 self-stretch"
+          onClick={goAerobic}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-1.png"
           />
 
-          <div
-            className="absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96px)] flex shrink-0 flex-col items-center justify-center drop-shadow-2xl"
-            
-          >
+          <div className="absolute left-[calc(50%_-_143px)] top-[calc(50%_-_96px)] flex shrink-0 flex-col items-center justify-center drop-shadow-2xl">
             <div
               className="relative text-left text-[#ffffff]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
@@ -73,16 +77,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="migic" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch" onClick={goMigiccomb}>
+        <div
+          id="migic"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
+          onClick={goMigiccomb}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-2.png"
           />
 
-          <div
-            className="absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.4px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-2xl"
-           
-          >
+          <div className="absolute left-[calc(50%_-_207px)] top-[calc(50%_-_84.4px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-2xl">
             <div
               className="relative text-left text-[#ffffff] drop-shadow-xl"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -99,7 +104,11 @@ function Project() {
           </div>
         </div>
 
-        <div id="two" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch" onClick={goTwoface}>
+        <div
+          id="two"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
+          onClick={goTwoface}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-3.png"
@@ -125,16 +134,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="saint" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch" onClick={goSaint}>
+        <div
+          id="saint"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch"
+          onClick={goSaint}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-4.png"
           />
 
-          <div
-            className="absolute left-[calc(50%_-_169px)] top-[165px] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl "
-            
-          >
+          <div className="absolute left-[calc(50%_-_169px)] top-[165px] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl ">
             <div
               className="relative text-left text-[#ececec] "
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -151,7 +161,11 @@ function Project() {
           </div>
         </div>
 
-        <div id="vector" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch" onClick={goVector}>
+        <div
+          id="vector"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch"
+          onClick={goVector}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-5.png"
@@ -174,16 +188,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="escortplus" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]" onClick={goEscortplus}>
+        <div
+          id="escortplus"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          onClick={goEscortplus}
+        >
           <img
             className="absolute left-[698px] right-0 top-0 h-[810px] shrink-0"
             src="projectbig-6.png"
           />
 
-          <div
-            className="absolute left-[209px] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-start justify-start gap-5 drop-shadow-xl"
-            
-          >
+          <div className="absolute left-[209px] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-start justify-start gap-5 drop-shadow-xl">
             <div
               className="relative text-left text-[#595959]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -200,13 +215,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="notlack" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]" onClick={goNotlack}>
+        <div
+          id="notlack"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          onClick={goNotlack}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-7.png"
           />
 
-          <div className=" drop-shadow-xl absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start">
+          <div className=" absolute left-[calc(50%_-_516px)] top-[245px] flex shrink-0 flex-col items-center justify-start drop-shadow-xl">
             <div
               className="relative text-left text-[#202020]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -226,16 +245,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="escort" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]" onClick={goEscort}>
+        <div
+          id="escort"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-start justify-start gap-2.5 self-stretch bg-[#ffffff]"
+          onClick={goEscort}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-8.png"
           />
 
-          <div
-            className="absolute left-[calc(50%_-_476px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl"
-            
-          >
+          <div className="absolute left-[calc(50%_-_476px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-start gap-5 drop-shadow-xl">
             <div
               className="relative text-left text-[#3d3d3d]"
               style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -252,13 +272,17 @@ function Project() {
           </div>
         </div>
 
-        <div id="one" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden" onClick={goOne}>
+        <div
+          id="one"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden"
+          onClick={goOne}
+        >
           <img
             className="relative flex-1 self-stretch"
             src="projectbig-0.png"
           />
 
-          <div className=" drop-shadow-xl absolute left-[calc(50%_-_298px)] top-[calc(50%_-_-149px)] flex shrink-0 flex-col items-center justify-start gap-0">
+          <div className=" absolute left-[calc(50%_-_298px)] top-[calc(50%_-_-149px)] flex shrink-0 flex-col items-center justify-start gap-0 drop-shadow-xl">
             <div
               className="relative text-left text-[#202020]"
               style={{ font: "600 80px/150% 'PingFang SC', sans-serif" }}
@@ -275,16 +299,18 @@ function Project() {
           </div>
         </div>
 
-        <div id="rili" className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-center gap-2.5 self-stretch overflow-hidden bg-[#d7d7d7]" onClick={goMiss}>
+        <div
+          id="rili"
+          className="relative flex w-[1440px] shrink-0 snap-center flex-col items-center justify-center gap-2.5 self-stretch overflow-hidden bg-[#d7d7d7]"
+          onClick={goMiss}
+        >
           <div className="relative flex flex-1 flex-col items-center justify-center gap-2.5 self-stretch">
             <img
               className="relative flex-1 self-stretch"
               src="projectbig-10.png"
             />
 
-            <div
-              className="absolute left-[calc(50%_-_257.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-xl"
-            >
+            <div className="absolute left-[calc(50%_-_257.5px)] top-[calc(50%_-_85px)] flex shrink-0 flex-col items-center justify-center gap-5 drop-shadow-xl">
               <div
                 className="relative text-left text-[#5b5b5b]"
                 style={{ font: "600 60px/150% 'PingFang SC', sans-serif" }}
@@ -303,28 +329,77 @@ function Project() {
         </div>
       </div>
 
+      {/* <div className=" flex w-[1440px] shrink-0 flex-row items-center justify-between gap-0 self-stretch">
+        <a href="/#aerobic">
+          <img
+            className="relative  z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-1.png"
+          />
+        </a>
 
-      <div className=" flex shrink-0 flex-row items-center justify-between gap-0 self-stretch w-[1440px]">
-      <a href="#aerobic"><img className="relative  h-20 flex-1 hover:scale-105 z-10" src="projectsmall-1.png"/></a>
+        <a href="/#migic">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-2.png"
+          />
+        </a>
 
-        <a href="#migic"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-2.png" /></a>
+        <a href="/#two">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-3.png"
+          />
+        </a>
 
-        <a href="#two"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-3.png" /></a>
+        <a href="/saint">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-4.png"
+          />
+        </a>
 
-        <a href="#saint"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-4.png" /></a>
+        <a href="#vector">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-5.png"
+          />
+        </a>
 
-        <a href="#vector"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-5.png" /></a>
+        <a href="#escortplus">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-6.png"
+          />
+        </a>
 
-        <a href="#escortplus"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-6.png" /></a>
+        <a href="#notlack">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-7.png"
+          />
+        </a>
 
-        <a href="#notlack"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-7.png" /></a>
+        <a href="#escort">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-8.png"
+          />
+        </a>
 
-        <a href="#escort"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-8.png" /></a>
+        <a href="#one">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-9.png"
+          />
+        </a>
 
-        <a href="#one"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-9.png" /></a>
-
-        <a href="#rili"><img className="relative h-20 flex-1 hover:scale-105 z-10" src="projectsmall-10.png" /></a> 
-      </div>
+        <a href="#rili">
+          <img
+            className="relative z-10 h-20 flex-1 hover:scale-105"
+            src="projectsmall-10.png"
+          />
+        </a>
+      </div> */}
       {/* <svg
         className="absolute left-[99px] top-[500px] shrink-0 overflow-visible"
         style={{ transform: "translate(-44px, -115.41px)" }}

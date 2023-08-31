@@ -64,8 +64,8 @@ function Monomer() {
   };
 
   return (
-    <div className="flex h-[1300px] w-full flex-col items-start   justify-start  gap-[60px] scrollbar">
-      <div className=" relative top-5 flex flex-col items-start justify-start gap-5">
+    <div className="flex  w-full flex-col justify-start gap-[60px]  bg-slate-400">
+      <div className=" relative top-5 flex flex-col items-start left-8 justify-start gap-5">
         <div
           className="relative text-left text-[#000000]"
           style={{
@@ -83,7 +83,7 @@ function Monomer() {
           单体
         </div>
       </div>
-      <div className="relative mx-auto flex w-full flex-1 flex-row flex-wrap items-start justify-start gap-[45px] gap-y-[23px]">
+      <div className="relative mx-auto left-8 flex w-full flex-1 flex-row flex-wrap items-start justify-start gap-[30px] gap-y-[23px]">
         <div
           className="relative flex h-[350px] w-[200px] shrink-0 flex-col items-start justify-start gap-2.5 rounded-[10px] bg-[#ffffff] p-2.5"
           style={{ boxShadow: "4px 4px 8px 0px rgba(0, 0, 0, 0.25)" }}

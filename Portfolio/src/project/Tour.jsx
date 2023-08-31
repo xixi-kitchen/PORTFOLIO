@@ -1,6 +1,125 @@
 import React from "react";
 
 export default function Tour({ ...props }) {
+    function goBeiJin() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("beijin");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goWenTi() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("wenti");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goMuBiao() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("mubiao");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goFenXi() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("fenxi");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goYongHuHuaXiang() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("yonghuhuaxiang");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goShiShi() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("shishi");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goXiangMuZhanShi() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("xiangmuzhanshi");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goLuoJiTu() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("luojitu");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goXianKuangTu() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("xiankuangtu");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goShiJueGuiFan() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("shijueguifan");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goLow() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("low");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+      function goHigh() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("high");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "center",
+      // inline:"nearest"
+    });
+  }
+      function goJieLun() {
+    // document.getElementById('colors').scrollTop = 0;
+    let getEle = document.getElementById("jielun");
+    getEle.scrollIntoView({
+      behavior: "smooth", //顺滑的滚动
+      block: "start",
+      // inline:"nearest"
+    });
+  }
+
+
   return (
     <div className="relative h-[15200px] w-[1440px] bg-[#f7f7f7]">
       <img
@@ -66,11 +185,11 @@ export default function Tour({ ...props }) {
               src="tour-3.png" />
           </div>
         </div>
-
+        <div  id="beijin" className=" h-2"></div>
         <div className="relative flex shrink-0 flex-col items-start justify-start gap-10">
           <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
             <div
-              id="beijin"
+              
               className="text-gray-1 relative text-left"
               style={{
                 font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -89,10 +208,10 @@ export default function Tour({ ...props }) {
             </div>
           </div>
         </div>
-
+        <div  id="wenti" className=" h-2"></div>
         <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            id="wenti"
+            
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -189,10 +308,10 @@ export default function Tour({ ...props }) {
             </div>
           </div>
         </div>
-
+        <div  id="mubiao" className=" h-2"></div>
         <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6">
           <div
-            id="mubiao"
+            
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -248,10 +367,10 @@ export default function Tour({ ...props }) {
             </div>
           </div>
         </div>
-
+        <div  id="fenxi" className=" h-2"></div>
         <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            id="fenxi"
+            
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -309,10 +428,10 @@ export default function Tour({ ...props }) {
             </div>
           </div>
         </div>
-
+        <div   id="yonghuhuaxiang" className=" h-2"></div>
         <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            id="yonghuhuaxiang"
+           
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -361,10 +480,10 @@ export default function Tour({ ...props }) {
             className="relative h-[1040px] w-[1040px] shrink-0"
             src="tour-tonglixing-1.png" />
         </div>
-
+        <div  id="shishi" className=" h-2"></div>
         <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-[60px]">
           <div
-            id="shishi"
+            
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -431,10 +550,10 @@ export default function Tour({ ...props }) {
               src="tour-meirijihua.png" />
           </div>
         </div>
-
+        <div  id="xiangmuzhanshi" className=" h-2"></div>
         <div className="relative flex shrink-0 flex-col items-start justify-start gap-6">
           <div
-            id="xiangmuzhanshi"
+            
             className="text-gray-1 relative text-left"
             style={{
               font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -447,8 +566,9 @@ export default function Tour({ ...props }) {
             className="relative h-[502.99px] w-[1040px] shrink-0"
             src="tour-xiangmuzhnashi.png" />
         </div>
-
-        <div className="relative flex w-[1440px] shrink-0 flex-col items-center justify-start gap-20">
+        
+        <div className="relative flex w-[1440px] shrink-0 flex-col items-center justify-start gap-14">
+        <div  id="luojitu" className=" h-2"></div>
           <div className="relative flex w-[1040px] shrink-0 flex-col items-center justify-start gap-6">
             <div className="relative flex shrink-0 flex-row items-start justify-start gap-6 self-stretch">
               <svg
@@ -475,7 +595,7 @@ export default function Tour({ ...props }) {
               </svg>
 
               <div
-                id="luojitu"
+                
                 className="text-gray-1 relative text-left"
                 style={{
                   font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -536,7 +656,7 @@ export default function Tour({ ...props }) {
               </div>
             </div>
           </div>
-
+          <div  id="xiankuangtu" className=" h-2"></div>
           <div className="relative flex w-[1040px] shrink-0 flex-col items-start justify-start gap-6">
             <div className="relative flex shrink-0 flex-col items-start justify-start gap-[11px]">
               <div className="relative flex shrink-0 flex-row items-start justify-start gap-[11px]">
@@ -568,7 +688,7 @@ export default function Tour({ ...props }) {
                 </svg>
 
                 <div
-                  id="xiankuangtu"
+                  
                   className="relative text-right"
                   style={{ font: "600 48px 'PingFang SC', sans-serif" }}
                 >
@@ -588,7 +708,7 @@ export default function Tour({ ...props }) {
               className="relative h-[739px] w-[925px] shrink-0"
               src="group-22.png" />
           </div>
-
+          <div  id="shijueguifan" className=" h-2"></div>
           <div className="relative flex shrink-0 flex-col items-start justify-start gap-14">
             <div className="relative flex h-[77px] w-[277px] shrink-0 flex-row items-center justify-center gap-5">
               <svg
@@ -649,7 +769,7 @@ export default function Tour({ ...props }) {
               </svg>
 
               <div
-                id="shijueguifan"
+                
                 className="relative text-left text-[#000000]"
                 style={{
                   font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -673,9 +793,10 @@ export default function Tour({ ...props }) {
                 src="_34.png" />
             </div>
           </div>
-
+          
           <div className="relative flex shrink-0 flex-col items-center justify-start gap-0 self-stretch">
             <div className="relative flex shrink-0 flex-col items-center justify-start gap-11 self-stretch">
+            <div  id="low" className=""></div>
               <div className="relative flex h-[104.96px] shrink-0 flex-row items-center justify-center gap-2.5 pb-0 pl-0 pr-0 pt-12">
                 <svg
                   className="relative shrink-0 overflow-visible"
@@ -701,7 +822,7 @@ export default function Tour({ ...props }) {
                 </svg>
 
                 <div
-                  id="lo"
+                  // id="low"
                   className="relative text-left text-[#000000]"
                   style={{
                     font: "var(--heading-1, 700 48px/140% 'Archivo', sans-serif)",
@@ -881,8 +1002,8 @@ export default function Tour({ ...props }) {
                     </div>
                   </div>
                 </div>
-
-                <div id="hi" className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
+                
+                <div className="relative flex shrink-0 flex-col items-start justify-start gap-2.5">
                   <img
                     className="relative h-[787.15px] w-[1440px] shrink-0"
                     src="tour-gaobaozhen.png" />
@@ -913,6 +1034,7 @@ export default function Tour({ ...props }) {
                       </svg>
 
                       <div
+                      id="high"
                         className="relative text-left text-[#000000]"
                         style={{ font: "600 40px 'PingFang SC', sans-serif" }}
                       >
@@ -991,7 +1113,7 @@ export default function Tour({ ...props }) {
       </div>
 
       <div
-        className="sticky left-3.5 top-[calc(50%_-_308px)] flex h-[616px] w-28 flex-col items-center justify-start gap-3 rounded-[10px] bg-[rgba(172,172,172,0.50)] p-1.5"
+        className="fixed left-3.5 top-[calc(50%_-_308px)] flex h-[616px] w-28 flex-col items-center justify-start gap-3 rounded-[10px] bg-[rgba(172,172,172,0.50)] p-1.5"
         style={{ backdropFilter: "blur(10px)" }}
       >
         <div
@@ -1002,8 +1124,7 @@ export default function Tour({ ...props }) {
         </div>
 
         <div className="relative flex shrink-0 flex-col items-center justify-center gap-[5px]">
-          <a href="#beijin" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goBeiJin} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -1011,10 +1132,8 @@ export default function Tour({ ...props }) {
                 背景
               </div>
             </div>
-          </a>
 
-          <a href="#wenti" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goWenTi} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -1022,10 +1141,8 @@ export default function Tour({ ...props }) {
                 问题
               </div>
             </div>
-          </a>
 
-          <a href="#mubiao" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goMuBiao} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -1033,9 +1150,7 @@ export default function Tour({ ...props }) {
                 目标
               </div>
             </div>
-          </a>
-          <a href="#fenxi" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goFenXi} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -1043,9 +1158,7 @@ export default function Tour({ ...props }) {
                 分析
               </div>
             </div>
-          </a>
-          <a href="#yonghuhuaxiang" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goYongHuHuaXiang} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/99.52% 'PingFang SC', sans-serif" }}
@@ -1053,9 +1166,7 @@ export default function Tour({ ...props }) {
                 用户画像
               </div>
             </div>
-          </a>
-          <a href="#shishi" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goShiShi} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
@@ -1063,9 +1174,8 @@ export default function Tour({ ...props }) {
                 实施
               </div>
             </div>
-          </a>
-          <a href="#xiangmuzhanshi" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+
+            <div onClick={goXiangMuZhanShi} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
@@ -1073,10 +1183,8 @@ export default function Tour({ ...props }) {
                 项目展示
               </div>
             </div>
-          </a>
 
-          <a href="#luojitu" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goLuoJiTu} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
@@ -1084,10 +1192,8 @@ export default function Tour({ ...props }) {
                 逻辑图
               </div>
             </div>
-          </a>
 
-          <a href="#xiankuangtu" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goXianKuangTu} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{ font: "400 16px/140% 'PingFang SC', sans-serif" }}
@@ -1095,10 +1201,8 @@ export default function Tour({ ...props }) {
                 线框图
               </div>
             </div>
-          </a>
 
-          <a href="#shijueguifan" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goShiJueGuiFan} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{
@@ -1108,10 +1212,8 @@ export default function Tour({ ...props }) {
                 视觉规范
               </div>
             </div>
-          </a>
 
-          <a href="#lo" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goLow} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{
@@ -1121,10 +1223,8 @@ export default function Tour({ ...props }) {
                 低保真原型
               </div>
             </div>
-          </a>
 
-          <a href="#hi" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goHigh} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{
@@ -1134,10 +1234,8 @@ export default function Tour({ ...props }) {
                 高保真原型
               </div>
             </div>
-          </a>
 
-          <a href="#jielun" className="w-full">
-            <div className="relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
+            <div onClick={goJieLun} className=" cursor-pointer relative flex shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-lg bg-[#c93e3e] p-2.5">
               <div
                 className="relative text-center text-[#ffffff]"
                 style={{
@@ -1147,7 +1245,6 @@ export default function Tour({ ...props }) {
                 结论
               </div>
             </div>
-          </a>
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ export default function Cabinets({ ...props }) {
           autoRotateSpeed={0.5}
           autoRotate />
       </Canvas>
-
+{/* 
       <div className="absolute left-0 top-[845px] flex w-[1440px] flex-col items-start justify-start gap-0 pl-[200px] pr-[200px]">
         <div
           className="relative text-left text-[#000000]"
@@ -56,7 +56,7 @@ export default function Cabinets({ ...props }) {
         >
           设计说明
         </div>
-      </div>
+      </div> */}
 
       <div className="absolute left-0 right-0 top-0 flex flex-row items-center justify-between pl-[200px] pr-[200px]">
         <div

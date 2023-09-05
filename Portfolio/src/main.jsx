@@ -486,13 +486,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </div>
     </div> */}
     <HashRouter>
-      <nav className=" fixed  z-10 flex h-12  w-full flex-row items-center justify-between bg-indigo-50 text-xl font-bold no-underline ">
+      <nav className=" fixed  z-20 flex h-12  w-full flex-row items-center justify-between bg-indigo-50 text-xl font-bold no-underline ">
         <Link
           to="/"
           reloadDocument
-          className="mx-8 text-blue-600 no-underline hover:text-[#8158fc]"
-        >
-          Homepage
+          className="mx-8 text-blue-600 no-underline flex flex-row gap-2 place-items-center hover:text-[#8158fc]"
+        ><img className="h-8 w-8" src="system-outline-45-category.gif"></img>
+          Human Design Studio
         </Link>
         <div>
           <Link

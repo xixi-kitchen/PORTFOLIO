@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
-import { OriginStatus } from './MonoStatus';
-import { WillinsertModel } from './WillinsertModel';
+import { OriginStatus } from "./MonoStatus";
+import { WillinsertModel } from "./WillinsertModel";
 
 export default function Willinsert() {
   return (
@@ -21,12 +21,10 @@ export default function Willinsert() {
         <Suspense fallback={null}>
           <WillinsertModel />
         </Suspense>
-        <OrbitControls 
-            enableZoom={false}
-            autoRotateSpeed={0.5} 
-            autoRotate />
+        <OrbitControls enableZoom={false} autoRotateSpeed={0.5} autoRotate />
       </Canvas>
-
+      
+      {/* 设计说明
       <div className="absolute left-0 top-[845px] flex w-[1440px] flex-col items-start justify-start gap-0 pl-[200px] pr-[200px]">
         <div
           className="relative text-left text-[#000000]"
@@ -57,7 +55,7 @@ export default function Willinsert() {
         >
           设计说明
         </div>
-      </div>
+      </div> */}
 
       <div className="absolute left-0 right-0 top-0 flex flex-row items-center justify-between pl-[200px] pr-[200px]">
         <div
@@ -110,10 +108,9 @@ export default function Willinsert() {
             </div>
           </div>
 
-          < OriginStatus />
+          <OriginStatus />
         </div>
       </div>
     </div>
-  )
+  );
 }
-
